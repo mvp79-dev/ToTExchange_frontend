@@ -1,0 +1,138 @@
+@import "../../../../styles/mixins";
+.dashboardManagement {
+  padding: 40px 185px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  @include media-breakpoint-below(1800px) {
+    padding: 40px 60px;
+  }
+  .recentlyActivity {
+    .filter {
+      display: flex;
+      align-items: center;
+      font-family: var(--base-font);
+      justify-content: space-between;
+      margin-bottom: 20px;
+      > span {
+        color: var(--neutral-11, #1f1f1f);
+        font-size: 20px;
+        font-weight: 500;
+      }
+      :global {
+        .ant-select-selector {
+          height: 40px;
+          display: flex;
+          align-items: center;
+          min-width: 160px;
+          font-family: "Be Vietnam Pro";
+          border-radius: 2px;
+        }
+      }
+    }
+    .boxActivity {
+      display: flex;
+      column-gap: 24px;
+      &__item {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+        border-radius: 8px;
+        width: 25%;
+        &-icon {
+          width: 48px;
+          height: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 6px;
+        }
+        &-content {
+          font-family: var(--base-font);
+          display: flex;
+          flex-direction: column;
+          row-gap: 12px;
+          &__growth {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: var(--neutral-11, #1f1f1f);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+
+            &-value {
+              display: flex;
+              align-items: center;
+              column-gap: 8px;
+              > span {
+                color: var(--gray10);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px; /* 157.143% */
+                > svg {
+                  width: 18px;
+                  height: 18px;
+                }
+              }
+            }
+          }
+          &__value {
+            color: var(--neutral-11, #1f1f1f);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 32px; /* 133.333% */
+          }
+        }
+      }
+    }
+  }
+  .totalRevenue,
+  .totalVisitor,
+  .totalSale,
+  .orderList {
+    .filter {
+      display: flex;
+      align-items: center;
+      font-family: var(--base-font);
+      justify-content: space-between;
+      margin-bottom: 20px;
+      > span {
+        color: var(--neutral-11, #1f1f1f);
+        font-size: 20px;
+        font-weight: 500;
+      }
+      :global {
+        .ant-select-selector {
+          height: 40px;
+          display: flex;
+          align-items: center;
+          min-width: 160px;
+          font-family: "Be Vietnam Pro";
+          border-radius: 2px;
+        }
+      }
+    }
+    .chart {
+      padding: 24px;
+      border-radius: 8px;
+      border: 1px solid var(--neutral-5, #d9d9d9);
+    }
+  }
+  .totalRevenue {
+    .chart {
+      height: 320px;
+    }
+  }
+  .totalVisitor {
+    .chart {
+      height: 320px;
+    }
+  }
+  .totalSale {
+    .chart {
+      height: 342px;
+    }
+  }
+}

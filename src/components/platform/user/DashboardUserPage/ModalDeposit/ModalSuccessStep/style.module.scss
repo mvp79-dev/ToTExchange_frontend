@@ -1,0 +1,51 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.modalSuccess {
+  text-align: center;
+  font-family: "Be VietNam Pro";
+  padding: 20px 125px;
+  @include mobile {
+    padding: 5px 10px;
+  }
+  .btnGroup {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+    justify-content: center;
+    .btn {
+      font-family: "Be VietNam Pro";
+      width: 50%;
+    }
+    :global {
+      .ant-btn {
+        font-family: "Be VietNam Pro";
+        width: 100%;
+      }
+    }
+    .btnActive {
+      @include mobile {
+        margin: 20px 0;
+      }
+      :global {
+        .ant-btn {
+          background-color: var(--base-color);
+          font-family: "Be VietNam Pro";
+          color: var(--white-color);
+        }
+        .ant-btn:hover {
+          color: var(--white-color) !important;
+        }
+      }
+    }
+  }
+  .title {
+    font-weight: 700;
+    font-family: "Be VietNam Pro";
+    font-size: 16px;
+  }
+  .content {
+    color: var(--gray10);
+    font-family: "Be VietNam Pro";
+    padding: 12px 0;
+  }
+}

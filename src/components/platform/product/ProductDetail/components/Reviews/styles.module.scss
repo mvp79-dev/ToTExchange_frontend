@@ -1,0 +1,186 @@
+@import "@/styles/mixins";
+
+.comment {
+  font-family: Inter, sans-serif;
+
+  &__section-title {
+    color: var(--black-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  &-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &-pagination {
+    margin: 10px 0px 40px;
+  }
+
+  &__content-title {
+    color: var(--black-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    &.form-header {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__note {
+    color: var(--black-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+
+    &.note {
+      margin-bottom: 30px;
+
+      @include mobile {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__item {
+    padding: 1.88rem 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.88rem;
+
+    &__user-avatar {
+      width: 3.75rem;
+      height: 3.75rem;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      :global {
+        .ant-rate {
+          font-size: 12px;
+        }
+      }
+    }
+
+    &__user-info {
+      font-size: 14px;
+      font-style: normal;
+      line-height: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__username {
+      color: var(--black-color);
+      font-weight: 500;
+    }
+
+    &__create-time {
+      color: var(--color-second);
+      font-weight: 400;
+    }
+  }
+
+  &-list > &__item:not(:last-child) {
+    border-bottom: 1px solid var(--background-footer);
+  }
+
+  &__form {
+    .rating {
+      font-size: 12px;
+    }
+
+    .comment_content {
+      height: 213px !important;
+      resize: none;
+      padding: 1.06rem;
+    }
+
+    :global {
+      .ant-form-item {
+        &:not(:first-child, :last-child) {
+          margin-bottom: 30px;
+        }
+
+        &:first-child {
+          margin-bottom: 26px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        label {
+          text-transform: capitalize;
+          color: var(--black-color);
+          font-family: Inter, sans-serif;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+
+        label.ant-form-item-required {
+          &::before {
+            display: none !important;
+          }
+
+          &::after {
+            content: " *";
+            visibility: visible;
+          }
+        }
+
+        .ant-form-item-control-input-content {
+          > .ant-input {
+            height: 55px;
+            padding: 1rem;
+            border-radius: 4px;
+            font-size: 14px !important;
+            &::placeholder {
+              text-transform: capitalize;
+            }
+          }
+        }
+
+        .ant-checkbox-checked .ant-checkbox-inner {
+          background-color: var(--base-color);
+          border-color: var(--base-color);
+        }
+      }
+    }
+
+    &__submit-btn {
+      width: 12.5rem;
+      height: 3.75rem;
+      border-radius: 0.25rem;
+      background: var(--base-color);
+      color: var(--neutral-1);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.5rem; /* 171.429% */
+      text-transform: uppercase;
+
+      @include mobile {
+        height: auto;
+        width: auto;
+      }
+    }
+  }
+}

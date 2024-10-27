@@ -1,0 +1,647 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+@mixin paddingSectionResponsive {
+  padding: 0 16px;
+}
+.home {
+  font-family: "Be Vietnam Pro";
+  :global {
+    .ant-row {
+      font-family: "Be Vietnam Pro";
+    }
+    .ant-col {
+      font-family: "Be Vietnam Pro";
+    }
+  }
+  .greenText {
+    color: var(--base-color);
+  }
+  .title {
+    padding-bottom: 10px;
+    text-align: center;
+    h2 {
+      font-size: 2.375rem;
+      font-weight: 500;
+    }
+    p {
+      font-size: 1rem;
+      color: var(--gray);
+      line-height: 1.5;
+    }
+  }
+  .sectionWrapper {
+    margin: 0px auto;
+    max-width: var(--width-content);
+
+    @include mobile {
+      max-width: 100%;
+    }
+    @include media-breakpoint-above(1300px) {
+      margin: 0px auto;
+    }
+    @include media-breakpoint-above(1600px) {
+      margin: 0px auto;
+    }
+    @include media-breakpoint-above(1801px) {
+      margin: 0px auto;
+    }
+    :global {
+      .slick-slide {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        > div {
+          > div {
+            width: auto !important;
+            padding: 0px 12px;
+            @include media-breakpoint-above(1300px) {
+              padding: 0px 12px;
+            }
+            @include media-breakpoint-above(1600px) {
+              padding: 0px 12px;
+            }
+            @include media-breakpoint-above(1801px) {
+              padding: 0px 12px;
+            }
+          }
+        }
+      }
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 24px;
+      margin-bottom: 40px;
+
+      > h2 {
+        margin: 0px;
+      }
+      > p {
+        max-width: 630px;
+        text-align: center;
+        margin: 0px;
+      }
+    }
+  }
+  // .banner {
+  //   width: 100%;
+  // }
+  .sectionInfo {
+    position: relative;
+    background-color: var(--background-gray);
+    padding: 80px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    @include mobile {
+      padding: 40px 16px;
+      max-width: 100%;
+    }
+    .thumbnail {
+      @include mobile {
+        height: 260px !important;
+        width: 100%;
+      }
+    }
+    .content {
+      @include mobile {
+        display: none;
+      }
+    }
+    .decoBg2 {
+      position: absolute;
+      left: 0;
+      top: -100px;
+
+      @include laptop {
+        display: none;
+      }
+    }
+    .decoBg3 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      @include laptop {
+        display: none;
+      }
+    }
+    .titleMain {
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+    .sectionCard {
+      background-color: var(--white-color);
+      img {
+        height: 260px;
+        width: 100%;
+      }
+      .info {
+        text-align: left;
+        padding: 15px 24px;
+      }
+      .textTitle {
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: 21px;
+        margin-bottom: 0px;
+        color: var(--gray-black1);
+      }
+      .textContent {
+        color: var(--gray10);
+        font-size: 16px;
+        margin: 16px 0px;
+      }
+      .textMore {
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+        padding-bottom: 4px;
+        border-bottom: 2px solid var(--gray7);
+        width: 90px;
+        color: var(--gray1);
+      }
+    }
+  }
+  .sectionProduct {
+    padding-top: 80px;
+    @include mobile {
+      padding-top: 40px;
+    }
+    .sectionWrapper {
+      max-width: var(--width-content);
+      @include mobile {
+        padding: 40px 16px;
+      }
+      .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 8px;
+        margin-bottom: 30px;
+
+        > h2 {
+          margin: 0px;
+          @include mobile {
+            font-size: 20px;
+          }
+        }
+        > p {
+          max-width: 630px;
+          text-align: center;
+          margin: 0px;
+          @include mobile {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .sectionAchievement {
+    padding: 80px 0;
+    position: relative;
+    .decoBg {
+      position: absolute;
+      right: 0;
+      top: -50px;
+
+      @include mobile {
+        display: none;
+      }
+    }
+    .achievementBox {
+      max-width: var(--width-content);
+      text-align: center;
+      h4 {
+        font-size: 20px;
+      }
+      .description {
+        color: var(--gray4);
+        font-size: 16px;
+      }
+      .viewMore {
+        font-size: 16px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid var(--gray9);
+        cursor: pointer;
+      }
+    }
+  }
+  .sectionStrategy {
+    padding: 4.5rem 0;
+    position: relative;
+    z-index: 10;
+    .leftBanner {
+      z-index: 2;
+      width: 50%;
+      height: 700px;
+      max-width: 1000px;
+      position: relative;
+      @include laptop {
+        width: 100%;
+        height: 450px;
+      }
+      @include mobile {
+        width: 100%;
+        height: 220px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__desc {
+      font-size: 16px;
+      @include laptop {
+        padding: 0 16px;
+      }
+      @include mobile {
+        font-size: 14px;
+      }
+      > span {
+        padding-right: 10px;
+        @include laptop {
+          padding-left: 10px;
+        }
+      }
+    }
+    .rightContent {
+      position: absolute;
+      right: 0;
+      top: 10rem;
+      width: 55%;
+      height: 700px;
+      z-index: 1;
+      @include laptop {
+        width: 100%;
+        position: relative;
+        top: 0;
+      }
+      @include mobile {
+        width: 100%;
+        position: relative;
+        top: 0;
+        height: 600px;
+      }
+
+      .content {
+        position: relative;
+        box-sizing: border-box;
+        padding: 100px 200px;
+        max-width: 100%;
+        max-height: 700px;
+        height: 700px;
+        background-position: center;
+        background-size: cover;
+        z-index: 10;
+        color: var(--white-color);
+        @include laptop {
+          padding: 40px 0;
+          height: 600px;
+        }
+        @include mobile {
+          padding: 40px 0;
+          height: 600px;
+        }
+        // @include media-breakpoint-below(1400px) {
+        //   padding: 50px 150px;
+        // }
+        .content_title {
+          font-size: 2.375rem;
+          @include laptop {
+            text-align: center;
+          }
+          @include mobile {
+            font-size: 20px;
+          }
+        }
+        .content_subTitle {
+          font-size: 1rem;
+          line-height: 1.5;
+          @include laptop {
+            padding: 0 16px;
+          }
+          @include mobile {
+            font-size: 14px;
+            text-align: center;
+          }
+        }
+      }
+      .content::after {
+        content: ""; // ::before and ::after both require content
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--base-color);
+        opacity: 0.8;
+      }
+      .strategy {
+        &__box {
+          padding: 24px 0;
+          display: flex;
+        }
+        &__image {
+          display: flex;
+          align-items: baseline;
+        }
+        &__content {
+          padding-left: 15px;
+        }
+        &__contentTitle {
+          font-size: 1.5rem;
+          margin: 0;
+          font-weight: 500;
+          color: var(--white-color);
+        }
+      }
+    }
+  }
+  .sectionAboutUs {
+    position: relative;
+    padding: 4.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 4.5rem;
+    text-align: left;
+    align-items: center;
+    @include laptop {
+      padding: 40px 16px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      padding: 40px 0;
+      @include paddingSectionResponsive();
+    }
+    .titleSection {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+
+      @include mobile {
+        justify-content: center;
+      }
+      > span {
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+    .decoBg4 {
+      position: absolute;
+      left: -250px;
+      top: -70px;
+      @include laptop {
+        display: none;
+      }
+    }
+    .decoBg5 {
+      position: absolute;
+      z-index: -1;
+      right: -280px;
+      bottom: 0;
+
+      @include laptop {
+        display: none;
+      }
+      img {
+        width: 280px;
+      }
+    }
+    &__content {
+      width: 50%;
+      @include mobile {
+        width: 100%;
+      }
+    }
+    &__title {
+      h2 {
+        font-size: 2.375rem;
+        font-weight: 500;
+        margin: 12px 0px 0px;
+        @include mobile {
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+      .titleSub {
+        font-size: 16px;
+        color: var(--gray);
+        line-height: 1.5;
+        margin: 36px 0px 16px;
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+      span {
+        color: var(--base-color);
+      }
+    }
+    &__image {
+      width: 50%;
+      @include mobile {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        max-height: 600px;
+        @include mobile {
+          max-height: 375px;
+        }
+      }
+    }
+    &__wrapperBox {
+      display: flex;
+      gap: 16px;
+    }
+    &__box {
+      display: flex;
+      gap: 16px;
+      @include mobile {
+        margin-top: 20px;
+      }
+      h3 {
+        font-size: 2.375rem;
+        font-weight: 500;
+        margin-block-end: 0;
+        @include mobile {
+          font-size: 20px;
+          margin-block-start: 0;
+        }
+      }
+      > img {
+        @include mobile {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+  .sectionHeath {
+    padding: 4.5rem 0;
+    background-color: var(--gray-blue3);
+    color: var(--white-color);
+    @include mobile {
+      padding: 40px 16px;
+    }
+    &__item {
+      cursor: pointer;
+    }
+
+    .title {
+      .titleMain {
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+      .titleSub {
+        color: var(--white-color);
+        font-size: 16px;
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      height: 240px;
+      border-top-right-radius: 16px;
+      border-top-left-radius: 16px;
+    }
+    &__card {
+      border-radius: 10px;
+      max-height: 520px;
+      max-width: 400px;
+      background-color: var(--white-color);
+      color: var(--black-color);
+      margin-right: 10px;
+      > img {
+        object-fit: cover;
+      }
+    }
+    &__info {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+      > p {
+        margin: 0px;
+      }
+    }
+    &__textTitle {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.6rem;
+      height: 3.2rem;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    &__date {
+      font-size: 16px;
+      color: var(--gray6);
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+    &__textContent {
+      font-size: 16px;
+      color: var(--gray);
+      line-height: 1.6rem;
+      height: 6.4rem;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+  }
+  .sectionBenefit {
+    position: relative;
+    .decoBg6 {
+      position: absolute;
+      left: 0;
+
+      @include laptop {
+        display: none;
+      }
+    }
+    .decoBg7 {
+      position: absolute;
+      right: 0;
+
+      @include laptop {
+        display: none;
+      }
+    }
+    .sectionWrapper {
+      @include mobile {
+        padding: 0 16px;
+      }
+    }
+    .sectionBenefitTitle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+    }
+    .title {
+      margin-bottom: 0px;
+      > h2 {
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+      > p {
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+    }
+    .sectionTitle {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--base-color);
+      padding-left: 10px;
+    }
+    &__content {
+      padding: 80px 0;
+      text-align: center;
+    }
+    &__list {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 80px;
+    }
+    &__listBoxWrapper {
+      background-color: var(--base-color);
+      width: 100%;
+      padding: 33px 4rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      text-align: center;
+      border-radius: 90px 0 90px 0;
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+    &__box {
+      color: var(--white-color);
+      h5 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 16px 0px 8px;
+      }
+      p {
+        font-size: 16px;
+        margin: 0px;
+      }
+    }
+  }
+}

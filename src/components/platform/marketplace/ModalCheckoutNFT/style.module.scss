@@ -1,0 +1,139 @@
+@import "@/styles/mixins";
+
+.checkout-modal {
+  :global(.ant-modal-close) {
+    display: none;
+
+    @include laptop {
+      display: inline-block;
+    }
+  }
+
+  :global(.ant-modal-title) {
+    font-size: 20px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.form {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  :global {
+    .ant-form {
+      width: 100%;
+      font-family: var(--base-font);
+    }
+
+    .ant-input {
+      height: 40px;
+      padding: 8px 12px;
+      border-radius: 2px;
+      font-family: var(--base-font);
+    }
+    .ant-col {
+      color: var(--gray-black3);
+      font-family: var(--base-font);
+    }
+    .ant-btn {
+      font-family: var(--base-font);
+      border-radius: 2px;
+      width: 100%;
+      height: 38.8px;
+      background-color: var(--base-color);
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--white-color);
+      margin-top: 20px;
+      :disabled {
+        background-color: var(--btn-bg-disabled);
+        color: var(--btn-text-disabled);
+      }
+    }
+  }
+
+  &__switch {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    :global {
+      .ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+        background-color: var(--base-color);
+      }
+
+      .ant-switch-checked {
+        background-color: var(--base-color);
+      }
+    }
+  }
+
+  &__options {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    .opt {
+      width: 50%;
+      padding: 16px;
+      border: 1px solid var(--gray7);
+      border-radius: 4px;
+      cursor: pointer;
+      &__title {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+      &__number {
+        color: var(--gray-black3);
+        font-size: 38px;
+        font-weight: 500;
+        padding-right: 8px;
+      }
+      &__type {
+        color: var(--gray-black3);
+        font-size: 16px;
+        padding-left: 5px;
+      }
+      &__eventType {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+    .optSelected {
+      border: 1px solid var(--base-color);
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+      .opt {
+        width: calc(50% - 10px);
+      }
+    }
+
+    @include mobile {
+      flex-direction: column;
+
+      .opt {
+        width: 100%;
+      }
+    }
+  }
+  .title {
+    color: var(--gray10);
+    font-family: var(--base-font);
+    line-height: 22px;
+    > span {
+      color: var(--gray-black3);
+      font-weight: 700;
+    }
+  }
+}

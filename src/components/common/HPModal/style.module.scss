@@ -1,0 +1,45 @@
+@import "@/styles/mixins";
+
+.hpModal {
+  margin: 1.1rem;
+
+  :global {
+    .ant-modal-content {
+      padding-bottom: 10px;
+      font-family: var(--base-font);
+      border-radius: 8px;
+      box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05),
+        0px 6px 16px 0px rgba(0, 0, 0, 0.08),
+        0px 3px 6px -4px rgba(0, 0, 0, 0.12);
+      .ant-modal-header {
+        margin-bottom: 16px;
+        .ant-modal-title {
+          color: var(--gray-black3);
+          font-weight: 500;
+        }
+      }
+      .ant-modal-footer {
+        margin-top: 18px;
+        > button {
+          font-family: var(--base-font);
+          padding: 4px 15px;
+          border-radius: 2px;
+          font-weight: 500;
+        }
+        > button:first-child {
+          border: 1px solid var(--gray7);
+          color: var(--gray-black3);
+        }
+        > button:last-child {
+          border: 1px solid var(--base-color);
+          background-color: var(--base-color);
+          color: var(--white-color);
+        }
+        > button:last-child:hover,
+        button:last-child:focus {
+          color: var(--white-color) !important;
+        }
+      }
+    }
+  }
+}

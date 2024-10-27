@@ -1,0 +1,99 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.commissions {
+  padding: 16px;
+  border-radius: 8px;
+  font-family: "Be Vietnam Pro";
+  border: 1px solid var(--gray7);
+  @include mobile {
+    padding-bottom: 0;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    font-family: "Be Vietnam Pro";
+    justify-content: space-between;
+    .title {
+      color: var(--neutral-11);
+      font-size: 20px;
+      font-weight: 500;
+      max-width: 65%;
+      @include mobile {
+        font-size: 20px;
+      }
+      .lastDate {
+        color: var(--gray3);
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 4px;
+      }
+    }
+    .action {
+      font-family: "Be Vietnam Pro";
+      border-radius: 2px;
+      border: 1px solid var(--base-color4);
+      padding: 0px 7px;
+      color: var(--base-color4);
+      font-weight: 500;
+      border-radius: 2px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      min-width: 96px;
+    }
+  }
+  .commissionItem {
+    padding-bottom: 16px;
+    padding-top: 16px;
+    display: flex;
+    align-items: flex-start;
+    font-family: "Be Vietnam Pro";
+    justify-content: space-between;
+    column-gap: 2px;
+    border-bottom: 1px solid var(--gray7);
+    .info {
+      > div {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        @include laptop {
+          padding: 5px 0;
+        }
+      }
+      .label {
+        font-weight: 500;
+        color: var(--neutral-11);
+        line-height: 22px;
+      }
+      .value {
+        color: var(--neutral-11);
+        line-height: 22px;
+      }
+      .highlightText {
+        color: var(--base-color);
+      }
+      .paid {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        .textPaid {
+          color: var(--gray3);
+          font-weight: 500;
+          line-height: 22px;
+        }
+      }
+    }
+    .action {
+      cursor: pointer;
+    }
+  }
+  .commissionItem:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+  .commissionItem:first-child {
+    padding-top: 0px;
+  }
+}

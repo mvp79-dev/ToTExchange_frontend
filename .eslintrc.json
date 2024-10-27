@@ -1,0 +1,21 @@
+{
+  "env": { "browser": true, "es2020": true },
+  "ignorePatterns": ["**/*.json", "test/*"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+    // "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "react-hooks"],
+  "rules": {
+    "no-undef": "off",
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "off",
+    "no-constant-condition": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/no-empty-function": "off",
+    "react/prop-types": "off"
+  }
+}

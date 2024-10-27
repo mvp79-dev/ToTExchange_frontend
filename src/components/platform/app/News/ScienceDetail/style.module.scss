@@ -1,0 +1,82 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.newsDetail {
+  max-width: var(--width-content);
+  margin: 0 auto;
+  padding: 80px 0;
+  cursor: pointer;
+  font-family: "Be Vietnam Pro";
+  @include laptop {
+    padding: 15px 16px;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 500;
+    @include mobile {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  .date {
+    color: var(--gray3);
+    font-size: 16px;
+  }
+  .listSub {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      p {
+        margin-block-start: 0;
+        margin-block-end: 0;
+      }
+    }
+  }
+  .tags {
+    .icon {
+      padding-right: 10px;
+    }
+  }
+  .description {
+    font-size: 16px;
+    color: var(--gray10);
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+  .section {
+    margin-bottom: 30px;
+    @include mobile {
+      margin-bottom: 15px;
+    }
+    .title {
+      font-size: 16px;
+      line-height: 24px;
+      @include mobile {
+        font-size: 14px;
+        margin-block-end: 0;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .groupBtn {
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn {
+    border: none;
+    box-shadow: 0;
+    font-size: 14px;
+    font-family: "Be Vietnam Pro";
+    display: flex;
+    align-items: center;
+  }
+}

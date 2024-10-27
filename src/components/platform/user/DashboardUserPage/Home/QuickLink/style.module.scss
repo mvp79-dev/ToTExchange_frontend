@@ -1,0 +1,68 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.quickLink {
+  border-radius: 8px;
+  font-family: "Be Vietnam Pro";
+  .title {
+    color: var(--neutral-11);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .date {
+    margin: 0px;
+    margin: 4px 0px 16px;
+    color: var(--gray3);
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 12px;
+  }
+  .quickLinkList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 16px;
+    padding-top: 27px;
+    @include laptop {
+      display: none;
+      column-gap: 10px;
+    }
+    .quickLinkItem {
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      align-items: left;
+      padding: 24px 16px;
+      width: 25%;
+      cursor: pointer;
+      @include laptop {
+        width: 80%;
+      }
+      .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 999px;
+        background-color: var(--base-color);
+      }
+      .label {
+        text-align: left;
+        color: var(--gray-black3);
+        font-size: 14px;
+        font-weight: 500;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 190px;
+        height: 1.2em;
+        white-space: nowrap;
+      }
+    }
+  }
+  .quickLinkList__mobile {
+    display: none;
+    @include laptop {
+      display: block;
+    }
+  }
+}

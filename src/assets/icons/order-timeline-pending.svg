@@ -1,0 +1,52 @@
+<svg width="21" height="29" viewBox="0 0 21 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="21" height="29" fill="#3E3E3E"/>
+<g id="Order Detail">
+<rect width="1920" height="2008" transform="translate(-699 -369)" fill="#FAFAFA"/>
+<g id="Agrinic" clip-path="url(#clip0_101_7283)">
+<rect width="1920" height="2007.5" transform="translate(-699 -369)" fill="white"/>
+<g id="Section Services">
+<rect width="1920" height="1098" transform="translate(-699 -167.5)" fill="white"/>
+<g id="Frame 1000002747">
+<g id="Orders Listing">
+<g clip-path="url(#clip1_101_7283)">
+<g id="Step-by-step">
+<g id="Step-by-step_2">
+<g id="Steps-Item-Icon">
+<g id="Image">
+<g id="Icon / Delivery / Pending">
+<g id="Mask group">
+<mask id="mask0_101_7283" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="29">
+<g id="Group">
+<g id="Group_2">
+<path id="Vector" d="M1.16602 2.5013C1.16602 2.14768 1.30649 1.80854 1.55654 1.55849C1.80659 1.30844 2.14573 1.16797 2.49935 1.16797H18.4993C18.853 1.16797 19.1921 1.30844 19.4422 1.55849C19.6922 1.80854 19.8327 2.14768 19.8327 2.5013V27.8346L15.166 24.5013L10.4993 27.8346L5.83268 24.5013L1.16602 27.8346V2.5013Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M6.5 13.1673H14.5M6.5 18.5007H14.5M6.5 7.83398H14.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</mask>
+<g mask="url(#mask0_101_7283)">
+<path id="Vector_3" d="M-5.5 -1.49805H26.5V30.502H-5.5V-1.49805Z" fill="#9DCA00"/>
+</g>
+</g>
+</g>
+<rect x="-18.5" y="-14.5" width="58" height="58" rx="29" stroke="#9DCA00" stroke-width="2"/>
+</g>
+</g>
+</g>
+<path d="M875 99.5H-113V101.5H875V99.5Z" fill="#D9D9D9" mask="url(#path-3-inside-1_101_7283)"/>
+</g>
+</g>
+<rect x="-112.5" y="-35" width="987" height="825" rx="5.5" stroke="#D9D9D9"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_101_7283">
+<rect width="1920" height="2007.5" fill="white" transform="translate(-699 -369)"/>
+</clipPath>
+<clipPath id="clip1_101_7283">
+<rect x="-113" y="-35.5" width="988" height="826" rx="6" fill="white"/>
+</clipPath>
+</defs>
+</svg>

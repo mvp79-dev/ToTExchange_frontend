@@ -1,0 +1,26 @@
+.container {
+  * {
+    box-sizing: border-box;
+  }
+
+  &__children-container {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.35s ease;
+
+    @media screen and (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
+
+    &.active {
+      max-height: var(--max-height, 100%);
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,21 @@
+.internal-point {
+  color: var(--gray-black3);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+
+  > p {
+    margin: 0;
+
+    &:last-child {
+      display: flex;
+      justify-content: flex-start;
+      gap: 8px;
+    }
+  }
+
+  &__convert-balance {
+    color: var(--gray3);
+  }
+}

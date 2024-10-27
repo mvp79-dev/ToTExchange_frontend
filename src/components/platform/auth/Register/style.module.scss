@@ -1,0 +1,134 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.layoutRegister {
+  padding-top: 80px !important;
+}
+.container {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    width: 440px;
+    @include mobile {
+      width: 100%;
+      row-gap: 32px;
+    }
+    .title {
+      font-size: 38px;
+      font-weight: 500;
+      margin-bottom: 12px;
+      @include mobile {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 0;
+      }
+    }
+    .highlightText {
+      color: var(--base-color);
+      cursor: pointer;
+    }
+    :global {
+      .ant-form {
+        width: 100%;
+        font-family: "Be Vietnam Pro";
+      }
+      .ant-form-item {
+        margin-bottom: 16px;
+        font-family: "Be Vietnam Pro";
+      }
+      .ant-form-item:first-child {
+        margin-bottom: 32px;
+      }
+      .ant-form-item:last-child {
+        margin-top: 32px;
+      }
+      .ant-form-item-control-input-content {
+        display: flex;
+        justify-content: center;
+      }
+      .ant-input {
+        height: 40px;
+        padding: 8px 12px;
+        border-radius: 2px;
+        font-family: "Be Vietnam Pro";
+      }
+      .ant-input-password {
+        height: 40px;
+        border-radius: 2px;
+        > input {
+          height: 30px;
+          padding: 0px;
+          font-family: "Be Vietnam Pro";
+        }
+      }
+      .ant-checkbox-wrapper {
+        font-family: "Be Vietnam Pro";
+        color: var(--gray-black3);
+        > span {
+          padding-inline-end: 0px;
+        }
+      }
+      .ant-radio-wrapper {
+        font-family: "Be Vietnam Pro";
+        color: var(--gray-black3);
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .ant-btn {
+        font-family: "Be Vietnam Pro";
+        border-radius: 2px;
+        width: 100%;
+        height: 38.8px;
+        background-color: var(--base-color);
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--white-color);
+        :disabled {
+          background-color: var(--btn-bg-disabled);
+          color: var(--btn-text-disabled);
+        }
+      }
+    }
+    .sponsor {
+      display: flex;
+      padding: 12px 15px;
+      width: 350px;
+      margin: 0px auto;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      border-radius: 2px;
+      border: 1px solid var(--gray7);
+      background: var(--white-color);
+      font-size: 16px;
+      margin-bottom: 16px;
+      .sponsorName {
+        color: var(--gray-black3);
+      }
+      .sponsorCode {
+        color: var(--gray3);
+      }
+    }
+    .btnGF {
+      font-weight: 400;
+      background-color: var(--white-color);
+      border: 1px solid var(--gray7);
+      color: var(--black-color);
+      font-family: "Be Vietnam Pro";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 10px;
+      > img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .btnRedirectLogin {
+      color: var(--gray-black3);
+      margin-top: 12px;
+      margin-bottom: 40px;
+    }
+  }
+}

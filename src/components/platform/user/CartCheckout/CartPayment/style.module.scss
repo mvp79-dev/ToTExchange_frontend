@@ -1,0 +1,384 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+%card-container {
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--gray7);
+  font-family: Be Vietnam Pro, sans-serif;
+}
+
+%section-title {
+  color: var(--gray-black3);
+  margin: 0;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+
+.cart-payment {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    font-family: Be Vietnam Pro, sans-serif;
+
+    @include laptop {
+      flex-direction: column;
+    }
+  }
+
+  &__cart-info {
+    width: 76.25%;
+
+    @include laptop {
+      width: 100%;
+    }
+    &__container {
+      padding: 20px 20px 0px 20px;
+      border-radius: 8px;
+      border: 1px solid var(--gray7);
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      color: var(--black-color);
+      margin-top: 0;
+      /* H4/medium */
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px; /* 140% */
+      margin-bottom: 16px;
+    }
+    &__tableMobile {
+      display: none;
+      @include mobile {
+        display: block;
+        padding: 10px 0;
+        .columnInfo {
+          display: flex;
+          > img {
+            width: 300px;
+            height: 80px;
+            object-fit: cover;
+          }
+          > p {
+            padding-left: 10px;
+          }
+        }
+        .columnBottom {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 10px;
+          > span {
+            font-size: 16px;
+            padding-top: 10px;
+          }
+          &__totalPrice {
+            color: var(--base-color);
+          }
+        }
+        .columnLine {
+          width: 100%;
+          height: 2px;
+          // background-color: var(--gray7);
+          // margin: 0 10px;
+        }
+      }
+    }
+    &__table {
+      background: var(--white-color);
+      border-top: 1px solid var(--gray7);
+      @include mobile {
+        display: none;
+      }
+      :global {
+        .ant-table-wrapper {
+          max-width: 850px;
+          margin: 0px auto;
+        }
+        .ant-table {
+          color: var(--gray-black3);
+          font-size: 16px;
+          font-weight: 500;
+
+          .ant-table-thead {
+            display: none;
+          }
+
+          tr > th {
+            color: var(--gray10);
+            font-size: 14px;
+            font-weight: 400;
+            border-bottom: 1px solid var(--gray7);
+            padding: 16px 0px;
+          }
+          tr > td {
+            border-bottom: 1px solid var(--gray7);
+            padding: 16px 0px;
+          }
+          tr:last-child > td {
+            border-bottom: none;
+          }
+        }
+      }
+
+      .productInfo {
+        display: flex;
+        align-items: center;
+        > img {
+          width: 80px;
+          height: 80px;
+          margin-right: 10px;
+        }
+      }
+
+      .totalPrice {
+        color: var(--base-color);
+      }
+    }
+
+    &__payment-method {
+      @extend %card-container;
+
+      > h5 {
+        color: var(--black-color);
+        margin: 0 0 16px;
+
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 140% */
+      }
+
+      &__option-list {
+        :global(.ant-collapse-content-box) {
+          padding: 16px;
+        }
+
+        > :global(.ant-collapse-item:nth-child(2) > .ant-collapse-content) {
+          display: none;
+        }
+
+        > :global(.ant-collapse-item > .ant-collapse-header) {
+          align-items: center;
+        }
+
+        > :global(.ant-collapse-item.ant-collapse-item-active) {
+          border: 1px solid var(--base-color);
+        }
+
+        > :global(
+            .ant-collapse-item.ant-collapse-item-active:not(:nth-child(2))
+              > .ant-collapse-header
+          ) {
+          border-bottom: 1px solid var(--base-color);
+        }
+      }
+
+      &__option-title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px;
+        font-style: normal;
+        font-weight: 400;
+
+        &__title {
+          color: var(--gray-black3);
+
+          /* Body/regular */
+          font-size: 14px;
+          line-height: 22px; /* 157.143% */
+          margin: 0;
+        }
+
+        &__desc {
+          color: var(--gray3);
+          font-size: 12px;
+          line-height: 20px; /* 166.667% */
+          margin: 0;
+        }
+
+        &__cards-list {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 16px;
+
+          > img {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+    }
+  }
+
+  &__payment-info {
+    width: 23.75%;
+    @include laptop {
+      width: 100%;
+    }
+    .delivery-address {
+      @extend %card-container;
+      margin-bottom: 30px;
+
+      &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+
+        > h5 {
+          @extend %section-title;
+        }
+
+        > button {
+          color: var(--base-color);
+          text-align: center;
+
+          /* Body/medium */
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 22px; /* 157.143% */
+          padding: 0;
+          border: 0;
+          background-color: transparent !important;
+        }
+      }
+
+      &__contact {
+        margin-top: 16px;
+        margin-bottom: 8px;
+
+        color: var(--gray-black3);
+        /* Body/bold */
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px; /* 157.143% */
+
+        > :global(.ant-divider) {
+          height: 20px;
+          border-color: var(--gray7);
+          margin: 0 12px;
+        }
+      }
+
+      &__address {
+        color: var(--gray10);
+
+        /* Body/regular */
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 157.143% */
+        margin: 0;
+      }
+    }
+
+    .payment-summary {
+      @extend %card-container;
+
+      &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+
+        > :global(.ant-divider) {
+          border-color: var(--gray7);
+          margin: 0;
+        }
+      }
+
+      &__title {
+        @extend %section-title;
+      }
+
+      &__summary-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        color: var(--gray-black3);
+        font-size: 14px;
+        font-style: normal;
+        line-height: 22px;
+
+        > .label {
+          font-weight: 400;
+        }
+
+        > .value {
+          font-weight: 700;
+
+          &.discount {
+            color: var(--destruction-5);
+          }
+        }
+
+        &.total {
+          font-size: 16px;
+        }
+      }
+
+      &__checkout {
+        margin-top: 24px;
+        width: 100%;
+        height: auto;
+        padding: 7px 15px;
+        border-radius: 2px;
+        border: 1px solid var(--base-color);
+        background: var(--base-color);
+
+        /* drop-shadow/button-primary */
+        box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+
+        color: var(--neutral-1);
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+
+        > span {
+          color: var(--white-color);
+        }
+
+        &:hover:not(:disabled) {
+          border-color: var(--base-color);
+          background: var(--base-color);
+        }
+        &:focus,
+        &:focus-within {
+          color: var(--white-color) !important;
+        }
+
+        &:disabled {
+          background-color: var(--btn-bg-disabled);
+          border-color: var(--btn-text-disabled);
+          color: var(--btn-text-disabled);
+          > span {
+            color: inherit;
+          }
+          &:hover {
+            border-color: var(--btn-text-disabled) !important;
+            color: var(--btn-text-disabled) !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1030 @@
+{
+  "forgotPassword": {
+    "title": "Forgot password",
+    "btnContinue": "Continue",
+    "btnBack": "Back ",
+    "inputEmail": "Email *",
+    "validateEmail": "Email is not a valid email!",
+    "requireEmail": "Email is required!",
+    "errorEmailNotFound": "Email does not exist!",
+    "toastCheckEmail": "Please check your email to change your password",
+    "warningOTP": "Authentication time has expired. Please resend the code"
+  },
+  "login": {
+    "title": "Login",
+    "requireAccountName": "User name is required!",
+    "inputAccountName": "User name *",
+    "validateAccountName": "Username does not contain special characters and capital letters.",
+    "requirePassword": "Password is required!",
+    "inputPassword": "Password *",
+    "inputRememberMe": "Remember me",
+    "textForgotPassword": "Forgot password?",
+    "btnLogin": "Login",
+    "btnLoginWithGoogle": "Sign in with Google",
+    "btnLoginWithFacebook": "Sign in with Facebook",
+    "textYouNotAccount": "Do not have an account?",
+    "textRegister": "Register now!",
+    "titleBtnVerifyOtp": "Login Confirmation",
+    "titleVerifyOtp": "OTP Authentication",
+    "titleVerifyAccount": "Account Verification",
+    "validateAccountPass": "Incorrect account or password.",
+    "warningOTPExpire": "OTP code expiration time",
+    "toastResendOTPError": "Request to resend code failed.",
+    "toastResendOTPSuccess": "Request to resend code success."
+  },
+  "register": {
+    "title": "Register",
+    "textCustomer": "Customer",
+    "textDistributer": "Distributer",
+    "validateAccountName": "Username does not contain special characters and capital letters.",
+    "validateAccountNameMinLength": "Username must be at least 3 characters.",
+    "validateAccountNameMaxLength": "Username up to 30 characters.",
+    "requireAccountName": "Username is required!",
+    "inputAccountName": "Username *",
+    "requirePassword": "Password is required!",
+    "validatePassword": "Password requires at least 8 characters including at least one uppercase letter, one lowercase letter, one number and one special character.",
+    "inputPassword": "Password *",
+    "requireFullName": "Full name is required!",
+    "inputFullName": "Full name *",
+    "requirePhoneNumber": "Phone number is required!",
+    "validatePhoneNumber": "Phone number is invalid!",
+    "existPhone": "Phone number already exists!",
+    "inputPhoneNumber": "Phone number *",
+    "requireEmail": "Email is required!",
+    "validateEmail": "Email is invalid!",
+    "inputEmail": "Email *",
+    "requireReferral": "Referral code is required!",
+    "inputReferral": "Referral code *",
+    "textSponsorId": "Sponsor ID:",
+    "validateAgreement": "This item is required!",
+    "textAgreement": "I agree with the",
+    "textAgreementTermsOfUse": "terms of use",
+    "textAgreementPrivacyPolicy": "privacy policy",
+    "btnRegister": "Register",
+    "btnRegisterWithGoogle": "Sign up with Google",
+    "btnRegisterWithFacebook": "Sign up with Facebook",
+    "textYouHaveAccount": "Do you already have an account?",
+    "textLoginNow": "Login now!",
+    "titleVerifyAccount": "Account Verification",
+    "titleBtnVerifyOtp": "Confirm",
+    "errorSponsorNotFound": "No sponsors found",
+    "errorAccountExist": "Username has already exist!",
+    "errorEmailExist": "Email already exists!",
+    "successRegister": "Successful account registration",
+    "warningOTPExpire": "OTP code expiration time",
+    "successVerifyAccount": "Account verification successful.",
+    "toastResendOTPError": "Request to resend code failed.",
+    "toastResendOTPSuccess": "Request to resend code successful."
+  },
+  "resetPassword": {
+    "title": "Create a new password",
+    "toastResetPasswordError": "Password change failed.",
+    "toastResetPasswordSuccess": "Password change successful.",
+    "requirePassword": "New password is required!",
+    "inputPassword": "New password *",
+    "requirePasswordConfirm": "Confirm password",
+    "validatePasswordConfirm": "Password entered does not match!",
+    "inputPasswordConfirm": "Confirm password *",
+    "btnConfirm": "Confirm",
+    "reset description": "Your password has been updated successfully"
+  },
+  "verifyOTP": {
+    "content": "Please enter the OTP code sent to your email",
+    "errorOTP": "Wrong code!",
+    "textResendOTP": "You can request a new code later",
+    "btnResendOTP": "Resend code"
+  },
+  "products": {
+    "filter_result": "Showing {{from}}–{{to}} of {{total}} results",
+    "filter": "filter",
+    "view": "view",
+    "Add_to_Cart": "Add to Cart",
+    "Add_to_wishlist": "Add to wishlist",
+    "SKU": "SKU",
+    "categories": "categories",
+    "tags": "tags",
+    "description": "description",
+    "additional_information": "additional information",
+    "reviews_count": "reviews ({{count}})",
+    "reviews": "reviews",
+    "reviewsError": "Review error",
+    "reviewsSuccess": "Review successfully",
+    "comment_post_comment_title": "Be the first to review",
+    "comment_post_comment_note": "Your email address will not be published. Required fields are marked *",
+    "comment_post_comment_rating": "Your rating",
+    "comment_post_comment_comment": "Your Review",
+    "comment_post_comment_username": "Name",
+    "comment_post_comment_email": "Email address",
+    "comment_post_comment_save_user_info": "Save my name, email, and website in this browser for the next time I comment.",
+    "comment_post_comment_submit": "submit",
+    "related_products": "Related Products",
+    "Sort by popularity": "Sort by popularity",
+    "Sort by latest": "Sort by latest",
+    "Sort by price low to high": "Sort by price: low to high",
+    "Sort by price hight to low": "Sort by price: hight to low",
+    "register_affiliate": "Become a partner to receive special offers!",
+    "register_now": "Register now",
+    "default_sort": "Default Sorting",
+    "ascending": "ascending",
+    "descending": "descending",
+    "products available": "{{count}} products available",
+    "out of stock": "Out of stock",
+    "detail": {
+      "chooseRequire": "Please choose a product."
+    },
+    "remain product left": "Only {{count}} products left",
+    "Product Categories": "Product Categories",
+    "Filter by Price": "Filter by Price",
+    "Price": "Price",
+    "Become a distributor to enjoy our offers": "Become a distributor to enjoy our offers",
+    "filterResult_other": "Total {{count}} items",
+    "filterResult_one": "Total {{count}} item"
+  },
+  "share": "Share",
+  "home": "Home",
+  "language": {
+    "vi": "Vietnamese",
+    "en": "English"
+  },
+  "cart": {
+    "Shopping Cart": "Shopping Cart",
+    "myCart": "My Cart ({{count}})",
+    "paymentSummary": "Payment Summary",
+    "orderSummary": "Order summary",
+    "shippingFee": "Shipping fee",
+    "promoCode": "Promo code",
+    "Total": "Total",
+    "Checkout": "Checkout",
+    "productItems": "Product Items",
+    "unitPrice": "Unit Price",
+    "quantity": "Quantity",
+    "Action": "Action",
+    "Your Cart": "Your Cart",
+    "Delivery Addess": "Delivery Address",
+    "Change": "Change",
+    "Discount": "Discount",
+    "Proceed to Payment": "Proceed to Payment",
+    "Select Payment Method": "Select Payment Method",
+    "Estimated Balance": "Estimated Balance",
+    "Cardholder Name": "Cardholder Name",
+    "Card Number": "Card Number",
+    "Card Number Placeholder": "Card type will be detected...",
+    "Expiration Code": "Expiration Code",
+    "Security Code": "Security Code",
+    "Select currency": "Select currency",
+    "Enter amount": "Enter amount",
+    "Successful": "Successful",
+    "Order Successful Placed": "Order Successful Placed",
+    "Thanks for your purchase": "Thanks for your purchase",
+    "Your_order_is": "Your order id is: <span>{{id}}</span>",
+    "Your Order": "Your Order",
+    "Edit": "Edit",
+    "Add more": "Add more",
+    "Change Shipping Addess": "Change Shipping Address",
+    "Save": "Save",
+    "totalPrice": "Total Price",
+    "addToCart": "Add to cart",
+    "modalDelContent": "Do you want to delete this item from cart?",
+    "Add shipping Address success": "Add Shipping Address Successfully",
+    "Edit shipping Address success": "Update Shipping Address Successfully",
+    "Please enter CVC": "Please enter CVC",
+    "Please enter expiration code": "Please enter expiration code",
+    "Please enter card number": "Please enter card number",
+    "Cash On Delivery": "Cash On Delivery",
+    "Internal Balance": "Internal Balance",
+    "Credit_Debit_Card": "Credit/Debit Card",
+    "Pay when you receive": "Pay when you receive",
+    "Change the current balance": "Change the current balance",
+    "Transaction fee may apply": "Transaction fee may apply",
+    "Keep buying": "Keep buying",
+    "ConfirmYourOrder": "Confirm your order?",
+    "YoureStillCanBuyMoreStuffsThatSuitYouInOurStore": "You’re still can buy more stuffs that suit you in our store",
+    "Insufficient Balance": "Insufficient Balance",
+    "messageRemoveCartSuccess": "Delete product successfully",
+    "messageAddProductToCartSuccess": "Add product to cart successfully",
+    "empty shipping address": "Please add a shipping address",
+    "confirm order note": "Note: when you accept order payment. Then you can only exchange products of equivalent value. But the order cannot be canceled. Thank."
+  },
+  "header": {
+    "welcome": "Welcome to",
+    "textLogin": "Login",
+    "textRegister": "Register",
+    "Disconnect": "Disconnect",
+    "Connect wallet": "Connect wallet",
+    "menu": {
+      "home": "Home",
+      "activity": "Activity",
+      "product": "Products",
+      "members": "Members",
+      "shop": "Shop",
+      "news": "News",
+      "newsHeath": "Health news",
+      "newsScience": "Science news",
+      "contactUs": "Contact us",
+      "about us": "About Us",
+      "about Happy365Global": "About Happy365Global",
+      "aiming": "Vision, mission, goals",
+      "creator message": "Founder's message"
+    },
+    "menuUser": {
+      "home": "Home",
+      "organization": "Organization",
+      "order": "Order",
+      "commission": "Commission",
+      "shop": "Shop",
+      "news": "Calendar",
+      "contactUs": "Contact us"
+    },
+    "dropdownUserInfo": {
+      "labelProfile": "Profile",
+      "labelDashboard": "Dashboard",
+      "labelOrder": "Order",
+      "labelLogout": "Logout"
+    }
+  },
+  "footer": {
+    "mission": "With the mission of creating a united Affiliate marketing community, where everyone can develop their business and access quality products and services.",
+    "mapAddress": "Address on map",
+    "supportInfoFooter": {
+      "title": "Support Information",
+      "item1": "Company introduction",
+      "item2": "Contact",
+      "item3": "Shop system",
+      "item4": "Recruitment",
+      "item5": "Promotional news"
+    },
+    "salePolicyFooter": {
+      "title": "Sales policy",
+      "item1": "Payment security",
+      "item2": "Information security",
+      "item3": "Complaint settlement",
+      "item4": "Return policy",
+      "item5": "Warranty Policy",
+      "item6": "Terms of use"
+    },
+    "contact": {
+      "title": "Contact",
+      "item1": "Hotline",
+      "item2": "Sales consultant",
+      "item3": "Working time"
+    },
+    "license": "Copyright belongs to Happy365Global Co., Ltd"
+  },
+  "homePage": {
+    "addToCart": "Add To Cart",
+    "viewMore": "View more",
+    "bannerContent": "Happiness is within your hands",
+    "sectionAchievement": {
+      "item1": {
+        "title": "Top Rated",
+        "description": "Clean products with VietGAP certification for healthy food lovers"
+      },
+      "item2": {
+        "title": "Best quality",
+        "description": "Free delivery within 5km radius with each bill over 500,000 VND"
+      },
+      "item3": {
+        "title": "Always fresh",
+        "description": "We are proud to bring the best quality products, the most delicious for users' health."
+      }
+    },
+    "sectionAbout": {
+      "subTile": "About Happy 365 Global",
+      "title": "Welcome to Happy365Global",
+      "content": "With the mission of creating a united Affiliate marketing community, where everyone can grow their business and access quality products and services. Happy365Global Group is committed to providing support, training and development opportunities to help participants achieve success and meet their goals.",
+      "happyCustomer": "Happy Customers",
+      "successCustomer": "Success Customers"
+    },
+    "sectionInfo": {
+      "title": "What we bring",
+      "content": "If you are looking for a fast-paced, collaborative environment, you will enjoy a culture of innovation and fact-driven results."
+    },
+    "sectionProduct": {
+      "title": "Our Products",
+      "content": "Offering customers thousands of healthy products"
+    },
+    "sectionStrategy": {
+      "subTitle": "About Happy 365 Global",
+      "title": "Why choose us",
+      "content": "HAPPY365GLOBAL focuses on researching solutions and applying advanced scientific achievements, friendly to the environment, people and nature.",
+      "list1": {
+        "title": "Nutrition strategy",
+        "content": "We use 5 different ways to speed up your metabolism so you burn calories. Our main aim is to improve healthy eating information & inner strength."
+      },
+      "list2": {
+        "title": "Support & Motivation",
+        "content": "We use 5 different ways to speed up your metabolism so you burn calories. Our main aim is to improve healthy eating information & inner strength."
+      },
+      "reasons": "Eight reasons to cooperate with HAPPY365GLOBAL",
+      "desc1": "Product diversity, meeting customer needs",
+      "desc2": "Develop without market limits (Global",
+      "desc3": "Accumulate group sales with unlimited TIME to level up",
+      "desc4": "When the downline is at the same level or higher, it will not be separated from the group",
+      "desc5": "Passive income from your own business",
+      "desc6": "Level up without downgrade",
+      "desc7": "Leveling up does not depend on personal sales",
+      "desc8": "Inheritance"
+    },
+    "sectionAboutUs": {
+      "subTitle": "Our story",
+      "title": "We provide the world's best health products",
+      "content": "HAPPY365GLOBAL GROUP is an organization with the motto: Consulting solutions to bring happiness and inspiration to each member's life around the world. Providing health care solutions by using product lines of natural origin, distilled by advanced science, used correctly, sufficiently and reasonably.",
+      "happyCustomer": "Happy Customers",
+      "successCustomer": "Success Customers"
+    },
+    "sectionHeath": {
+      "title": "Health News",
+      "content": "Food hygiene and safety news updated every day for you"
+    },
+    "sectionBenefit": {
+      "subTitle": "Testimonials",
+      "title": "Customers talk about us",
+      "content": "HAPPY365GLOBAL GROUP is an organization with the motto: Consulting solutions to bring happiness and inspiration to each member's life around the world. Provide health care solutions by using product lines of natural origin, distilled by advanced science, used correctly, sufficiently and reasonably.",
+      "item1": {
+        "title": "Free ship in Viet Nam",
+        "content": "5KM radius and orders from 200,000 VND"
+      },
+      "item2": {
+        "title": "Asia representative office:",
+        "content": "531A UPPER CROSS STREET #04-95 HONG LIM COMPLEX SINGAPORE (051531)"
+      },
+      "item3": {
+        "title": "Ecommerce",
+        "content": "Offer a variety of items at reasonable prices"
+      }
+    }
+  },
+  "aboutUs": {
+    "aboutHappy365": {
+      "our story": "Our story",
+      "about Happy365Global": "Introduction to Happy365Global",
+      "mission quote": "End poverty, end debt, start a new golden age!",
+      "mission description": "HAPPY365GLOBAL Group is an organization with the mission of consulting and solutions to bring happiness and inspiration to the lives of all members around the world. By using products of natural origin, refined by advanced science, used correctly, sufficiently and reasonably.",
+      "description": "<p>Prepare for a world where poverty, debt and unemployment are relics of the past, replaced by global prosperity and lasting peace for all!</p><p>As global science advances, we are facing a world where prosperity, freedom and innovation thrive, and the human spirit flourishes without material burdens.</p><p>A rejuvenation biomedical doctor specializing in herbal treatment and acupuncture at the age of 8. A very active Ambassador in applying clean green food and agriculture technology to adapt to climate change and be environmentally friendly. Dr. Nguyen Thi Giang Van is also a philosopher, artist, poet and green energy promoter. Originating from the concerns about the lives of people around the world, the dream of creating a home --- “The world is filled with love, joy and happiness”.</p><p>The idea of creating a HAPPY365GLOBAL community was conceived and concretized by Dr. Nguyen Thi Giang Van with an action plan from March 2018. But soon after in 2019, the COVID epidemic spread globally, causing it to interruption. By 2022 HAPPY365GLOBAL continues to be realized.</p>",
+      "fouder": "Founder of HAPPY365GLOBAL Group",
+      "about founder": "<p>Founder of HAPPY365GLOBAL Group Nguyen Thi Giang Van is currently the Ambassador for the PRIME WORLD TRUST PTE. LTD. Global Climate Change Organization based in the USA. As Ambassador representing Southeast Asia and South Asia with representative office in Singapore.</p><p>Address: 531A UPPER CROSS STREET #04-95 HONG LIM COMPLEX SINGAPORE (051531)</p>",
+      "description-2": "<p>We understand very clearly the value of happiness in every minute of 365 days a year. That is why HAPPY365GLOBAL Group is here to support solutions for the Asian community in particular and the world in general.</p><p>HAPPINESS IS IN YOUR HAND! Believe in yourself, think simply, take small steps and unite the community. You will achieve happiness within your reach that you never expected. Thank you very much for coming to us. HAPPY 365 GLOBAL! WE LOVE YOU ALL</p>",
+      "footer-banner": "HAPPY 365 GLOBAL! WE LOVE YOU ALL!"
+    },
+    "founderMessage": {
+      "title": "Founder message",
+      "missionQuote": "End poverty, end debt, start a new golden age!",
+      "missionDescription": "HAPPY365GLOBAL GROUP is an organization with the motto: Consulting solutions that bring happiness and inspiration to the lives of every member around the world. Providing health care solutions by using products of natural origin, filtered by advanced science, used correctly, sufficiently and reasonably.",
+      "founderQuote": "Founder of HAPPY365GLOBAL Group and Ambassador for the PRIME WORLD TRUST PTE. LTD. Global Climate Change Organization based in the USA. As Ambassador representing Southeast Asia and South Asia with representative office in Singapore.",
+      "founderInfoTitle": "Founder of HAPPY365GLOBAL Group",
+      "address": "Address: ",
+      "founder name": "DR Van Nguyen"
+    },
+    "vision": {
+      "mission": {
+        "title": "Mission",
+        "content": "Happy365Global's mission is to create a united Affiliate marketing community. Where everyone can develop their business and access quality products and services. The Group is committed to providing training support, providing opportunities for personal development, helping participants achieve success and meet their health and financial goals."
+      },
+      "vision": {
+        "title": "Vission",
+        "content": "Happy365Global aims to become a leading Group in the field of Affiliate marketing, bringing development and success opportunities to participants. The Group wishes to build a sustainable and reliable Affiliate marketing business model. Create favorable conditions for members to achieve success in health, finance and beauty."
+      },
+      "goal": {
+        "title": "Goals",
+        "content": "HAPPY365GLOBAL organizes programs, events, and community activities to encourage people to take positive actions and build a good environment for happiness. This organization also cooperates with partners who are businesses, scientific research institutes and other organizations around the world to learn and apply scientific achievements into smart health care and building a better life. Live a positive, prosperous economic life, spread the message of happiness and create a better life for everyone."
+      },
+      "bottomText": "We understand very clearly the value of happiness in every minute of 365 days a year. That is the reason why HAPPY365GLOBAL Group is here to support solutions for the Asian community in particular and the world in general."
+    }
+  },
+  "modal": {
+    "modalFormShipping": {
+      "titleEdit": "Edit shipping address",
+      "titleAdd": "Add shipping address",
+      "inputReceiverName": "Receiver Name",
+      "inputReceiverPhone": "Receiver Phone",
+      "inputStreet": "Street",
+      "inputCountry": "Country",
+      "inputPostalCode": "Postal Code",
+      "inputDistrict": "District",
+      "inputCity": "City",
+      "Please enter receiver name": "Please enter receiver name",
+      "Please enter receiver phone": "Please enter receiver phone",
+      "Please enter receive street": "Please enter receive street",
+      "Please enter portal code": "Please enter portal code",
+      "Please enter receive district": "Please enter receive district",
+      "Please enter receive city": "Please enter receive city",
+      "Save": "Save",
+      "maxLength": "This field exceeds maximum {{number}} characters"
+    },
+    "modalEditProfile": {
+      "title": "Edit your profile",
+      "inputFullName": "Full Name",
+      "inputLastName": "Last Name",
+      "inputCompany": "Company",
+      "inputPersonalWebsite": "Personal website",
+      "inputDateOfBirth": "Date of Birth (MM/DD/YYYY)",
+      "inputPreferredName": "Preferred Name",
+      "inputPreferredLanguage": "Preferred Language",
+      "inputReplicatedSiteText": "Replicated Site Text",
+      "inputCheckbox": "Place your new signups in your holding tank",
+      "invalid url": "Invalid website address, please check again"
+    },
+    "modalWarningQuantityLimit": {
+      "content_1": "There are only",
+      "content_2": "quantity remaining for this item"
+    },
+    "modalEditBillingAddress": {
+      "title": "Edit billing address",
+      "inputStreet": "Street",
+      "inputCountry": "Country",
+      "inputPostalCode": "Postal Code",
+      "inputDistrict": "District",
+      "inputCity": "City",
+      "inputCheckbox": "Billing Address same as Shipping Address"
+    },
+    "modalEditContactInformation": {
+      "title": "Edit Contract information",
+      "inputEmail": "Email",
+      "inputPhoneNumber": "Phone",
+      "inputCountry": "Country",
+      "inputPostalCode": "Postal Code",
+      "inputWork": "Work",
+      "inputFax": "Fax",
+      "inputPager": "Pager",
+      "inputOther": "Other",
+      "alertSuccess": "You've updated contact information successfully!",
+      "errors": {
+        "invalidPhone": "Invalid phone number format!",
+        "invalidEmail": "Invalid email format!",
+        "requiredEmail": "Email is required field!"
+      }
+    },
+    "modalDeposit": {
+      "continue": "Continue",
+      "steps1": {
+        "title": "Select currency",
+        "currency": "currency",
+        "depositWith": "Deposit with",
+        "recommended": "Recommend",
+        "otherMethod": "Other method",
+        "option1": {
+          "title": "Bank Transfer (SEPA)",
+          "content": "{{fee}} Discount Transaction Fee, 1-2 business days"
+        },
+        "option2": {
+          "title": "Bank Card (VISA/MC)",
+          "content": "{{fee}} transaction fee"
+        },
+        "option3": {
+          "title": "Metamask",
+          "content": "{{fee}} transaction fee"
+        },
+        "question1": "What is SEPA?",
+        "question2": "How long does the deposit take?",
+        "Request rejected": "Please accept the request to proceed",
+        "An error has occur": "An error has occur, please try again",
+        "Add token success": "Added token to your wallet",
+        "Not select currency": "Please select a token to proceed",
+        "Add token to wallet": "Import token",
+        "Select a currency": "Select a currency"
+      },
+      "steps2": {
+        "title": "Enter amount",
+        "amount": "Amount",
+        "transactionRequirement": "Transaction requirement",
+        "youReceive": "You receive",
+        "paymentMethod": "Payment method",
+        "transactionFee": "Transaction Fee",
+        "link": "Didn't receive deposit",
+        "notice": "Notice",
+        "noticeContent": "If the deposited amount exceeds your daily limit, we will divide the total payment based on your maximum daily limit.",
+        "user balance": "Balance: {{balance}} {{token}}"
+      },
+      "steps3": {
+        "title": "Successful",
+        "main": "Deposit Successful",
+        "detail": "Your request has been confirmed. You can track its progress on the Tracsaction History page."
+      },
+      "errors": {
+        "currency": "Please select a currency",
+        "amount": "Enter the amount"
+      },
+      "btn": {
+        "btnPrevious": "Previous",
+        "btnContinue": "Continue",
+        "btnViewWall": "View Wallet",
+        "btnViewHistory": "View History"
+      }
+    },
+    "modalConfirmChooseAddressDefault": {
+      "title": "Do you want to edit the shipping address as the default address?"
+    }
+  },
+  "drawerCartItem": {
+    "textOnly": "Only",
+    "textProduct": "on product"
+  },
+  "drawerCart": {
+    "textSubtotal": "Subtotal",
+    "btnViewCart": "View cart",
+    "btnCheckout": "Check out"
+  },
+  "profile": {
+    "textMyProfile": "My Profile",
+    "textDistributor": "Distributor",
+    "textCustomer": "Customer",
+    "textPreferredPlacement": "Preferred Placement",
+    "textRank": "Rank",
+    "textEmail": "Email",
+    "textPhone": "Phone",
+    "btnEdit": "Edit",
+    "textBillingAddress": "Billing Address",
+    "textShippingAddress": "Shipping Address",
+    "textEnrollmentInfo": "Enrollment Info",
+    "textJoinDate": "Join Date",
+    "textPayoutMethod": "Payout Method",
+    "textPayment": "Payment",
+    "textSponsor": "Sponsor",
+    "textSponsorPhone": "Sponsor Phone",
+    "textPersonallySponsored": "Personally Sponsored",
+    "textTotalDownline": "Total Downline",
+    "activityTimeline": {
+      "title": "Activity Timeline",
+      "textLastUpdated": "Last Updated",
+      "descReUp": "Created {{desc}} as a new customer",
+      "descOrder": "Order #{{desc}} Placed, total is {{amount}}$",
+      "descDeposit": "You have deposited {{amount}} {{currency}}",
+      "descWithdraw": "You have withdrawn {{amount}} {{currency}}",
+      "descBuyNFT": "You have bought a NFT {{amount}} {{currency}}",
+      "descUpgradeNFT": "You have upgraded NFT package  {{amount}} {{currency}}",
+      "descCancelOrder": "You cancelled your order #{{desc}}, total is {{amount}}$"
+    },
+    "btnViewMore": "View More Orders",
+    "btnCreateOrders": "Create New Orders",
+    "textTitleTableDescription": "Description",
+    "textTitleTableDate": "Date",
+    "messageUpdateDefaultAddress": "Update address shipping default successfully",
+    "preferredPlacement": {
+      "title": "Choose your Preferred Placement",
+      "content": "Choose the preferred placement for new Distributors. This will be used for all new enrollments.",
+      "btnSave": "Save Changes",
+      "labelSelect": "Preferred Placement"
+    },
+    "file size exceed": "Exceed file limit of {{size}}MB",
+    "Referral link": "Referral link",
+    "Promoter": "Promoter",
+    "LEFT Branch": "LEFT Branch (L)",
+    "RIGHT Branch": "RIGHT Branch (R)"
+  },
+  "dashboardUser": {
+    "balance": {
+      "title": "Estimated Balance",
+      "btnDeposit": "Deposit",
+      "btnWithdraw": "Withdraw",
+      "msgDepositProcessing": "Transaction processing",
+      "msgDepositError": "Transaction error",
+      "msgApproveError": "Approve error"
+    },
+    "infoUser": {
+      "textRank": "Rank",
+      "textBonusRank": "Bonus Rank",
+      "textRefCode": "Referral code",
+      "textRewardPoint": "Reward point"
+    },
+    "quickLink": {
+      "title": "Quick link",
+      "textDate": "Last Updated",
+      "textEnrollDistributor": "Enroll Distributor",
+      "textMyPersonalWebsite": "My Personal Website",
+      "textManageMySubscriptions": "Manage My Subscriptions",
+      "textLeftLeg": "Left Leg Business Snapshot",
+      "textRightLeg": "Right Leg Business Snapshot",
+      "tooltipWebsite": "Information has not been updated by you in Profile, please update."
+    },
+    "businessSnapshot": {
+      "title": "Business Snapshot",
+      "textDate": "Last Updated",
+      "textWeeklyLeftLeg": "Weekly Left Leg (CV)",
+      "textWeeklyRightLeg": "Weekly Right Leg (CV)",
+      "textWeeklyPersonallySponsoredLeftLeg": "Personally Sponsored Active in Left Leg",
+      "textWeeklyPersonallySponsoredRightLeg": "Personally Sponsored Active in Right Leg"
+    },
+    "rankProgress": {
+      "title": "Rank Progress",
+      "textDate": "Last Updated",
+      "labelTabCurrent": "Current",
+      "labelTabLast": "Last",
+      "labelTabHighest": "Highest",
+      "textBtn": "View Rank Requirements"
+    },
+    "myAlerts": {
+      "title": "My Alerts",
+      "textAction": "View More"
+    },
+    "teamGrowth": {
+      "title": "Team Growth Statistics",
+      "textDate": "Last Updated",
+      "labelTotalDownline": "Total Downline",
+      "labelFrontLine": "Front Line",
+      "labelNew3Days": "New in the last 3 Days",
+      "labelLast3Days": "Last 3 Days Growth %",
+      "labelLast30Days": "Last 30 Days Growth %",
+      "labelDeepestLevel": "Deepest Level"
+    },
+    "commissions": {
+      "title": "Commissions",
+      "textDate": "Last Updated",
+      "textViewAll": "View All",
+      "labelBalanceForward": "Balance Forward",
+      "labelPreviousBalance": "Previous Balance",
+      "labelCommissionAmount": "Commission Amount",
+      "labelAdjustment": "Adjustment"
+    },
+    "withdrawal": {
+      "Enter OTP": "Enter OTP",
+      "Select coin": "Select coin",
+      "Send to": "Send to",
+      "address": "address",
+      "Happy365 user": "Happy365 user",
+      "Enter Address": "Enter Address",
+      "Network": "Network",
+      "Select withdrawal network": "Select withdrawal network",
+      "Internal Wallet": "Internal Wallet",
+      "Recipients email": "Recipient’s email",
+      "Recipients ID": "Recipient’s ID",
+      "Withdrawal Order Submited": "Withdrawal Order Submitted",
+      "Withdrawal request submitted": "Withdrawal request submitted",
+      "Visit History to view your order status": "Visit History to view your order status",
+      "Receive amount": "Receive amount",
+      "Transaction Method": "Transaction Method",
+      "Indicated Amount": "Indicated Amount",
+      "protocolFee": "Protocol fee",
+      "View wallet": "View wallet",
+      "View history": "View history",
+      "Minimal amount": "Minimal {{amount}}",
+      "requireAddress": "Address is required!",
+      "validateAddress": "Address is not valid",
+      "requireAmount": "Amount is required!",
+      "validateAmount": "Input only number",
+      "validateMinimumAmount": "Amount must be greater than {{amount}}",
+      "withdrawProcessing": "Withdraw request is in processing! Please wait...",
+      "withdrawSuccess": "Withdraw Successfully",
+      "Withdraw amount": "Withdraw amount",
+      "MAX": "MAX",
+      "Balance": "{{currency}} Balance",
+      "Daily remaining limit": "Daily remaining limit",
+      "Change withdrawal amount to received amount": "Change withdrawal amount to received amount",
+      "Minimum withdrawal": "Minimum withdrawal",
+      "24h remaining limit": "24h remaining limit"
+    },
+    "deposit": {
+      "depositSuccess": "Deposit {{amount}} USDT successfully",
+      "deposit info": "Be patient! It might take 2-5 minutes to sync up your balance. If it takes longer, please contact us at support@happy365global.com."
+    }
+  },
+  "myOrder": {
+    "btn": {
+      "export": "Export",
+      "search": "Search",
+      "refresh": "Refresh",
+      "back": "Back",
+      "cancel": "Cancel"
+    },
+    "orderBY": {
+      "date": "Date",
+      "amount": "Amount",
+      "orderId": "Order Id"
+    },
+    "sorting": {
+      "ascending": "Ascending",
+      "descending": "Descending"
+    },
+    "placeholder": {
+      "searchOrder": "Search orders..."
+    },
+    "allOrder": {
+      "title": "All Order",
+      "sortBy": "Sort By",
+      "table": {
+        "yourOrder": "Your Order",
+        "itemCount": "Items Count",
+        "amount": "Amount",
+        "status": "Status",
+        "page": "page"
+      },
+      "detail": {
+        "orderNumber": "Order Number",
+        "shipTo": "Ship to",
+        "billingTo": "Bill to",
+        "emailAddress": "Email Address",
+        "orderDate": "Order Date",
+        "shippingUnit": "Shipping Unit",
+        "shipping": "Shipping",
+        "productItems": "Product Items",
+        "quantity": "Quantity",
+        "totalPrice": "Total Price",
+        "subTotal": "SubTotal",
+        "shippingFee": "Shipping fee",
+        "total": "Total",
+        "timelinePending": "Created",
+        "timelineProcessing": "Processing",
+        "timelineDelivery": "On Delivery",
+        "timelineSucceed": "Succeed",
+        "timelineCancelled": "Cancelled",
+        "cancelSuccess": "You have cancelled this order successful",
+        "doYouWantToCancel": "Do you want to cancel this order?",
+        "exit": "Exit"
+      },
+      "errors": {
+        "notFound": "Can not found the Order",
+        "cancelledFailed": "Cancelled order failed"
+      }
+    },
+    "personalOrder": {
+      "title": "Personal Order"
+    },
+    "customerOrder": {
+      "title": "Customer Order"
+    },
+    "subscription": {
+      "title": "Subscription"
+    }
+  },
+  "alerts": {
+    "tabs": {
+      "item1": "All Alerts",
+      "item2": "Commissions",
+      "item3": "Rep Order",
+      "item4": "Rep Signup",
+      "item5": "Celebration"
+    },
+    "alertOderItem": {
+      "title": "Your order is {{orderStatus}}",
+      "content": "Thank you for your order #{{orderId}} on {{date, format: DD/MM/YYYY}}. Your order is {{orderStatus}}. If you have any questions don't hesitate to contact Support."
+    },
+    "alertSignUpItem": {
+      "title": "You've got a new Customer!",
+      "content": "Congratulations! A new customer just registered! CUSTOMER INFORMATION Name: {{nameRef}} Email: {{emailRef}}"
+    },
+    "alertCommissionItem": {
+      "title": "Your projected earnings for {{fromDate}} {{toDate}}",
+      "content": "Your projected earnings for {{fromDate}} - {{toDate}} are currently ${{amount}} Keep sharing your products and services through the end of {{formDate}} - {{toDate}} to maximize your earnings!"
+    },
+    "alertCelebrationItem": {
+      "title": "Your annual renewal is coming up",
+      "content": "Thank you for being a member of our New U Life Family! Your annual New U Life Membership will renew on {{renewOn}} and your payment method on file will be charged. If you have any questions, please contact customer service at (925) 274-5000 or email support@happy365global.com."
+    },
+    "alert": "Alerts"
+  },
+  "commission": {
+    "Commissions": "Commissions",
+    "Type": "Type",
+    "Commission Total": "Commission Total",
+    "Previous Balance": "Previous Balance",
+    "Adjustment": "Adjustment",
+    "Balance Forward": "Balance Forward",
+    "Statements": "Statements",
+    "View Statements": "View Statements",
+    "paid at": "Paid at",
+    "username": "Username"
+  },
+  "toastErrorCommon": {
+    "Message-1.1": "Transaction rejected!",
+    "Message-1.2": "An unexpected error has occurred, please try again.",
+    "Message-1.3": "Transaction error.",
+    "Message-1.4": "Recheck Metamask popup to connect to the system",
+    "Message-1.5": "You rejected the request.",
+    "Message-2.1": "Amount must be greater than 0.",
+    "Message-2.2": "Amount must be less than or equal Your Balance.",
+    "Message-2.3": "Amount must be less than or equal limit today."
+  },
+  "genealogy": {
+    "title": "Genealogy",
+    "titleCheckBox": "Genealogy",
+    "titleLegend": "Legend",
+    "textTreeView": "Tree View",
+    "textGraphicalView": "Graphical View",
+    "textBinary": "Binary",
+    "textSponsor": "Sponsor",
+    "Enter keyword": "Enter keyword...",
+    "Available": "Available",
+    "Deactivated": "Deactivated",
+    "New Enrollment": "New Enrollment",
+    "Personaly Sponsored": "Personaly Sponsored"
+  },
+  "marketplace": {
+    "marguee text": "Unleash Your Inner VIP with Our Premium NFT: Profits and Privileges Await!",
+    "Premium NFTs": "Premium NFTs",
+    "NFTItem": {
+      "btnBuy": "Buy now",
+      "btnDetail": "Detail",
+      "btnProcessing": "Processing",
+      "tooltipWarning": "You are a customer, to mint NFT you need to register as a distributor",
+      "tooltipVFTVip": "Your NFT is a VIP",
+      "textOwner": "Owner",
+      "textDetail": "Detail",
+      "textBenefits": "Benefits",
+      "textCreatedAt": "Created At",
+      "textExpirationDate": "Expiration Date",
+      "textBuyNFTSuccess": "Buy NFT successfully!",
+      "textProcessingBuyNFT": "Buy NFT is in processing",
+      "textUpgradeSuccessfully": "Upgrade package successfully",
+      "textRenewalSuccessfully": "Renewal package successfully",
+      "nftDesc": "Largest community-based, multi-chain Web3 and crypto events brand and facilitator focusing on DeFi, NFTs, Metaverses, GameFi and DAOs.",
+      "Not enought balance": "The amount in the system is not enough to buy NFT. Please deposit money to buy NFT",
+      "Profit from both referral product purchases and NFTs": "Profit from both referral product purchases and NFTs.",
+      "Eligible to earn commissions up": "Eligible to earn commissions up to 11 levels (up to ~36%).",
+      "Unleash Premium can earn up to 12 levels": "Unleash Premium can earn up to 12 levels."
+    },
+    "modalAutoRenewal": {
+      "textPackage": "Package:",
+      "textUpgradePackage": "Upgrade your package into VIP with only from",
+      "btnUpgrade": "Upgrade Now",
+      "textExpired": "Your package will be expired soon:",
+      "textAutoRenewal": "Auto renewal",
+      "btnReActive": "Re-Activate",
+      "textRenewalPrior": "Renewal prior",
+      "Expired": "Expired"
+    },
+    "modalCheckoutNFT": {
+      "title": "Checkout",
+      "content": "You are about to purchase a NFT",
+      "labelInput": "Enter wallet address",
+      "placeholderInput": "Enter wallet address",
+      "btnConfirm": "Confirm"
+    },
+    "modalUpgradeYourPackage": {
+      "title": "Upgrade your package",
+      "title2": "Renewal your package",
+      "btnCancel": "Cancel",
+      "btnOk": "OK",
+      "option1": {
+        "title": "by month",
+        "type": "month",
+        "eventType": "Billed monthly"
+      },
+      "option2": {
+        "title": "by year",
+        "type": "year",
+        "eventType": "Billed year"
+      },
+      "option3": {
+        "title": "by 6 months",
+        "type": "6 months",
+        "eventType": "Billed once in 6 months"
+      },
+      "autoRenew": "Automatically renew activation",
+      "No upgrade nor renew": "No renew normal and VIP",
+      "Renew only": "Normal Only",
+      "Upgrade only": "VIP only",
+      "Both renew and upgrade": "Both normal and VIP",
+      "Renew failed": "Auto renew failed",
+      "Renew successfully": "Auto renew turn on successfully"
+    }
+  },
+  "productManagement": {
+    "Sell Price": "Sell Price",
+    "Sold": "Sold",
+    "In Stock": "In Stock",
+    "Rating": "Rating",
+    "Product ID": "Product ID",
+    "Product name": "Product name",
+    "Category": "Category",
+    "Brand": "Brand",
+    "Cost Price": "Cost Price",
+    "Attribute": "Attribute",
+    "Product image": "Product image",
+    "Single Product": "Single Product",
+    "Composed Product": "Composed Product",
+    "Sub Products": "Sub Products",
+    "Value": "Value",
+    "Oldest": "Oldest",
+    "Highest rating": "Highest rating",
+    "Least rating": "Least rating",
+    "Delete": "Hide",
+    "Are you really want to delete product": "Are you really want to hide product {{id}}",
+    "This field is required": "This field is required",
+    "Product create success": "Product created successfully",
+    "Product edit success": "Product updated successfully",
+    "This product name has been taken": "This product name has been taken, please choose a different one",
+    "This product SKU has been taken": "This product SKU has been taken, please choose a different one",
+    "active": "Active",
+    "inactive": "Inactive",
+    "Add new product": "Add new product",
+    "Edit product": "Update product",
+    "Tags": "Tags",
+    "English version": "English version",
+    "Vietnamese version": "Vietnamese version",
+    "Add description": "Add description",
+    "Edit description": "Edit description",
+    "Upload": "Upload",
+    "Update": "Update",
+    "language description": "{{lang}} description"
+  },
+  "adminOrders": {
+    "statusOptionAll": "All Status",
+    "orderStatus": {
+      "accessing": "Processing",
+      "created": "Created",
+      "fulfilled": "Succeed",
+      "shipping": "On Delivery",
+      "cancelled": "Cancelled"
+    },
+    "placeholder": "Order Search",
+    "filter": {
+      "showBy": "Show by",
+      "sortBy": "Sort by"
+    },
+    "tableColumn": {
+      "orderId": "Order Id",
+      "date": "Date",
+      "customer": "Customer",
+      "total": "Total",
+      "shippingUnit": "Shipping Unit",
+      "fee": "Fee",
+      "status": "Status"
+    }
+  },
+  "adminOrdersDetail": {
+    "title": "Order Detail",
+    "status": "Status",
+    "shipTo": "Ship to",
+    "billTo": "Bill to",
+    "change": "Change",
+    "orderDate": "Order date",
+    "shippingUnit": "Shipping Unit",
+    "orderItem": "Order Items",
+    "paymentInfo": "Payment Infor",
+    "paymentMethod": "Payment method",
+    "phone": "Phone",
+    "discount": "Discount",
+    "note": "Note",
+    "table": {
+      "name": "Name",
+      "price": "Price",
+      "quantity": "Quantity",
+      "total": "Total"
+    },
+    "alertUpdatedSuccess": "You've updated this order successfully",
+    "businessName": "Business name"
+  },
+  "notifyAlert": {
+    "newCustomer": {
+      "title": "You've got a new Customer!",
+      "content": "A new customer just registered! Customer information: {{name}} - {{email}} "
+    },
+    "order": {
+      "title": "Your order is being ",
+      "content": "Order #{{id}} on {{date}} is being ",
+      "textCanceled": "canceled",
+      "textFulfilled": "fulfilled",
+      "textProcessing": "processing",
+      "textShipping": "shipping",
+      "textCreated": "created"
+    },
+    "textViewDetail": "View detail"
+  },
+  "chartSelection": {
+    "thisWeek": "This week",
+    "thisMonth": "This month",
+    "thisYear": "This Year",
+    "bySixMonth": "By Six Month "
+  },
+  "adminWithdrawStatus": {
+    "created": "Created",
+    "approved": "Approved",
+    "processing": "Processing",
+    "rejected": "Rejected",
+    "finished": "Finished"
+  },
+  "adminRecentlyActivity": {
+    "title": "Recently Activity",
+    "totalCustomer": "Total Customer",
+    "visitor": "Visitors",
+    "totalDelivery": "Total Delivery",
+    "totalOrder": "Total Order"
+  },
+  "adminDashboard": {
+    "totalRevenue": "Total Revenue",
+    "totalVisitor": "Total Visitor",
+    "totalSale": "Total Sale"
+  },
+  "adminMenuSlide": {
+    "dashboard": "Dashboard",
+    "Balance Tracking": "Balance Tracking",
+    "System Balance Tracking": "System Balance Tracking",
+    "Orders": "Orders",
+    "Products": "Products",
+    "Sales Report": "Sales Report",
+    "Settings": "Settings"
+  },
+  "estimateBalance": {
+    "title": "Estimated Balance",
+    "totalMoneyDeposit": "Total Money Deposit",
+    "adminBalance": "Admin Balance",
+    "totalVolume": "Total Volume",
+    "Deposit Total": "Deposit Total",
+    "Withdraw Total": "Withdraw Total",
+    "Hash": "Hash",
+    "No": "No"
+  },
+  "news": {
+    "previous": "PREVIOUS POST",
+    "next": "NEXT POST"
+  }
+}

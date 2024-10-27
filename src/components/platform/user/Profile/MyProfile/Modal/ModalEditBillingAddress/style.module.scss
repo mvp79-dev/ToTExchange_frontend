@@ -1,0 +1,28 @@
+.formEditBilling {
+  :global {
+    .ant-form-item {
+      margin-bottom: 16px;
+    }
+    .ant-form-item-label {
+      color: var(--gray10);
+      font-family: "Be Vietnam Pro";
+      font-size: 14px;
+    }
+    .ant-input {
+      height: 40px;
+      border-radius: 2px;
+    }
+    .ant-select-selector {
+      height: 40px !important;
+      border-radius: 2px !important;
+      display: flex !important;
+      align-items: center !important;
+      font-family: "Be Vietnam Pro" !important;
+      font-size: 14px !important;
+    }
+    .ant-checkbox-wrapper {
+      color: var(--input-color);
+      font-family: "Be Vietnam Pro" !important;
+    }
+  }
+}

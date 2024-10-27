@@ -1,0 +1,130 @@
+.nftItem {
+  border-radius: 8px;
+  // width: 100%;
+  padding: 24px;
+  border-radius: 24px;
+  // border: 1px solid var(--gray3);
+  // background: var(--neutral-11);
+  // box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.24);
+  // &:hover {
+  //   box-shadow: 0px 10px 30px 10px rgba(0, 255, 255, 0.7);
+  //   -webkit-transition: box-shadow 0.7s ease-in;
+  //   transform: scale3d(1.04, 1.04, 1.04);
+  //   -webkit-transition: transform 0.5s ease-in;
+  // }
+  .nftImg {
+    width: 100%;
+    border-radius: 8px;
+    height: 280px;
+    margin: 0px;
+    margin-bottom: 16px;
+    > img {
+      object-fit: cover;
+      width: 100%;
+      border-radius: 8px;
+      height: 100%;
+    }
+  }
+  .nftBox {
+    position: relative;
+    .nftVip {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 99px;
+      transform: translateY(-6%);
+    }
+    .nftInfo {
+      display: flex;
+      font-family: var(--font-base);
+      flex-direction: column;
+      row-gap: 8px;
+      .nftName {
+        color: var(--white-color);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        margin: 0px;
+      }
+      .nftInfoUser {
+        color: var(--white-color);
+        font-size: 14px;
+        font-weight: 500;
+
+        &.hasVip {
+          max-width: calc(100% - 2.5rem);
+          display: inline-block;
+          line-break: anywhere;
+        }
+      }
+      .nftDesc {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: var(--gray13);
+        white-space: nowrap;
+        line-height: 22px;
+        font-family: var(--font-base);
+      }
+      .nftBenefits {
+        color: var(--white-color);
+        font-weight: 500;
+        line-height: 22px;
+        > ul {
+          margin: 0px;
+          margin-top: 4px;
+          margin-left: -14px;
+          > li {
+            color: var(--gray13);
+            font-weight: 400;
+          }
+        }
+      }
+      .nftPrice {
+        color: var(--base-color);
+        font-family: var(--font-base);
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 8px;
+        line-height: 32px;
+      }
+      .nftAction {
+        width: 100%;
+        :global {
+          .ant-tooltip-disabled-compatible-wrapper {
+            width: 100%;
+          }
+        }
+        button {
+          background-color: var(--white-color);
+          border: 1px solid var(--gray7);
+          font-family: "Be Vietnam Pro";
+          width: 100%;
+          border-radius: 2px;
+          height: 40px;
+          margin-top: 8px;
+          color: var(--gray-black3);
+          font-size: 16px;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            color: var(--white-color) !important;
+            background-color: var(--base-color);
+          }
+          &:disabled {
+            color: var(--gray-black3) !important;
+            background-color: var(--gray7);
+            width: 100%;
+          }
+        }
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+%filter-box {
+  border-radius: 2px !important;
+  border: 1px solid var(--gray7) !important;
+  background: var(--white-color) !important;
+}
+
+%normal-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.product-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__search-bar {
+    @extend %filter-box, %normal-text;
+
+    width: 320px;
+    padding: 8px 12px;
+    font-family: var(--base-font);
+
+    > :global(.ant-input-prefix) {
+      margin-right: 12px;
+    }
+
+    > :global(.ant-input) {
+      font: inherit;
+      color: inherit;
+
+      &::placeholder {
+        color: var(--gray3);
+      }
+
+      &:hover {
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  &__sort-by-select {
+    width: 250px;
+    height: 40px;
+    margin-left: 12px;
+
+    > div {
+      @extend %filter-box;
+    }
+
+    > :global(div.ant-select-selector) {
+      height: 100% !important;
+      padding: 8px 34px 8px 12px !important;
+      font-family: var(--base-font);
+      color: var(--input-color);
+    }
+
+    > :global(.ant-select-arrow) {
+      font-size: 18px;
+      top: 50%;
+      right: 12px;
+      margin: 0;
+      transform: translateY(-50%);
+      color: var(--gray-black3);
+    }
+
+    :global(.ant-select-selector span.ant-select-selection-item) {
+      font: inherit;
+      color: inherit;
+      line-height: normal;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+
+    > div {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      > span {
+        @extend %normal-text;
+      }
+    }
+    :global {
+      .ant-select-selection-item {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  &__create-link {
+    padding: 7px 15px;
+    border-radius: 2px;
+    border: 1px solid var(--base-color);
+    background: var(--base-color);
+    color: var(--white-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+
+    &:hover {
+      color: var(--white-color);
+      border: 1px solid var(--base-color);
+    }
+  }
+}

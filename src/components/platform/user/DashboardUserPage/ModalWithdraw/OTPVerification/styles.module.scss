@@ -1,0 +1,11 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.verification-otp {
+  margin-top: 0;
+  @include mobile {
+    padding: 0 20px;
+  }
+  > img {
+    display: none;
+  }
+}

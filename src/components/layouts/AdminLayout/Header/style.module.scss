@@ -1,0 +1,150 @@
+.headerAdmin {
+  font-family: var(--base-font);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 31px 80px;
+  border-bottom: 1px solid var(--gray7);
+  h1 {
+    margin: 0px;
+  }
+  :global {
+    .ant-input-affix-wrapper {
+      width: 420px;
+      height: 40px;
+      padding: 4px 24px;
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
+      .ant-input-prefix {
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      input {
+        font-family: var(--base-font);
+      }
+    }
+  }
+
+  .action {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    :global {
+      .ant-btn {
+        border-radius: 2px;
+        height: 38.8px;
+        background-color: var(--base-color);
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--white-color);
+        :disabled {
+          background-color: var(--btn-bg-disabled);
+          color: var(--btn-text-disabled);
+        }
+      }
+    }
+    .userInfo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-family: var(--base-font);
+      .user {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+        color: var(--gray-black3);
+        margin-left: 10px;
+        > img {
+          width: 40px;
+          height: 40px;
+        }
+        &__name {
+          color: var(--gray-black3);
+          text-overflow: ellipsis;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 22px; /* 157.143% */
+        }
+        &__role {
+          color: var(--gray10);
+          text-overflow: ellipsis;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 20px; /* 166.667% */
+        }
+      }
+    }
+    .walletAddress {
+      display: flex;
+      height: 44px;
+      padding: 4px;
+      border-radius: 2px;
+      background: var(--neutral-3);
+      align-items: center;
+      font-family: "Be Vietnam Pro";
+      column-gap: 15px;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      cursor: pointer;
+      .balance {
+        white-space: nowrap;
+        border-radius: 2px;
+        background: var(--base-color);
+        color: var(--white-color);
+        padding: 6px 15px;
+      }
+      .address {
+        color: var(--gray10);
+        padding-right: 15px;
+      }
+    }
+  }
+}
+:global {
+  .dropdownUserInfo {
+    li {
+      &:hover {
+        border-radius: 2px !important;
+        background-color: var(--base-color) !important;
+      }
+    }
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .disconnectWallet {
+    :global {
+      .ant-dropdown-menu-title-content {
+        > div {
+          display: flex;
+          align-items: center;
+          column-gap: 12px;
+          padding: 5px 0px;
+          font-size: 14px;
+          font-weight: 500;
+          font-family: var(base-font);
+          color: var(--gray10);
+          > img {
+            width: 32px;
+            height: 32px;
+            object-fit: cover;
+          }
+        }
+        .boxDisconnect {
+          filter: invert(26%) sepia(94%) saturate(5465%) hue-rotate(347deg) brightness(98%) contrast(95%);
+          display: flex;
+          align-items: center;
+          column-gap: 4px;
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+}

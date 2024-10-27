@@ -1,0 +1,84 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.businessSnapshot {
+  font-family: "Be Vietnam Pro";
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  @include mobile {
+    padding: 32px 0;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include laptop {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    :global {
+      .ant-picker {
+        height: 40px;
+        border-radius: 2px;
+        font-family: "Be Vietnam Pro";
+        width: 256px;
+        input {
+          font-family: "Be Vietnam Pro";
+        }
+      }
+    }
+    .title {
+      > div {
+        color: var(--neutral-11);
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 4px;
+        @include laptop {
+          margin-bottom: 20px;
+        }
+      }
+      > span {
+        color: var(--gray3);
+        font-size: 16px;
+      }
+    }
+  }
+  .snapshotList {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    .snapshotItem {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+      padding: 20px 16px;
+      border-radius: 6px;
+      background: var(--btn-bg-disabled);
+      width: 32%;
+      max-width: 33.33%;
+      @include laptop {
+        width: 85%;
+        max-width: 85%;
+      }
+      @include mobile {
+        width: 45%;
+        max-width: 48%;
+      }
+      .value {
+        color: var(--neutral-11);
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .label {
+        color: var(--gray10);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        > img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.renderLegend {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 16px;
+  padding-top: 24px;
+  .wrapDot {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .dot {
+    width: 12px;
+    height: 12px;
+  }
+}
+.customTooltip {
+  display: flex;
+  padding: 6px 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 2px;
+  background: var(--neutral-9, #434343);
+  color: var(--white-color);
+  font-family: var(--base-font);
+  font-size: 14px;
+  p {
+    margin: 0px;
+  }
+}

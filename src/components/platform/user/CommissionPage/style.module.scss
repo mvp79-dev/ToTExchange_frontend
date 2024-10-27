@@ -1,0 +1,79 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.commission-page {
+  max-width: var(--width-content);
+  margin: 0 auto;
+  padding: 5rem 1.1rem;
+  .activeText {
+    color: var(--base-color);
+  }
+  @include mobile {
+    padding: 2rem 1.1rem;
+  }
+
+  &__title {
+    color: var(--neutral-11);
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: var(--base-font);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 133.333% */
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+
+  &__table {
+    background-color: transparent;
+
+    :global {
+      .ant-table {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+      }
+
+      .ant-table .ant-table-thead th {
+        line-height: 1.5;
+      }
+      .ant-table-content {
+        @include mobile {
+          width: 100%;
+          overflow: auto;
+        }
+      }
+
+      ul.ant-table-pagination.ant-pagination {
+        margin-top: 32px;
+        margin-bottom: 0;
+        @include mobile {
+          text-align: center;
+          justify-content: center;
+        }
+
+        > .ant-pagination-jump-next {
+          min-width: 32px;
+        }
+
+        > li.ant-pagination-options {
+          margin-left: auto;
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__total-payout {
+      color: var(--base-color);
+    }
+
+    &__view-statement {
+      color: var(--base-color);
+
+      &:hover {
+        color: var(--base-color);
+        text-decoration: underline;
+      }
+    }
+  }
+}

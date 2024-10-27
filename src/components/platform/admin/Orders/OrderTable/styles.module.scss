@@ -1,0 +1,36 @@
+.orderAdmin__table {
+  padding-top: 30px;
+  .pagination {
+    padding-top: 30px;
+  }
+  :global {
+    .ant-table-cell {
+      color: var(--gray-black3);
+    }
+  }
+  .column {
+    &__status {
+      // padding: 4px 12px;
+      // text-align: center;
+      // border-radius: 30px;
+      // border: 2px solid var(--warning-color);
+      // background-color: var(--background-warning);
+      color: var(--warning-color);
+    }
+    &__fulfilled {
+      color: var(--base-color);
+      // border: 2px solid var(--base-color);
+    }
+    &__cancelled {
+      color: var(--error-color);
+      // border-color: var(--error-color);
+    }
+    &__id {
+      height: 24px;
+      width: 24px;
+      border-radius: 100%;
+      border: 1px solid var(--gray7);
+      text-align: center;
+    }
+  }
+}

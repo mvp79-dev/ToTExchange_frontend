@@ -1,0 +1,151 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.drawerCart {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  .footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    font-family: "Be Vietnam Pro";
+    .subtotal {
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--gray-black3);
+      > span {
+        font-weight: 700;
+        color: var(--base-color);
+      }
+    }
+    .action {
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      > button {
+        font-family: "Be Vietnam Pro";
+        border-radius: 2px;
+        width: 100%;
+        height: 38.8px;
+        background-color: var(--base-color);
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--white-color);
+        :disabled {
+          background-color: var(--btn-bg-disabled);
+          color: var(--btn-text-disabled);
+        }
+      }
+      > button:last-child {
+        margin-bottom: 24px;
+      }
+      .btnViewCart {
+        background-color: var(--white-color);
+        border: 1px solid var(--gray7);
+        color: var(--input-color);
+        font-family: "Be Vietnam Pro";
+      }
+    }
+  }
+}
+
+.cartItem {
+  border-bottom: 1px solid var(--gray7);
+  padding: 16px 0px 30px;
+  font-family: "Be Vietnam Pro";
+  .cartItemInfo {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    .cartItemImg {
+      min-width: 80px;
+      height: 80px;
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .cartItemBox {
+      width: 100%;
+      display: flex;
+      row-gap: 8px;
+      flex-direction: column;
+      position: relative;
+      .cartItemHeader {
+        display: flex;
+        justify-content: space-between;
+        color: var(--gray-black3);
+        font-size: 16px;
+        font-weight: 500;
+        @include mobile {
+          font-size: 14px;
+        }
+        > div {
+          @include mobile {
+            width: 235px;
+          }
+        }
+        svg {
+          cursor: pointer;
+        }
+      }
+      .cartItemAction {
+        display: flex;
+        > div {
+          min-width: 40px;
+          height: 32px;
+          border-bottom: 1px solid var(--gray7);
+          border-top: 1px solid var(--gray7);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+        > div:first-child,
+        div:last-child {
+          min-width: 32px;
+          height: 32px;
+          border: 1px solid var(--gray7);
+        }
+        > div:first-child {
+          border-top-left-radius: 2px;
+          border-bottom-left-radius: 2px;
+        }
+        > div:last-child {
+          border-top-right-radius: 2px;
+          border-bottom-right-radius: 2px;
+        }
+      }
+      .btnDisable {
+        color: var(--btn-text-disabled);
+        background-color: var(--btn-bg-disabled);
+        cursor: not-allowed !important;
+      }
+      .cartItemTotalPrice {
+        position: absolute;
+        bottom: -24px;
+        color: var(--gray-black3);
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        span {
+          color: var(--base-color);
+          font-weight: 500;
+        }
+        &__warning {
+          color: var(--error-color);
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.cartItem:first-child {
+  padding: 0px 0px 30px;
+}

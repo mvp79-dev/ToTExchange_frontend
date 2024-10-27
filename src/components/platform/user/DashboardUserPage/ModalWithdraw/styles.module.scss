@@ -1,0 +1,33 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.withdrawal-modal {
+  :global {
+    .ant-modal-content {
+      padding: 44px;
+      @include mobile {
+        padding: 20px;
+      }
+    }
+    @include mobile {
+      .ant-steps {
+        display: flex !important;
+        flex-direction: row !important;
+        margin-bottom: 0 !important;
+      }
+      .ant-steps-item {
+        padding-right: 5px;
+      }
+      .ant-steps-item-container {
+        display: flex;
+        flex-direction: column !important;
+      }
+      .ant-steps-item-title {
+        font-size: 12px !important;
+      }
+    }
+  }
+
+  &__withdraw-steps {
+    margin-bottom: 40px;
+  }
+}

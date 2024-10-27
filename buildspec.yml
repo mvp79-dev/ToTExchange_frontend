@@ -1,0 +1,42 @@
+version: 0.2
+phases:
+  install:
+    #If you use the Ubuntu standard image 2.0 or later, you must specify runtime-versions.
+    #If you specify runtime-versions and use an image other than Ubuntu standard image 2.0, the build fails.
+    runtime-versions:
+      nodejs: 18
+  pre_build:
+    commands:
+      # export the env variables
+      - echo REACT_APP_API_BASE_URL=${REACT_APP_API_BASE_URL} >> .env
+      - echo REACT_APP_DOMAIN=${REACT_APP_DOMAIN} >> .env
+      - echo REACT_APP_EXPIRY_TIME_OTP=${REACT_APP_EXPIRY_TIME_OTP} >> .env
+      - echo REACT_APP_FIREBASE_PROJECT_ID=${REACT_APP_FIREBASE_PROJECT_ID} >> .env
+      - echo REACT_APP_SOCKET_URL=${REACT_APP_SOCKET_URL} >> .env
+      - echo REACT_APP_CONTRACT_TREASURY=${REACT_APP_CONTRACT_TREASURY} >> .env
+      - echo REACT_APP_CONTRACT_USDT_HP=${REACT_APP_CONTRACT_USDT_HP} >> .env
+      - echo REACT_APP_CONTRACT_NFT_HP=${REACT_APP_CONTRACT_NFT_HP} >> .env
+      - echo REACT_APP_JWT_SECRET_KEY=${REACT_APP_JWT_SECRET_KEY} >> .env
+      - echo REACT_APP_CHAIN_ID_SUPPORTED=${REACT_APP_CHAIN_ID_SUPPORTED} >> .env
+      - echo REACT_APP_BNB_CHAIN_RPC_URL=${REACT_APP_BNB_CHAIN_RPC_URL} >> .env
+      - echo REACT_APP_BNB_CHAIN_ID=${REACT_APP_BNB_CHAIN_ID} >> .env
+      - echo REACT_APP_BNB_CHAIN_NAME=${REACT_APP_BNB_CHAIN_NAME} >> .env
+      - echo REACT_APP_URL_SCAN=${REACT_APP_URL_SCAN} >> .env
+      - echo REACT_APP_PROJECT_TYPE=${REACT_APP_PROJECT_TYPE} >> .env
+      - echo REACT_APP_ALCHEMY_KEY=${REACT_APP_ALCHEMY_KEY} >> .env
+      # install dependencies
+      - echo Installing source NPM dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Build started on 'date'
+      - npm run build
+  post_build:
+    commands:
+      - aws s3 cp --recursive ./build s3://happy-ui
+      - aws s3 cp --cache-control="max-age=0, no-cache, no-store, must-revalidate" ./build/index.html s3://happy-ui
+      - aws cloudfront create-invalidation --distribution-id  E1EKEB81Z7HZC8 --paths /*
+artifacts:
+  files:
+    - "build/*"
+    - "build/**/*"

@@ -1,0 +1,8 @@
+.hpTooltip {
+  font-family: var(--base-font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: wrap;
+  text-overflow: ellipsis;
+}

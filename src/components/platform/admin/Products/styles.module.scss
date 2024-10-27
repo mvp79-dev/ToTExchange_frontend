@@ -1,0 +1,14 @@
+.product-list-page {
+  max-width: var(--width-content);
+  margin: 0 auto;
+  padding: 0 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &__pagination {
+    :global(li.ant-pagination-jump-next) {
+      min-width: 32px;
+    }
+  }
+}

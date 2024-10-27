@@ -1,0 +1,33 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.related-product {
+  margin-top: 80px;
+  min-height: 200px;
+
+  @include mobile {
+    margin-top: 16px;
+  }
+
+  &__title {
+    color: var(--gray-black1);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    /* H1/medium */
+    font-family: var(--base-font);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 46px; /* 121.053% */
+    @include mobile {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__product-item {
+    > div {
+      margin: 0 auto;
+    }
+  }
+}

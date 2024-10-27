@@ -1,0 +1,161 @@
+@import "@/styles/mixins";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  margin-top: 80px;
+
+  @include laptop {
+    margin-top: 2rem;
+    height: auto;
+    padding-bottom: 24px;
+  }
+
+  @include tablet {
+    margin-top: 2rem;
+    height: auto;
+    padding-bottom: 24px;
+  }
+
+  @include mobile {
+    margin-top: 0;
+  }
+
+  .logo {
+    width: 364px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      line-height: 40px;
+      font-style: normal;
+
+      @include mobile {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+    .highlightText {
+      color: var(--base-color);
+      cursor: pointer;
+    }
+    .textPhone {
+      font-size: 16px;
+      color: var(--gray);
+      max-width: 300px;
+      text-align: center;
+
+      @include laptop {
+        max-width: 100%;
+      }
+    }
+    .otp {
+      margin: 32px 0px 20px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+      .inputOTP {
+        > div {
+          column-gap: 20px;
+
+          @include mobile {
+            column-gap: 8px;
+          }
+        }
+        input {
+          box-sizing: border-box;
+          width: 60px !important;
+          height: 64px;
+          border-radius: 2px;
+          border: 1px solid var(--gray7);
+          font-size: 16px;
+          font-family: var(--base-font);
+
+          @include mobile {
+            width: 50.5px !important;
+          }
+        }
+      }
+      .errorOTP {
+        input {
+          border: 1px solid var(--error-color) !important;
+        }
+        color: var(--error-color);
+      }
+    }
+
+    .resendCode {
+      max-width: 300px;
+      font-size: 16px;
+      text-align: center;
+      line-height: 24px;
+      color: var(--gray-black3);
+      @include media-breakpoint-above(1023px) {
+        max-width: 300px;
+      }
+
+      @include media-breakpoint-above(1460px) {
+        max-width: 350px;
+      }
+
+      @include laptop {
+        max-width: 100%;
+      }
+      > div {
+        display: flex;
+        column-gap: 5px;
+        align-items: center;
+      }
+
+      .btnResendCode {
+        font-weight: 500 !important;
+        color: var(--base-color);
+        border: none;
+        font-size: 16px !important;
+        cursor: pointer;
+        background-color: transparent !important;
+      }
+      .btnResendCode:disabled {
+        cursor: not-allowed;
+      }
+    }
+    .btnConfirm {
+      width: 100%;
+      > button {
+        background-color: var(--base-color);
+        color: var(--white-color);
+        font-size: 16px;
+        font-weight: 500;
+        font-family: var(--base-font);
+        margin-top: 32px;
+        height: 40px;
+        width: 100%;
+        border-radius: 2px;
+      }
+      > button:disabled {
+        background-color: var(--btn-bg-disabled);
+        color: var(--btn-text-disabled);
+        border: 1px solid var(--gray7);
+      }
+      > button:disabled {
+        &:hover {
+          background-color: var(--btn-bg-disabled);
+          color: var(--btn-text-disabled) !important;
+          border: 1px solid var(--gray7);
+          border-color: var(--gray7) !important;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

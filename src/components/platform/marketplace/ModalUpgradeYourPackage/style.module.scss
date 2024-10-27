@@ -1,0 +1,130 @@
+@import "@/styles/mixins";
+
+.modalUpgradePackage {
+  font-family: var(--base-font);
+
+  * {
+    box-sizing: border-box;
+  }
+
+  :global {
+    .ant-modal-close {
+      display: none;
+
+      @include laptop {
+        display: inline-block;
+      }
+    }
+
+    .ant-modal-content div.ant-modal-footer {
+      // margin-top: 0;
+
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .ant-btn {
+      padding: 7px 15px !important;
+      height: 40px !important;
+    }
+
+    .ant-modal-footer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+  > h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--gray-black3);
+
+    @include laptop {
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__upgrade-switch {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+    :global {
+      .ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+        background-color: var(--base-color);
+      }
+
+      .ant-switch-checked {
+        background-color: var(--base-color);
+      }
+    }
+  }
+
+  &__options {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    .opt {
+      width: 50%;
+      padding: 16px;
+      border: 1px solid var(--gray7);
+      border-radius: 4px;
+      cursor: pointer;
+      &__title {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+      &__number {
+        color: var(--gray-black3);
+        font-size: 38px;
+        font-weight: 500;
+        padding-right: 8px;
+      }
+      &__type {
+        color: var(--gray-black3);
+        font-size: 16px;
+        padding-left: 5px;
+      }
+      &__eventType {
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      &.disabled {
+        opacity: 0.25;
+        cursor: not-allowed;
+      }
+    }
+
+    .optSelected {
+      border: 1px solid var(--base-color);
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+      .opt {
+        width: calc(50% - 10px);
+      }
+    }
+
+    @include mobile {
+      flex-direction: column;
+
+      .opt {
+        width: 100%;
+      }
+    }
+  }
+
+  &__renew-option {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}

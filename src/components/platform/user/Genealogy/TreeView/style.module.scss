@@ -1,0 +1,13 @@
+.treeView {
+  :global {
+    .ant-tree-iconEle {
+      img {
+        width: 24px;
+        height: 25px;
+      }
+    }
+    .ant-tree-node-selected {
+      background-color: transparent !important;
+    }
+  }
+}

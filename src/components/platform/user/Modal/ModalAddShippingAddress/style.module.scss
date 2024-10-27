@@ -1,0 +1,82 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.update-shipping-modal {
+  :global {
+    .ant-modal-content {
+      padding: 24px;
+    }
+  }
+}
+.drawerAddress {
+  &__bottom {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__groupBtn {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .wrapBtn {
+    width: 50%;
+  }
+  .btn {
+    width: 100%;
+  }
+  .activeBtn {
+    color: var(--white-color);
+    background-color: var(--base-color);
+    border-radius: 2px;
+    &:focus,
+    O &:hover {
+      color: var(--white-color) !important;
+      background-color: var(--base-color) !important;
+    }
+  }
+}
+
+.formShipping {
+  :global {
+    .ant-form-item {
+      margin-bottom: 16px;
+    }
+    .ant-form-item-label {
+      color: var(--gray10);
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-size: 14px;
+      text-transform: capitalize;
+      font-weight: 400;
+      line-height: 22px; /* 157.143% */
+
+      > .ant-form-item-required {
+        &::before {
+          display: none !important;
+          visibility: hidden;
+        }
+
+        &::after {
+          display: inline-block;
+          margin-inline-end: 4px;
+          color: var(--destruction-5);
+          font-size: 14px;
+          font-family: SimSun, sans-serif;
+          line-height: 1;
+          content: "*";
+          visibility: visible;
+        }
+      }
+    }
+    .ant-input {
+      height: 40px;
+      border-radius: 2px;
+    }
+    .ant-select-selector {
+      height: 40px !important;
+      border-radius: 2px !important;
+      display: flex !important;
+      align-items: center !important;
+      font-family: "Be Vietnam Pro", sans-serif !important;
+      font-size: 14px !important;
+    }
+  }
+}

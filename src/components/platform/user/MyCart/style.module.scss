@@ -1,0 +1,17 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.cartPage {
+  font-family: "Be Vietnam Pro", sans-serif;
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+  margin: 100px 0px;
+
+  @include laptop {
+    margin: 100px 16px;
+  }
+
+  @include mobile {
+    margin: 20px 0px;
+  }
+}

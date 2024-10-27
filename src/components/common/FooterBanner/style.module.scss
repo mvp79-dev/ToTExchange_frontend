@@ -1,0 +1,66 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.hero-img {
+  width: 100%;
+  height: 352px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include laptop {
+    height: 300px;
+  }
+
+  @include tablet {
+    height: 200px;
+  }
+
+  @include mobile {
+    height: 140px;
+  }
+
+  > div {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include mobile {
+      background-size: 10%;
+      background-position: center;
+    }
+  }
+
+  &::before {
+    content: " ";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: #0008;
+  }
+
+  .footer-banner {
+    color: var(--neutral-1);
+    font-size: 38px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 46px; /* 121.053% */
+
+    @include laptop {
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+
+    @include tablet {
+      font-size: 1.5rem;
+    }
+
+    @include mobile {
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+  }
+}

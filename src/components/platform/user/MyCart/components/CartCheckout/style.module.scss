@@ -1,0 +1,221 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.checkout {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    @include laptop {
+      flex-direction: column;
+    }
+  }
+}
+.myCartMobile {
+  display: none;
+  @include mobile {
+    display: block;
+  }
+  &__title {
+    color: var(--gray-black3);
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+  }
+}
+
+.myCart {
+  min-width: 915px;
+  padding: 12px;
+  background: var(--btn-bg-disabled);
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  @include laptop {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  @include mobile {
+    display: none;
+  }
+  > span {
+    color: var(--gray-black3);
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .textModalConfirm {
+    text-align: center;
+  }
+  .table {
+    padding: 0px 20px;
+    border-radius: 2px;
+    background: var(--white-color);
+
+    :global {
+      .ant-table-wrapper {
+        max-width: 850px;
+        margin: 0px auto;
+      }
+      .ant-table {
+        color: var(--gray-black3);
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Be Vietnam Pro", sans-serif;
+        th.ant-table-cell {
+          background-color: transparent;
+        }
+
+        tr > th {
+          color: var(--gray10);
+          font-size: 14px;
+          font-weight: 400;
+          border-bottom: 1px solid var(--gray7);
+          padding: 16px 0px;
+        }
+        tr > td {
+          border-bottom: 1px solid var(--gray7);
+          padding: 16px 0px;
+        }
+        tr:last-child > td {
+          border-bottom: none;
+        }
+      }
+    }
+
+    &__quantity {
+      user-select: none;
+    }
+  }
+
+  .productInfo {
+    display: flex;
+    align-items: center;
+    > img {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+    }
+  }
+
+  .quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > div {
+      min-width: 40px;
+      height: 40px;
+      border-bottom: 1px solid var(--gray7);
+      border-top: 1px solid var(--gray7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    > div:first-child,
+    div:last-child {
+      min-width: 40px;
+      height: 40px;
+      border: 1px solid var(--gray7);
+    }
+    > div:first-child {
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+    > div:last-child {
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+    .btnDisable {
+      color: var(--btn-text-disabled);
+      background-color: var(--btn-bg-disabled);
+      cursor: not-allowed !important;
+    }
+  }
+
+  .totalPrice {
+    color: var(--base-color);
+  }
+}
+.paymentSummary {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  width: 285px;
+  padding: 20px;
+  border-radius: 2px;
+  border: 1px solid var(--gray7);
+  .title {
+    color: var(--gray-black3);
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .paymentSummaryItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray-black3);
+    @include mobile {
+      margin-left: 10px;
+    }
+    .label {
+      font-weight: 400;
+    }
+    .value {
+      font-weight: 700;
+    }
+    .valueCode {
+      font-weight: 500;
+
+      color: var(--gray-black3);
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      line-height: 1.5;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .highlightText {
+      color: var(--base-color);
+      cursor: pointer;
+    }
+
+    .promoteCode {
+      &__icon {
+        width: 12px;
+        height: 12px;
+        transform: rotate(-90deg);
+        font-size: 12px;
+      }
+    }
+  }
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray7);
+  }
+  .btnCheckout {
+    font-family: var(--base-font);
+    border-radius: 2px;
+    width: 100%;
+    height: 38.8px;
+    background-color: var(--base-color);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white-color);
+    &:disabled {
+      background-color: var(--btn-bg-disabled);
+      color: var(--btn-text-disabled);
+
+      &:hover {
+        border-color: var(--btn-text-disabled) !important;
+        color: var(--btn-text-disabled) !important;
+      }
+    }
+
+    &:hover {
+      color: var(--white-color) !important;
+    }
+  }
+}

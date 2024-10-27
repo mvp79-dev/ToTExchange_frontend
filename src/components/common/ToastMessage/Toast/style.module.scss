@@ -1,0 +1,70 @@
+:root {
+  --toast-padding: 1.5em;
+  --toast-margin: 1em;
+}
+
+.toast {
+  background-color: var(--white-color);
+  padding: var(--toast-padding);
+  box-shadow:
+    0 1px 10px 0 rgb(0 0 0 / 10%),
+    0 2px 15px 0 rgb(0 0 0 / 5%);
+  border-radius: 0.5em;
+  position: relative;
+  color: var(--black-color);
+  z-index: 9999;
+
+  .toastMessage {
+    display: flex;
+    align-items: center;
+    font-family: var(--base-font);
+    column-gap: 12px;
+  }
+
+  .iconCLose {
+    position: absolute;
+    top: 0.8em;
+    right: 0.8em;
+    padding: 0;
+    line-height: 1;
+    height: 1em;
+    width: 1em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    opacity: 0.75;
+  }
+
+  .toastError {
+    color: var(--error-color);
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .toastSuccess {
+    color: green;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .toastWaring {
+    color: gold;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .toastInfo {
+    color: dodgerblue;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+.toast + .toast {
+  margin-top: var(--toast-margin);
+}

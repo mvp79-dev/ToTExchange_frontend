@@ -1,0 +1,95 @@
+@import "@/styles/mixins";
+
+.infoUserOther {
+  display: flex;
+  row-gap: 24px;
+  flex-direction: column;
+  .boxAddress {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    .boxAddressItem {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+      padding: 8px 12px;
+      &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__edit {
+          display: flex;
+          color: var(--gray10);
+          font-weight: 500;
+          column-gap: 10px;
+          cursor: pointer;
+          align-items: center;
+        }
+        &__check {
+          label {
+            display: flex;
+            align-items: center;
+            column-gap: 4px;
+            span {
+              font-family: "Be Vietnam Pro", sans-serif;
+            }
+          }
+        }
+      }
+      &__address {
+        color: var(--gray10);
+      }
+    }
+  }
+  .boxAddressActive {
+    background-color: var(--primary-1);
+    border-radius: 8px;
+  }
+
+  &__address {
+    column-gap: 24px;
+    display: flex;
+    &__item {
+      border-radius: 8px;
+      border: 1px solid var(--gray7);
+      padding: 20px;
+      flex-direction: column;
+      row-gap: 8px;
+      display: flex;
+      width: 50%;
+      height: fit-content;
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+    &__label {
+      color: var(--gray-black3);
+      font-weight: 700;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__edit {
+      display: flex;
+      color: var(--gray10);
+      font-weight: 500;
+      column-gap: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      align-items: center;
+    }
+    &__value {
+      color: var(--gray10);
+      line-height: 22px;
+      font-size: 14px;
+    }
+    button {
+      height: 32px;
+      width: 126px;
+    }
+  }
+}

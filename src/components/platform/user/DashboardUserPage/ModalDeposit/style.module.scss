@@ -1,0 +1,43 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.modalDeposit {
+  //   min-height: 550px;
+  padding: 24px;
+  @include mobile {
+    padding: 0;
+  }
+  &__steps {
+    background-color: aqua;
+  }
+  :global {
+    .ant-input {
+      height: 40px;
+      font-family: "Be Vietnam Pro", sans-serif !important;
+      border-radius: 2px;
+    }
+    .ant-select-selector {
+      height: 40px !important;
+      border-radius: 2px !important;
+      display: flex !important;
+      align-items: center !important;
+      font-family: "Be Vietnam Pro", sans-serif !important;
+      font-size: 14px !important;
+    }
+    @include mobile {
+      .ant-steps {
+        display: flex !important;
+        flex-direction: row !important;
+      }
+      .ant-steps-item {
+        padding-right: 5px;
+      }
+      .ant-steps-item-container {
+        display: flex;
+        flex-direction: column !important;
+      }
+      .ant-steps-item-title {
+        font-size: 12px !important;
+      }
+    }
+  }
+}

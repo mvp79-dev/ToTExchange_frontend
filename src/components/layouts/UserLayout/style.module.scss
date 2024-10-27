@@ -1,0 +1,27 @@
+.appLayout {
+  .children {
+    min-height: 390px;
+    border-top: 1px solid var(--gray7);
+  }
+}
+.notify {
+  font-family: var(--base-font);
+  background-color: var(--base-color) !important;
+  :global {
+    .ant-notification-notice-message {
+      color: var(--black-color) !important;
+      font-weight: 500;
+    }
+    .ant-notification-notice-description {
+      color: var(--gray-blue3) !important;
+    }
+    .anticon {
+      color: var(--black-color) !important;
+    }
+    .link {
+      text-decoration: underline;
+      cursor: pointer;
+      color: rgb(0, 81, 255);
+    }
+  }
+}

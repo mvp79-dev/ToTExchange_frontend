@@ -1,0 +1,90 @@
+@import "@/styles/mixins";
+
+.container {
+  margin-top: 80px;
+  width: 100%;
+
+  @include laptop {
+    margin-top: 2rem;
+    padding-bottom: 24px;
+  }
+
+  @include tablet {
+    margin-top: 2rem;
+  }
+
+  @include mobile {
+    margin-top: 0;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mobile {
+      width: 100%;
+      row-gap: 32px;
+    }
+
+    .title {
+      font-size: 38px;
+      font-weight: 500;
+      margin-bottom: 12px;
+
+      @include mobile {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+    .highlightText {
+      color: var(--base-color);
+    }
+    :global {
+      .ant-form {
+        width: 100%;
+        font-family: var(--base-font);
+      }
+      .ant-form-item:not(:last-child) {
+        margin-bottom: 32px;
+        font-family: var(--base-font);
+      }
+      .ant-form-item:last-child {
+        margin: 0px;
+      }
+      .ant-input {
+        height: 40px;
+        padding: 8px 12px;
+        border-radius: 2px;
+        font-family: var(--base-font);
+      }
+      .ant-btn {
+        font-family: var(--base-font);
+        border-radius: 2px;
+        width: 100%;
+        height: 38.8px;
+        background-color: var(--base-color);
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--white-color);
+        :disabled {
+          background-color: var(--btn-bg-disabled);
+          color: var(--btn-text-disabled);
+        }
+      }
+    }
+    .btnBack {
+      border: none;
+      background-color: transparent;
+      color: var(--gray-black3);
+      font-family: var(--base-font);
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: -4px;
+      box-shadow: none;
+    }
+  }
+}

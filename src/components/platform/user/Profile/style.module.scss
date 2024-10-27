@@ -1,0 +1,90 @@
+@import "@/styles/mixins";
+
+.profilePage {
+  display: flex;
+  column-gap: 32px;
+  width: 100%;
+  max-width: var(--width-content);
+  margin: 0px auto;
+  font-family: var(--base-font);
+  padding: 60px 0 74px;
+  box-sizing: border-box;
+
+  @include laptop {
+    flex-direction: column;
+    padding: 3rem 1.2rem;
+  }
+
+  @include tablet {
+    padding: 2rem 16px;
+  }
+
+  @include mobile {
+    padding: 16px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &__menuLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 16px;
+    min-width: 208px;
+    color: var(--neutral-11);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    > div {
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+
+    @include laptop {
+      flex-direction: row;
+      align-items: center;
+
+      > div {
+        font-size: 1rem;
+        text-align: center;
+        flex: 1 1 auto;
+        width: 0;
+        border-bottom: 2px solid transparent;
+
+        &.activeMenu {
+          text-align: center;
+          border-right: 0;
+          border-color: var(--base-color);
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .activeMenu {
+    border-right: 2px solid var(--base-color);
+    background: var(--btn-bg-disabled);
+    color: var(--base-color);
+    text-align: end;
+  }
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    @include laptop {
+      padding: 2rem 0;
+    }
+
+    @include tablet {
+      padding: 1.5rem 0;
+    }
+
+    @include mobile {
+      padding: 16px 0;
+    }
+  }
+}

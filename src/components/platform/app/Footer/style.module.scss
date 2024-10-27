@@ -1,0 +1,130 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.appFooter {
+  background-color: var(--gray-blue1);
+  color: var(--white-color);
+  font-family: var(--base-font);
+
+  * {
+    box-sizing: border-box;
+  }
+
+  :global {
+    .ant-row {
+      font: inherit;
+    }
+
+    .ant-col {
+      color: var(--white-color);
+      font: inherit;
+      a {
+        color: var(--white-color);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+
+        &:hover {
+          color: var(--base-color2);
+        }
+
+        @include mobile {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  &__wrap {
+    max-width: var(--width-content);
+    margin: 0 auto;
+    padding: 0 1.1rem;
+    padding-top: 80px;
+    @include mobile {
+      padding: 32px 16px 0;
+    }
+  }
+
+  &__row-section {
+    gap: 16px;
+
+    & > &__col {
+      &:nth-child(n + 2) {
+        padding-left: 65px !important;
+        @include mobile {
+          padding-left: 16px !important;
+        }
+      }
+    }
+  }
+
+  &__mission {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 30px;
+
+    + p {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin: 0;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px;
+
+      > a {
+        > img {
+          margin-left: 4px;
+        }
+      }
+    }
+
+    @include mobile {
+      font-size: 1rem;
+      line-height: 1.5;
+
+      + p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  &__contact {
+    &__title {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+      margin: 0 0 12px;
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+
+    &__item {
+      margin: 0 0 8px;
+    }
+  }
+
+  .sign {
+    background-color: var(--black-color);
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 50px;
+    margin-bottom: 0;
+
+    @include mobile {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+}

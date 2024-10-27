@@ -1,0 +1,286 @@
+%form-label {
+  color: var(--gray-black3);
+  font-family: var(--base-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+%input {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+}
+
+%button {
+  padding: 7px 15px;
+  height: auto;
+  border-radius: 2px;
+  border: 1px solid var(--base-color);
+  background: var(--base-color);
+  color: var(--white-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+
+  &:hover,
+  &:focus {
+    color: var(--white-color) !important;
+    border: 1px solid var(--base-color);
+    background-color: var(--base-color) !important;
+  }
+}
+
+.ck-editor {
+  height: 316px;
+}
+
+.page-tabs {
+  @extend %form-label;
+
+  :global {
+    .ant-tabs-tab {
+      &:hover {
+        color: var(--base-color);
+      }
+
+      &.ant-tabs-tab-active {
+        color: var(--base-color);
+
+        > div.ant-tabs-tab-btn {
+          color: inherit;
+        }
+      }
+    }
+
+    .ant-tabs-ink-bar {
+      background: var(--base-color);
+    }
+  }
+}
+
+.edit-form {
+  &__item {
+    :global {
+      .ant-input,
+      .ant-input-affix-wrapper,
+      .ant-select > .ant-select-selector {
+        border-radius: 2px;
+      }
+
+      .ant-input-affix-wrapper > .ant-input:hover {
+        box-shadow: none !important;
+      }
+
+      .ant-form-item-label {
+        color: var(--gray-black3);
+        font-family: var(--base-font);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+
+        > label {
+          text-transform: capitalize;
+
+          .ant-form-item-optional {
+            display: none;
+          }
+        }
+      }
+
+      .ant-select-single:not(.ant-select-customize-input)
+        .ant-select-selector
+        .ant-select-selection-search-input {
+        @extend %input;
+        height: auto;
+      }
+
+      .ant-upload-wrapper.ant-upload-picture-card-wrapper
+        .ant-upload.ant-upload-select {
+        width: 180px;
+        height: 180px;
+        margin: 0;
+      }
+
+      .ant-select > .ant-select-selector {
+        height: auto;
+        padding: 4px 11px;
+
+        > .ant-select-selection-placeholder {
+          @extend %input;
+        }
+
+        > .ant-select-selection-item {
+          @extend %input;
+          height: fit-content;
+        }
+
+        &::after {
+          line-height: 1.5;
+        }
+      }
+
+      .ant-input {
+        @extend %input;
+      }
+    }
+
+    &.composed-option {
+      > :global(.ant-form-item-row) {
+        flex-direction: row;
+        > :global(.ant-form-item-label) {
+          padding-bottom: 0;
+        }
+
+        > :global(.ant-form-item-control) {
+          width: fit-content;
+        }
+      }
+
+      :global {
+        .ant-checkbox-wrapper {
+          &.ant-checkbox-wrapper-checked {
+            .ant-checkbox-inner {
+              background-color: var(--base-color);
+              border-color: var(--base-color);
+            }
+          }
+        }
+      }
+    }
+
+    &__compose-title {
+      display: flex;
+      justify-content: space-between;
+
+      > p {
+        @extend %form-label;
+        margin: 0;
+      }
+    }
+
+    &__custom-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.25rem;
+
+      > p {
+        @extend %form-label;
+        margin: 0;
+      }
+
+      > button {
+        border-radius: 2px;
+      }
+    }
+
+    &.description-field {
+      :global(.ant-form-item-label) {
+        text-align: center;
+        padding-bottom: 1.5rem;
+      }
+
+      label {
+        font-size: 2rem;
+      }
+    }
+
+    &__upload {
+      &-field {
+        :global {
+          .ant-upload-list {
+            &::before {
+              display: none;
+            }
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+          }
+
+          .ant-upload-wrapper.ant-upload-picture-card-wrapper
+            .ant-upload-list.ant-upload-list-picture-card
+            .ant-upload-list-item-container {
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            height: auto;
+
+            + .ant-upload {
+              display: none;
+            }
+
+            &::before {
+              display: none;
+            }
+          }
+        }
+
+        &.show-list {
+          :global {
+            .ant-upload-wrapper.ant-upload-picture-card-wrapper
+              .ant-upload-list.ant-upload-list-picture-card
+              .ant-upload-list-item-container {
+              + .ant-upload {
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+
+      &__preview-file {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      &__preview-file-container {
+        position: relative;
+
+        > :global(.ant-btn) {
+          position: absolute;
+          top: 0;
+          right: 0;
+          border-radius: 9999px;
+          width: 16px;
+          height: 16px;
+          font-size: 8px;
+          line-height: 1;
+        }
+
+        > :global(.ant-btn .anticon) {
+          font-size: inherit;
+        }
+      }
+
+      > span {
+        display: inline-block;
+        margin-bottom: 8px;
+        &:last-child {
+          margin: 0;
+          color: var(--gray10);
+          font-family: var(--base-font);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          display: block;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__btn {
+      &.btn {
+        @extend %button;
+      }
+    }
+  }
+}

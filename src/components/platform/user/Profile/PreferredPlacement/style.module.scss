@@ -1,0 +1,112 @@
+@import "@/styles/mixins";
+
+%save-btn {
+  font-family: var(--base-font);
+  border-radius: 2px;
+  width: 100%;
+  height: 38.8px;
+  background-color: var(--base-color);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white-color);
+  :disabled {
+    background-color: var(--btn-bg-disabled);
+    color: var(--btn-text-disabled);
+  }
+}
+
+.preferredPlacement {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  font-family: var(--base-font);
+
+  @include mobile {
+    row-gap: 16px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+      > div {
+        color: var(--neutral-11);
+        font-size: 20px;
+        font-weight: 500;
+
+        @include mobile {
+          font-size: 16px;
+          line-height: 1.5;
+        }
+      }
+      > span {
+        color: var(--gray3);
+        font-size: 16px;
+        line-height: 1.5;
+
+        @include mobile {
+          font-size: 1rem;
+        }
+      }
+    }
+    .action {
+      @include mobile {
+        display: none;
+      }
+
+      :global(.ant-btn) {
+        @extend %save-btn;
+      }
+    }
+  }
+  .content {
+    :global {
+      .ant-select {
+        width: 480px;
+
+        @include mobile {
+          width: 100%;
+        }
+      }
+      .ant-select-selector {
+        height: 40px;
+        border-radius: 2px;
+        border: 1px solid var(--gray7);
+        display: flex;
+        align-items: center;
+        font-family: var(--base-font);
+        color: var(--input-color);
+        font-size: 16px;
+      }
+      .ant-select-selection-item {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .label {
+      font-family: var(--base-font);
+      color: var(--neutral-11);
+      font-size: 16px;
+      line-height: 1.5;
+
+      @include mobile {
+        font-size: 1rem;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  > .action {
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
+
+    > button {
+      @extend %save-btn;
+      width: 100%;
+    }
+  }
+}

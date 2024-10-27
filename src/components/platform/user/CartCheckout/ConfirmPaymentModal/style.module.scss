@@ -1,0 +1,47 @@
+.modal-confirm-payment {
+  :global(.ant-modal-content) {
+    padding: 32px;
+  }
+
+  :global(.ant-modal-content > .ant-modal-footer) {
+    margin-top: 24px;
+
+    > button {
+      &:last-child:focus {
+        color: var(--white-color) !important;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+
+    color: var(--gray-black3);
+
+    /* H5/bold */
+    font-family: var(--base-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+  }
+
+  &__info {
+    color: var(--gray-black3);
+
+    /* Body/regular */
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+    margin-top: 8px;
+    margin-bottom: 0;
+
+    &.warning {
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--error-color);
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.hpPagination {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  :global {
+    .ant-pagination {
+      > li {
+        min-width: 12px;
+        margin-right: 8px;
+        font-family: "Be Vietnam Pro";
+        > a {
+          color: var(--black-color);
+        }
+      }
+      > li:first-child {
+        margin-right: 8px;
+      }
+      > li:last-child {
+        margin-left: 8px;
+      }
+    }
+    .ant-pagination-item {
+      border-radius: 2px;
+      border: 1px solid var(--gray7);
+      width: 32px;
+      height: 32px;
+    }
+    .ant-pagination-item-active {
+      border: 1px solid var(--base-color);
+      > a {
+        color: var(--base-color) !important;
+      }
+    }
+    .ant-pagination-prev,
+    .ant-pagination-next {
+      border: 1px solid var(--gray7);
+      border-radius: 2px;
+      width: 32px;
+      height: 32px;
+      > div {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+      }
+    }
+    .ant-pagination-options-size-changer {
+      .ant-select-selector {
+        font-family: "Be Vietnam Pro";
+        border-radius: 2px !important;
+      }
+    }
+  }
+}

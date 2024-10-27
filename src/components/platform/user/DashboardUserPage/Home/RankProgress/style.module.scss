@@ -1,0 +1,148 @@
+.rankProgress {
+  display: flex;
+  padding: 16px 16px 0px;
+  border-radius: 6px;
+  border: 1px solid var(--gray7);
+  font-family: "Be Vietnam Pro";
+  :global {
+    .ant-input-affix-wrapper {
+      border-radius: 6px;
+      border: 1px solid var(--gray7);
+      height: 40px;
+      font-family: "Be Vietnam Pro";
+    }
+    .slick-prev,
+    .slick-next {
+      top: 25%;
+      z-index: 1;
+    }
+    .slick-prev {
+      left: 0%;
+    }
+    .slick-next {
+      left: 90%;
+    }
+    .ant-carousel {
+      .slick-next {
+        &::before {
+          content: "";
+        }
+      }
+      .slick-prev {
+        &::before {
+          content: "";
+        }
+      }
+    }
+  }
+  .wrapTop {
+    display: flex;
+    justify-content: space-between;
+    :global {
+      .anticon-search {
+        cursor: pointer;
+        > svg {
+          width: 1.5em;
+          height: 1.5em;
+        }
+      }
+    }
+  }
+  .title {
+    color: var(--neutral-11);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px;
+    font-family: "Be Vietnam Pro";
+    line-height: 24px;
+  }
+  .lastDate {
+    color: var(--gray3);
+    font-size: 14px;
+    margin-top: 4px;
+    line-height: 24px;
+    font-family: "Be Vietnam Pro";
+  }
+
+  .tab {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 4px;
+    background-color: var(--btn-bg-disabled);
+    font-family: "Be Vietnam Pro";
+
+    > div {
+      width: 33.33%;
+      text-align: center;
+      color: var(--gray10);
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .tabActive {
+      border-radius: 4px;
+      background: var(--base-color);
+      box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+      padding: 6px 4px;
+      color: var(--white-color);
+    }
+  }
+  .progressItem {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 24px;
+    font-family: "Be Vietnam Pro";
+    &__btn {
+      display: flex;
+      > img {
+        padding-left: 10px !important;
+      }
+    }
+    > span {
+      color: var(--neutral-11);
+      font-size: 20px;
+      font-family: "Be Vietnam Pro";
+      font-weight: 500;
+    }
+    > button {
+      margin-top: -8px;
+      font-family: "Be Vietnam Pro";
+      border-radius: 2px;
+      width: 226px;
+      height: 38.8px;
+      background-color: var(--base-color);
+      font-size: 16px;
+      font-weight: 500;
+      font-family: "Be Vietnam Pro";
+      color: var(--white-color);
+      :disabled {
+        background-color: var(--btn-bg-disabled);
+        color: var(--btn-text-disabled);
+      }
+    }
+    .formatProgress {
+      display: flex;
+      flex-direction: column;
+      font-family: "Be Vietnam Pro";
+      row-gap: 5px;
+      .value {
+        color: var(--neutral-11);
+        font-size: 31.667px;
+        font-weight: 500;
+        line-height: 38.333px;
+      }
+      .name {
+        color: var(--gray3);
+        font-size: 16.667px;
+        font-weight: 500;
+        line-height: 23.333px;
+      }
+    }
+  }
+  .oneProgress {
+    padding-bottom: 60px;
+  }
+}

@@ -1,0 +1,103 @@
+@import "@/styles/mixins";
+
+.marketplace {
+  max-width: var(--width-content);
+  margin: 80px auto;
+  padding: 0 1.1rem;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  @include laptop {
+    margin: 2.5rem 0;
+  }
+
+  @include tablet {
+    margin: 1.5rem 0 2.5rem;
+  }
+
+  @include mobile {
+    margin: 16px 0 40px;
+    padding: 0;
+  }
+
+  h3 {
+    color: var(--neutral-11);
+    font-family: var(--base-font);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 0px;
+    margin-bottom: 30px;
+
+    @include mobile {
+      margin: 0 16px 24px;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  }
+  .boxNFT {
+    background-image: url("../../../assets/images/Background_NFT.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 827px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    position: relative;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    :global {
+      .marquee-container {
+        position: absolute;
+        font-family: var(--base-font);
+        font-size: 18px;
+        color: var(--white-color);
+        top: 26px;
+      }
+    }
+
+    @include mobile {
+      border-radius: 0;
+      height: auto;
+    }
+  }
+
+  &__marquee-text {
+    font-weight: bold;
+    font-family: var(--base-font);
+    // font-size: 24px;
+    margin: 0 1.1rem;
+    background: linear-gradient(
+      90deg,
+      rgb(255, 0, 0) 0%,
+      rgb(255, 154, 0) 10%,
+      rgb(208, 222, 33) 20%,
+      rgb(79, 220, 74) 30%,
+      rgb(63, 218, 216) 40%,
+      rgb(47, 201, 226) 50%,
+      rgb(28, 127, 238) 60%,
+      rgb(95, 21, 242) 70%,
+      rgb(186, 12, 248) 80%,
+      rgb(251, 7, 217) 90%,
+      rgb(255, 0, 0) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% auto;
+    animation: textShine 4s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}

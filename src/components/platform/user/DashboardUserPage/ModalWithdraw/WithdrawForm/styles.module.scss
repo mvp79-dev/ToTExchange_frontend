@@ -1,0 +1,76 @@
+%form-label {
+  color: var(--gray10);
+
+  /* Body/regular */
+  font-family: var(--base-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  text-transform: capitalize;
+
+  > label {
+    color: inherit;
+  }
+}
+
+.withdraw-form {
+  :global {
+    .ant-form-item-label {
+      @extend %form-label;
+    }
+  }
+
+  &__currency-selection {
+    margin-bottom: 16px;
+
+    :global {
+      .ant-select .ant-select-selector {
+        height: 40px;
+        padding: 2px 12px;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  &__currency-option {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    font-size: 16px;
+  }
+
+  &__receive-type-field {
+    :global {
+      .ant-form-item-label {
+        padding-bottom: 0;
+      }
+    }
+
+    &__tabs {
+      :global {
+        .ant-tabs-nav {
+          margin-bottom: 20px;
+        }
+
+        .ant-tabs-tab {
+          padding: 8px 0;
+          text-transform: capitalize;
+
+          &.ant-tabs-tab-active .ant-tabs-tab-btn {
+            color: var(--base-color);
+          }
+
+          &:hover {
+            color: var(--base-color);
+          }
+        }
+
+        .ant-tabs-ink-bar {
+          background-color: var(--base-color);
+        }
+      }
+    }
+  }
+}

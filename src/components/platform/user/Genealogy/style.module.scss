@@ -1,0 +1,196 @@
+@import "@/styles/mixins";
+
+.genealogyPage {
+  max-width: var(--width-content);
+  font-family: var(--base-font);
+  display: flex;
+  flex-direction: column;
+  margin: 80px auto;
+  row-gap: 30px;
+  padding: 0 1.1rem;
+
+  @include laptop {
+    margin: 3rem auto;
+  }
+
+  @include mobile {
+    margin: 32px auto;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      margin: 0px;
+      color: var(--neutral-11);
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 32px;
+    }
+
+    .tab {
+      background-color: var(--white-color2);
+      color: var(--gray-black3);
+      cursor: pointer;
+      padding: 4px;
+      min-width: 285px;
+      border-radius: 4px;
+
+      :global {
+        .ant-segmented-item {
+          flex: 1;
+
+          &.ant-segmented-item-selected {
+            > .ant-segmented-item-label {
+              background-color: var(--base-color);
+              color: var(--white-color);
+            }
+          }
+
+          .ant-segmented-item-label {
+            color: var(--gray-black3);
+            text-align: center;
+            font-family: var(--base-font);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; /* 157.143% */
+            padding: 4px 15px;
+            height: 32px;
+            border-radius: 4px;
+          }
+        }
+      }
+
+      // .tabItem {
+      //   font-weight: 500;
+      //   line-height: 22px;
+      //   padding: 4px 22px;
+      // }
+      // .tabActive {
+      //   border-radius: 2px;
+      //   background: var(--white-color);
+      //   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+      // }
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+  .searchBox {
+    border-radius: 2px;
+    overflow: hidden;
+
+    :global {
+      .ant-input-affix-wrapper,
+      .ant-input-group-addon {
+        border-radius: 0 !important;
+      }
+
+      .ant-input {
+        &:hover {
+          box-shadow: none !important;
+        }
+      }
+
+      .ant-input-search-button {
+        border-radius: 2px;
+        border: 1px solid var(--base-color);
+        background: var(--base-color);
+        &.ant-btn.ant-btn-lg {
+          border-start-end-radius: 0;
+          border-end-end-radius: 0;
+        }
+
+        &:hover,
+        &:focus {
+          background: var(--base-color);
+          color: var(--white-color) !important;
+        }
+      }
+    }
+  }
+
+  .checkBox {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    font-family: var(--base-font);
+    border: 1px solid var(--gray7);
+    :global {
+      .ant-radio-group {
+        span {
+          font-family: var(--base-font);
+          color: var(--gray-black3);
+        }
+      }
+    }
+    > span {
+      color: var(--gray-black3);
+      font-size: 16px;
+      font-family: var(--base-font);
+      font-weight: 500;
+    }
+  }
+
+  .treeTypeOption {
+    :global {
+      .ant-radio {
+        &.ant-radio-checked {
+          .ant-radio-inner {
+            background-color: var(--white-color) !important;
+
+            &::after {
+              background-color: var(--base-color);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .note {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    font-family: var(--base-font);
+    border: 1px solid var(--gray7);
+    > span {
+      color: var(--gray-black3);
+      font-size: 16px;
+      font-family: var(--base-font);
+      font-weight: 500;
+    }
+    > div {
+      margin-top: -2px;
+      display: flex;
+      align-items: center;
+      column-gap: 12px;
+      color: var(--black-color);
+    }
+  }
+  .content {
+    display: flex;
+    padding: 40px;
+    border-radius: 8px;
+    background: var(--neutral-3);
+    min-height: 400px;
+    overflow: auto;
+
+    @include laptop {
+      padding: 2rem;
+    }
+
+    @include mobile {
+      padding: 1.5rem;
+    }
+  }
+}

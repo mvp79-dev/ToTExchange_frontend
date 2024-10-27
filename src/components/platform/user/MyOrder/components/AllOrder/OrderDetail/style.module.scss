@@ -1,0 +1,312 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+@mixin input {
+  border-radius: 2px;
+  font-size: 16px;
+  @include fontFamily;
+}
+@mixin fontFamily {
+  font-family: var(--base-font);
+}
+
+.allOrderItemDetail {
+  padding-right: 1.1rem;
+  @include mobile {
+    padding: 0 16px;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+      flex-direction: column;
+    }
+    :global {
+      .ant-btn {
+        @include input;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        padding: 4px 15px;
+        height: 32px;
+        @include mobile {
+          padding: 4px 4px;
+          font-size: 14px;
+          margin: 10px 0;
+        }
+      }
+      .ant-btn:hover,
+      .ant-btn:focus {
+        color: var(--black-color) !important;
+      }
+    }
+
+    &__status-icon {
+      color: var(--black-color);
+      width: 30px;
+      height: 30px;
+      @include mobile {
+        width: 20px;
+        height: 20px;
+      }
+
+      &.active {
+        color: var(--white-color);
+      }
+
+      &.passed {
+        color: var(--base-color);
+      }
+    }
+
+    &__content {
+      display: inline-block;
+      .orderNumber {
+        padding-right: 10px;
+        @include mobile {
+          font-size: 12px;
+          padding-right: 5px;
+        }
+      }
+      .status {
+        padding-left: 10px;
+        @include mobile {
+          padding-right: 5px;
+        }
+        border-left: 1px solid var(--black-color);
+        &__fulfilled {
+          color: var(--base-color3);
+        }
+        &__shipping,
+        &__created,
+        &__processing {
+          color: var(--base-color);
+        }
+        &__canceled {
+          color: var(--destruction-5);
+        }
+      }
+    }
+  }
+  .content {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid var(--gray7);
+    @include mobile {
+      border: none;
+    }
+    &__timeline {
+      padding: 0px 100px 20px;
+      border-bottom: 1px solid var(--neutral-5, #d9d9d9);
+      margin: 0px -20px;
+      @include mobile {
+        padding: 0;
+        border: none;
+      }
+    }
+    &__info {
+      display: flex;
+      padding-top: 20px;
+      padding-bottom: 16px;
+      @include mobile {
+        flex-direction: column;
+      }
+      > div {
+        width: 40%;
+
+        p {
+          margin: 0;
+        }
+      }
+      .billingTo,
+      .shipTo,
+      .addressInfo {
+        color: var(--gray10);
+        line-height: 22px;
+
+        > p:not(:last-child, .title) {
+          margin-bottom: 4px;
+        }
+      }
+      // .addressInfo {
+      //   padding-top: 25px;
+      // }
+      .textInfo {
+        font-weight: 500;
+        color: var(--black-color);
+        padding-right: 5px;
+
+        &.title {
+          margin-bottom: 8px;
+        }
+      }
+      .address {
+        width: 50%;
+        line-height: 2;
+      }
+
+      .empty {
+        height: 18px;
+      }
+    }
+    &__table {
+      :global {
+        .ant-table-thead {
+          .ant-table-cell {
+            text-align: right;
+          }
+          .ant-table-cell:first-of-type {
+            text-align: left;
+          }
+        }
+        .ant-table-row,
+        .ant-table-tbody {
+          > tr:nth-child(even) {
+            background-color: var(--white-color) !important;
+          }
+        }
+      }
+      @include mobile {
+        display: none;
+      }
+      .column {
+        &__totalPrice {
+          color: var(--base-color);
+          text-align: right;
+          font-size: 16px;
+        }
+        &__productInfo {
+          display: flex;
+          align-items: center;
+          > img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+          }
+          > span {
+            padding-left: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            max-width: 480px;
+          }
+        }
+        &__quantity {
+          text-align: right;
+          padding-right: 30px;
+          font-size: 16px;
+        }
+      }
+    }
+    &__table__mobile {
+      display: none;
+      @include mobile {
+        display: block;
+        .mbTitle {
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .mbRow {
+          display: flex;
+          justify-content: space-between;
+          padding: 12px 0;
+          img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+          }
+          &__content {
+            display: flex;
+          }
+          &__title {
+            padding-left: 8px;
+            .titleMain {
+              font-weight: 500;
+              max-width: 90%;
+            }
+            > p {
+              margin-block-start: 0;
+              margin-block-end: 0;
+              line-height: 24px;
+            }
+          }
+          &__price {
+            color: var(--base-color);
+            font-weight: 500;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    &__total {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 12px;
+      padding-right: 10px;
+      @include mobile {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .wrapContent {
+        @include mobile {
+          width: 100%;
+        }
+        > div {
+          display: flex !important;
+          justify-content: space-between;
+          width: 250px;
+          line-height: 2;
+          @include mobile {
+            width: 100%;
+          }
+        }
+        .subTitle {
+          font-size: 16px;
+          color: var(--gray10);
+        }
+        .title {
+          font-size: 24px;
+        }
+        .number {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .wrapGroupBtn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    .groupBtn {
+      display: flex;
+      gap: 12px;
+      :global {
+        .ant-btn {
+          width: 127px;
+          font-size: 16px;
+          padding: 0;
+          border-radius: 2px;
+        }
+      }
+      .cancelBtn {
+        :global {
+          .ant-btn,
+          .ant-btn:hover,
+          .ant-btn:focus {
+            border: 1px solid var(--destruction-5) !important;
+            color: var(--destruction-5) !important;
+          }
+        }
+      }
+      .trackingBtn {
+        :global {
+          .ant-btn,
+          .ant-btn:hover,
+          .ant-btn:focus {
+            border: 1px solid var(--base-color) !important;
+            color: var(--white-color) !important;
+            background-color: var(--base-color);
+          }
+        }
+      }
+    }
+  }
+}

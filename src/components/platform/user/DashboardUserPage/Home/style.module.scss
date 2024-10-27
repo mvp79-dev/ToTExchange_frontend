@@ -1,0 +1,131 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.dashboardUser {
+  max-width: var(--width-content);
+  padding: 40px 1.1rem 50px;
+  margin: 0px auto;
+  font-family: var(--base-font);
+  .rowLeft {
+    max-width: 810px;
+  }
+  .rowRight {
+    max-width: 390px;
+  }
+  &__wrapSection {
+    padding-bottom: 40px;
+  }
+  .estimateBalance {
+    padding: 32px 16px;
+    background: var(--white-color2);
+    box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.5);
+    border-radius: 8px;
+    font-family: var(--base-font);
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: var(--black-color);
+    background-image: url("../../../../../assets/images/dashboard-estimateBlance-bg.png");
+    height: 100%;
+    box-sizing: border-box;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--neutral-11);
+      font-weight: 500;
+      @include mobile {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+      }
+      .title {
+        font-size: 20px;
+        color: var(--white-color);
+      }
+      .action {
+        display: flex;
+        column-gap: 12px;
+        @include mobile {
+          width: 100%;
+        }
+        > button {
+          font-family: var(--base-font);
+          border-radius: 2px;
+          padding: 7px 15px;
+          height: 40px;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          column-gap: 8px;
+          @include mobile {
+            width: 50%;
+            margin-top: 24px;
+          }
+        }
+        > button:last-child {
+          background-color: var(--white-color);
+          border: 1px solid var(--gray7);
+          color: var(--input-color);
+          :disabled {
+            background-color: var(--btn-bg-disabled);
+            color: var(--btn-text-disabled);
+          }
+        }
+        > button:first-child {
+          background-color: var(--base-color);
+          color: var(--white-color);
+        }
+      }
+    }
+    .content {
+      font-size: 30px;
+      font-weight: 500;
+      color: var(--white-color);
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .infoUser {
+    box-sizing: border-box;
+    padding: 32px 16px;
+    border-radius: 8px;
+    background: var(--base-color);
+    font-family: var(--base-font);
+    background-image: url("../../../../../assets/images/dashboard-userInfo-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    .refCode {
+      display: flex;
+      align-items: center;
+      column-gap: 6px;
+      justify-content: center;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 4px;
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--white-color);
+      line-height: 24px;
+    }
+    > div:first-child {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 8px;
+      line-height: 20px;
+    }
+  }
+}

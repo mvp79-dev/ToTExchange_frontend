@@ -1,0 +1,17 @@
+.card-form {
+  :global(.ant-input),
+  :global(.ant-input-affix-wrapper) {
+    height: 40px;
+    border-radius: 2px;
+    padding: 8px 12px;
+    border: 1px solid var(--gray7);
+  }
+
+  :global(.ant-input-affix-wrapper > .ant-input) {
+    height: 100%;
+
+    &:hover {
+      box-shadow: none !important;
+    }
+  }
+}

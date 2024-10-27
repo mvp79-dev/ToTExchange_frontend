@@ -1,0 +1,20 @@
+.hpEditor {
+  border-radius: 2px;
+  border: 1px solid var(--gray7);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  :global {
+    .ck.ck-toolbar {
+      border: 0;
+      border-radius: 0;
+      background: var(--primary-1);
+      height: 44px;
+    }
+
+    .ck.ck-content {
+      flex: 1 1 auto;
+    }
+  }
+}

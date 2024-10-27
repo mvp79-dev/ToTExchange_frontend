@@ -1,0 +1,168 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+@mixin colorInputLabel {
+  color: var(--gray10);
+}
+
+@mixin imgSize {
+  width: 18px;
+  height: 18px;
+}
+
+.modalEnterAmount {
+  padding-top: 40px;
+  font-family: var(--base-font);
+  .wrapper {
+    display: flex;
+    font-family: var(--base-font);
+    gap: 36px;
+    @include mobile {
+      flex-direction: column;
+    }
+    &.admin {
+      justify-content: center;
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+
+  .notice {
+    font-family: var(--base-font);
+    width: 48%;
+    @include mobile {
+      width: 100%;
+    }
+    &.admin {
+      display: none;
+    }
+  }
+
+  .amount {
+    font-family: var(--base-font);
+    width: 52%;
+    @include mobile {
+      width: 100%;
+    }
+
+    &.admin {
+      width: 80%;
+      @include mobile {
+        width: 100%;
+      }
+    }
+    .inputAmount {
+      padding-bottom: 20px;
+      :global {
+        .ant-input-number-affix-wrapper {
+          font-family: var(--base-font);
+          width: 100%;
+        }
+      }
+      &__label {
+        display: flex;
+        font-family: var(--base-font);
+        justify-content: space-between;
+        padding-bottom: 4px;
+        @include colorInputLabel;
+        > span {
+          padding-right: 5px;
+          font-family: var(--base-font);
+        }
+      }
+    }
+    .text {
+      font-family: var(--base-font);
+      @include colorInputLabel;
+    }
+    .number {
+      color: var(--gray-black3);
+      font-size: 20px;
+      margin-block-end: 0;
+      margin-block-start: 0;
+      font-family: var(--base-font);
+      font-weight: 500;
+    }
+    .paymentInfo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex: 1 1;
+      font-family: var(--base-font);
+      align-items: center;
+      > p:last-child {
+        display: flex;
+        font-family: var(--base-font);
+        align-items: center;
+      }
+      > p {
+        // width: 50%;
+        margin-block-end: 5px;
+        margin-block-start: 5px;
+        font-family: var(--base-font);
+        @include colorInputLabel;
+        > img {
+          margin-right: 8px;
+          width: 18px;
+          height: 18px;
+        }
+      }
+      &__value {
+        text-align: left;
+      }
+    }
+    .btnGroup {
+      display: flex;
+      gap: 12px;
+      font-family: var(--base-font);
+      margin-top: 15px;
+      .btn {
+        width: 50%;
+      }
+      :global {
+        .ant-btn {
+          font-family: var(--base-font);
+          width: 100%;
+          border-radius: 2px;
+        }
+      }
+      .btnActive {
+        :global {
+          .ant-btn {
+            background-color: var(--base-color);
+            font-family: var(--base-font);
+            border-radius: 2px;
+            color: var(--white-color);
+          }
+          .ant-btn:hover,
+          .ant-btn:focus {
+            color: var(--white-color) !important;
+          }
+        }
+      }
+    }
+  }
+  .notice {
+    &__link {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-block-start: 0;
+      text-decoration: underline;
+      color: var(--base-color);
+      font-weight: 500;
+      > img {
+        @include imgSize;
+      }
+      > span {
+        padding-left: 10px;
+      }
+    }
+    &__title {
+      font-weight: 600;
+    }
+    &__content {
+      @include colorInputLabel;
+    }
+  }
+}

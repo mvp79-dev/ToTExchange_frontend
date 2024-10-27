@@ -1,0 +1,60 @@
+.teamGrowth {
+  padding: 16px;
+  border-radius: 6px;
+  border: 1px solid var(--gray7);
+  font-family: "Be Vietnam Pro";
+
+  .title {
+    color: var(--neutral-11);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Be Vietnam Pro";
+    line-height: 28px;
+  }
+  .lastDate {
+    color: var(--gray3);
+    line-height: 22px;
+    font-family: "Be Vietnam Pro";
+    margin-top: 4px;
+  }
+  .teamGrowthList {
+    .teamGrowthItem {
+      padding: 8px 0px;
+      border-bottom: 1px solid var(--gray7);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "Be Vietnam Pro";
+      .label {
+        color: var(--neutral-11);
+        line-height: 22px;
+      }
+      .value {
+        position: relative;
+        box-sizing: border-box;
+        z-index: 999;
+        color: var(--base-color3);
+        line-height: 22px;
+        padding: 1px 8px;
+        border: 1px solid var(--background-base-color-1);
+        min-width: 68px;
+        text-align: center;
+      }
+      .value::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0.4;
+        border-radius: 2px;
+        background-color: var(--background-base-color-1);
+      }
+    }
+    .teamGrowthItem:last-child {
+      border-bottom: none;
+    }
+  }
+}

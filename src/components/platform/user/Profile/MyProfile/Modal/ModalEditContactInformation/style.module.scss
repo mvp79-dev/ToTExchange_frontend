@@ -1,0 +1,75 @@
+@import "@/styles/mixins";
+
+.formEditContract {
+  width: 608px;
+
+  @include mobile {
+    width: 100%;
+  }
+
+  .groupBtn {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    padding-bottom: 24px;
+    justify-content: flex-end;
+
+    @include mobile {
+      justify-content: flex-start;
+    }
+
+    > button {
+      width: auto;
+      padding: 7px 15px;
+      height: auto;
+      font-family: var(--base-font);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      border-radius: 2px;
+      border-color: var(--gray7);
+
+      @include mobile {
+        width: calc(50% - 6px);
+      }
+    }
+
+    :global {
+      button.ant-btn-primary {
+        background-color: var(--base-color);
+        color: var(neutral-1) !important;
+
+        &:hover,
+        &:focus {
+          color: var(--white-color) !important;
+        }
+      }
+    }
+  }
+  :global {
+    .ant-form-item {
+      margin-bottom: 16px;
+    }
+    .ant-form-item-label {
+      color: var(--gray10);
+      font-family: var(--base-font);
+      font-size: 14px;
+    }
+    .ant-input {
+      height: 40px;
+      border-radius: 2px;
+    }
+    .ant-select-selector {
+      height: 40px !important;
+      border-radius: 2px !important;
+      display: flex !important;
+      align-items: center !important;
+      font-family: var(--base-font) !important;
+      font-size: 14px !important;
+    }
+    .ant-checkbox-wrapper {
+      color: var(--input-color);
+      font-family: var(--base-font) !important;
+    }
+  }
+}

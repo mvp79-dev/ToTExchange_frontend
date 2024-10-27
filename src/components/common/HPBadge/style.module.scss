@@ -1,0 +1,10 @@
+.hpBadge {
+  :global {
+    .ant-badge-count {
+      font-family: "Be Vietnam Pro", sans-serif;
+      background-color: var(--base-color3) !important;
+      font-size: 12px;
+      line-height: 21px;
+    }
+  }
+}

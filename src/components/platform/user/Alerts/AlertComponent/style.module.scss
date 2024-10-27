@@ -1,0 +1,114 @@
+@import "@/styles/mixins";
+
+.alertItem {
+  padding: 16px;
+  font-family: var(--base-font);
+  border: 1px solid var(--gray7);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  cursor: pointer;
+
+  @include mobile {
+    padding: 24px;
+  }
+
+  & > div {
+    width: 100%;
+  }
+
+  & > &__header {
+    display: flex;
+    justify-content: space-between;
+    .wrapTitle {
+      display: flex;
+    }
+    .icon {
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--yellow-color);
+    }
+    .title {
+      padding-left: 24px;
+
+      > p {
+        margin-block-start: 0;
+        margin-block-end: 10px;
+      }
+
+      &__main {
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      &__sub {
+        color: var(--gray3);
+      }
+
+      @include mobile {
+        padding-left: 12px;
+      }
+    }
+
+    > .moreInfo {
+      display: block;
+      @include laptop {
+        display: none;
+      }
+    }
+  }
+  &__content {
+    color: var(--gray10);
+    padding-top: 16px;
+  }
+
+  .moreInfo {
+    display: none;
+
+    @include laptop {
+      display: block;
+      padding-top: 16px;
+
+      .itemOrderLabel {
+        border-left: 0;
+        padding-left: 0;
+        justify-content: flex-end;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &__title,
+        &__id {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding: 0;
+        }
+
+        &__title {
+          flex-shrink: 0;
+          width: fit-content;
+        }
+      }
+    }
+  }
+
+  .itemOrderLabel {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    padding-left: 24px;
+    border-left: 1px solid var(--gray7);
+    &__id {
+      font-weight: 500;
+      padding-left: 10px;
+      color: var(--base-color);
+    }
+    &__title {
+      font-weight: 500;
+      color: var(--neutral-11);
+    }
+  }
+}

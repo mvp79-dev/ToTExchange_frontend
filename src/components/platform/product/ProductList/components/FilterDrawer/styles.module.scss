@@ -1,0 +1,127 @@
+.filter-drawer {
+  :global {
+    .ant-drawer-header {
+      padding-bottom: 0;
+    }
+
+    .ant-drawer-title {
+      > span {
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &__label {
+    margin: 0;
+    color: var(--gray-black3);
+
+    /* H5/medium */
+    font-family: var(--base-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+
+  &__categories {
+    :global {
+      .ant-tree-switcher {
+        display: none;
+      }
+
+      .ant-tree-checkbox {
+        &.ant-tree-checkbox-checked {
+          .ant-tree-checkbox-inner {
+            border-color: var(--base-color);
+            background-color: var(--base-color);
+          }
+
+          &:hover {
+            .ant-tree-checkbox-inner {
+              border-color: var(--base-color) !important;
+              background-color: var(--base-color) !important;
+            }
+          }
+        }
+
+        &:hover {
+          .ant-tree-checkbox-inner {
+            border-color: var(--base-color);
+          }
+        }
+      }
+
+      .ant-tree-title {
+        color: var(--input-color);
+        font-family: var(--base-font);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+
+        .category-count {
+          color: var(--gray3);
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  &__price-slider {
+    &:hover {
+      :global(.ant-slider-handle) {
+        &::after {
+          box-shadow: 0 0 0 2px var(--base-color);
+        }
+      }
+    }
+
+    :global {
+      .ant-slider-track.ant-slider-track-1 {
+        background-color: var(--base-color);
+      }
+
+      .ant-slider-handle {
+        &::after {
+          box-shadow: 0 0 0 2px var(--base-color);
+        }
+
+        &:hover,
+        &:focus {
+          &::after {
+            box-shadow: 0 0 0 4px var(--base-color);
+          }
+        }
+      }
+    }
+  }
+
+  &__action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > .filter-btn {
+      padding: 4px 15px;
+      border-radius: 2px;
+      border: 1px solid var(--base-color);
+      background: var(--base-color);
+      box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+      color: var(--white-color);
+      text-transform: capitalize;
+      font-family: var(--base-font);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 22px;
+
+      &:hover,
+      &:focus {
+        color: var(--white-color) !important;
+        background: var(--base-color) !important;
+      }
+    }
+  }
+}

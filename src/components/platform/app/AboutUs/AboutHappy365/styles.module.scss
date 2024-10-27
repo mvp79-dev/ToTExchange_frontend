@@ -1,0 +1,141 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.page-container {
+  font-family: var(--base-font);
+  margin: 80px auto;
+  padding: 0 1.1rem;
+  max-width: var(--width-content);
+
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  @include mobile {
+    padding: 0 0;
+    box-sizing: border-box;
+  }
+
+  p {
+    margin: 0;
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+}
+
+.about-us {
+  color: var(--gray10);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  &__timeline-text {
+    color: var(--base-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    @include mobile {
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+
+  &__section {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+
+    @include laptop {
+      flex-direction: column;
+      padding: 0 16px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      padding: 0 16px;
+    }
+
+    &__title {
+      color: var(--gray-black1);
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 40px;
+      margin: 0;
+      @include mobile {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+
+    &__content {
+      width: 52%;
+      @include laptop {
+        width: 100%;
+      }
+      @include mobile {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+
+    &__img {
+      width: 48%;
+      @include laptop {
+        width: 100%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+      > img {
+        width: 100%;
+      }
+    }
+  }
+
+  .quote {
+    position: relative;
+    color: var(--gray-black3);
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 28px; /* 140% */
+    @include mobile {
+      font-size: 16px;
+    }
+
+    &::before {
+      position: absolute;
+      top: -30px;
+      left: 0;
+      content: "\02EE";
+      font-size: 120px;
+      line-height: 1;
+      opacity: 0.08;
+    }
+  }
+}
+
+.paragraph-gap {
+  gap: 30px;
+  @include laptop {
+    padding: 0 16px;
+  }
+  @include mobile {
+    padding: 0 16px;
+  }
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-banner {
+  color: var(--neutral-1);
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 46px; /* 121.053% */
+}

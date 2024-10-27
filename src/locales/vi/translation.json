@@ -1,0 +1,1029 @@
+{
+  "forgotPassword": {
+    "title": "Quên mật khẩu",
+    "btnContinue": "Tiếp tục",
+    "btnBack": "Quay lại",
+    "inputEmail": "Nhập email *",
+    "validateEmail": "Sai định dạng email",
+    "requireEmail": "Vui lòng nhập email",
+    "errorEmailNotFound": "Email không tồn tại",
+    "toastCheckEmail": "Vui lòng kiểm tra email để thay đổi mật khẩu",
+    "warningOTP": "Thời gian xác thực đã hết hạn. Vui lòng gửi lại mã"
+  },
+  "login": {
+    "title": "Đăng nhập",
+    "requireAccountName": "Vui lòng nhập tên đăng nhập",
+    "inputAccountName": "Tên đăng nhập *",
+    "validateAccountName": "Tên đăng nhập không chứa kí tự đặc biệt và chữ in hoa",
+    "requirePassword": "Vui lòng nhập mật khẩu",
+    "inputPassword": "Mật khẩu *",
+    "inputRememberMe": "Ghi nhớ đăng nhập",
+    "textForgotPassword": " Quên mật khẩu?",
+    "btnLogin": "Đăng nhập",
+    "btnLoginWithGoogle": "Đăng nhập bằng Google",
+    "btnLoginWithFacebook": "Đăng nhập bằng Facebook",
+    "textYouNotAccount": "Bạn chưa có tài khoản?",
+    "textRegister": "Đăng ký ngay!",
+    "titleBtnVerifyOtp": "Xác nhận đăng nhập",
+    "titleVerifyOtp": "Xác thực OTP",
+    "titleVerifyAccount": "Xác thực tài khoản",
+    "validateAccountPass": "Tài khoản hoặc mật khẩu không chính xác.",
+    "warningOTPExpire": "Thời gian mã OTP hết hạn",
+    "toastResendOTPError": "Yêu cầu gửi lại mã thất bại.",
+    "toastResendOTPSuccess": "Yêu cầu gửi lại đã thành công"
+  },
+  "register": {
+    "title": "Đăng ký",
+    "textCustomer": "Khách hàng",
+    "textDistributer": "Nhà phân phối",
+    "validateAccountName": "Tên đăng nhập không chứa kí tự đặc biệt và chữ in hoa",
+    "validateAccountNameMinLength": "Tên đăng nhập phải có ít nhất 3 ký tự.",
+    "validateAccountNameMaxLength": "Tên đăng nhập tối đa 30 ký tự.",
+    "requireAccountName": "Vui lòng nhập tên đăng nhập",
+    "inputAccountName": "Tên đăng nhập *",
+    "requirePassword": "Vui lòng nhập mật khẩu",
+    "validatePassword": "Mật khẩu yêu cầu có ít nhất 8 kí tự trong đó có ít nhất một chữ hoa, một chữ thường, một chữ số và một ký tự đặc biệt.",
+    "inputPassword": "Mật khẩu *",
+    "requireFullName": "Vui lòng nhập họ và tên",
+    "inputFullName": "Họ và Tên *",
+    "requirePhoneNumber": "Vui lòng nhập số điện thoại",
+    "validatePhoneNumber": "Sai định dạng số điện thoại",
+    "existPhone": "Số điện thoại này đã được sử dụng!",
+    "inputPhoneNumber": "Số điện thoại *",
+    "requireEmail": "Vui lòng nhập email",
+    "validateEmail": "Sai định dạng email",
+    "inputEmail": "Nhập email *",
+    "requireReferral": "Vui lòng nhập mã giới thiệu",
+    "inputReferral": "Mã giới thiệu *",
+    "textSponsorId": "Sponsor ID:",
+    "validateAgreement": "Mục này yêu cầu bắt buộc",
+    "textAgreement": "Tôi đồng ý với các",
+    "textAgreementTermsOfUse": "điều khoản sử dụng",
+    "textAgreementPrivacyPolicy": "chính sách bảo mật",
+    "btnRegister": "Đăng ký",
+    "btnRegisterWithGoogle": "Đăng ký bằng Google",
+    "btnRegisterWithFacebook": "Đăng ký bằng Facebook",
+    "textYouHaveAccount": "Bạn đã có tài khoản?",
+    "textLoginNow": "Đăng nhập ngay!",
+    "titleVerifyAccount": "Xác thực tài khoản",
+    "titleBtnVerifyOtp": "Xác nhận",
+    "errorSponsorNotFound": "Không tìm thấy nhà tài trợ",
+    "errorAccountExist": "Tên đăng nhập đã tồn tại",
+    "errorEmailExist": "Email này đã được sử dụng, vui lòng chọn một email khác.",
+    "successRegister": "Đăng kí tài khoản thành công",
+    "warningOTPExpire": "Thời gian mã OTP hết hạn",
+    "successVerifyAccount": "Xác minh tài khoản thành công.",
+    "toastResendOTPError": "Yêu cầu gửi lại mã thất bại.",
+    "toastResendOTPSuccess": "Yêu cầu gửi lại đã thành công"
+  },
+  "resetPassword": {
+    "title": "Tạo mật khẩu mới",
+    "toastResetPasswordError": "Đổi mật khẩu thất bại.",
+    "toastResetPasswordSuccess": "Đổi mật khẩu thành công",
+    "requirePassword": "Vui lòng nhập mật khẩu mới",
+    "inputPassword": "Mật khẩu mới *",
+    "requirePasswordConfirm": "Vui lòng nhập lại mật khẩu mới",
+    "validatePasswordConfirm": "Mật khẩu mới mà bạn đã nhập không khớp!",
+    "inputPasswordConfirm": "Nhập lại mật khẩu mới *",
+    "btnConfirm": "Xác nhận",
+    "reset description": "Mật khẩu của bạn đã được cập nhật"
+  },
+  "verifyOTP": {
+    "content": " Quý khách vui lòng nhập mã OTP được gửi về email",
+    "errorOTP": "Nhập sai mã!",
+    "textResendOTP": "Bạn có thể yêu cầu mã mới sau",
+    "btnResendOTP": "Gửi lại mã"
+  },
+  "products": {
+    "filter_result": "Đang hiển thị {{from}}–{{to}} trong tổng số {{total}} kết quả",
+    "filter": "Bộ lọc",
+    "view": "view",
+    "Add_to_Cart": "Thêm vào giỏ hàng",
+    "Add_to_wishlist": "Thêm vào danh sách yêu thích",
+    "SKU": "SKU",
+    "categories": "thể loại",
+    "tags": "tags",
+    "description": "Miêu tả",
+    "additional_information": "thông tin bổ sung",
+    "reviews_count": "đánh giá ({{count}})",
+    "reviews": "đánh giá",
+    "reviewsError": "Đánh giá thất bại",
+    "reviewsSuccess": "Đánh giá thành công",
+    "comment_post_comment_title": "Hãy là người đầu tiên đánh giá",
+    "comment_post_comment_note": "Địa chỉ email của bạn sẽ không được công bố. Các trường bắt buộc được đánh dấu *",
+    "comment_post_comment_rating": "Đánh giá của bạn",
+    "comment_post_comment_comment": "Your Review",
+    "comment_post_comment_username": "name",
+    "comment_post_comment_email": "Địa chỉ email",
+    "comment_post_comment_save_user_info": "Lưu tên, email và trang web của tôi trong trình duyệt này cho lần tôi bình luận tiếp theo.",
+    "comment_post_comment_submit": "submit",
+    "related_products": "Những sảm phẩm tương tự",
+    "Sort by popularity": "Sắp xếp theo độ nổi tiếng",
+    "Sort by latest": "Mới nhất",
+    "Sort by price low to high": "Sắp xếp theo giá tăng dần",
+    "Sort by price hight to low": "Sắp xếp theo giá giảm dần",
+    "register_affiliate": "Hãy trở thành đối tác để được mua hàng ưu đãi!",
+    "register_now": "Đăng ký ngay",
+    "default_sort": "Sắp xếp mặc định",
+    "ascending": "tăng dần",
+    "descending": "giảm dần",
+    "products available": "{{count}} sản phẩm có sẵn",
+    "out of stock": "Hết hàng",
+    "detail": {
+      "chooseRequire": "Vui lòng chọn sản phẩm."
+    },
+    "remain product left": "Chỉ còn {{count}} sản phẩm",
+    "Product Categories": "Danh mục sản phẩm",
+    "Filter by Price": "Lọc theo khoảng giá",
+    "Price": "Giá",
+    "Become a distributor to enjoy our offers": "Hãy trở thành nhà phân phối để được hưởng ữu đãi của chúng tôi",
+    "filterResult_other": "Tổng {{count}} kết quả",
+    "filterResult_one": "Tổng {{count}} kết quả"
+  },
+  "share": "share",
+  "home": "Trang chủ",
+  "language": {
+    "vi": "Tiếng Việt",
+    "en": "Tiếng Anh"
+  },
+  "cart": {
+    "Shopping Cart": "Giỏ hàng",
+    "myCart": "Giỏ hàng ({{count}})",
+    "paymentSummary": "Đơn thanh toán",
+    "orderSummary": "Đơn đặt hàng",
+    "shippingFee": "Phí vận chuyển",
+    "promoCode": "Mã giảm giá",
+    "Total": "Tổng",
+    "Checkout": "Thanh toán",
+    "productItems": "Sản phẩm",
+    "unitPrice": "Giá",
+    "quantity": "Số lượng",
+    "Action": "Action",
+    "Your Cart": "Giỏ hàng của bạn",
+    "Delivery Addess": "Địa chỉ giao hàng",
+    "Change": "Thay đổi",
+    "Discount": "Giảm giá",
+    "Proceed to Payment": "Tiến hành thanh toán",
+    "Select Payment Method": "Chọn phương thức thanh toán",
+    "Estimated Balance": "Số dư ước tính",
+    "Cardholder Name": "Tên chủ thẻ",
+    "Card Number": "Số thẻ",
+    "Card Number Placeholder": "Loại thẻ sẽ được phát hiện...",
+    "Expiration Code": "Mã hết hạn",
+    "Security Code": "Mã bảo mật",
+    "Select currency": "Chọn tiền tệ",
+    "Enter amount": "Nhập số tiền",
+    "Successful": "Thành công",
+    "Order Successful Placed": "Đặt hàng thành công",
+    "Thanks for your purchase": "Cảm ơn vì đã mua hàng",
+    "Your_order_is": "Số đơn đặt hàng của bạn là: <span>{{id}}</span>",
+    "Your Order": "Đơn hàng của bạn",
+    "Edit": "Chỉnh sửa",
+    "Add more": "Thêm",
+    "Change Shipping Addess": "Thay đổi địa chỉ giao hàng",
+    "Save": "Lưu",
+    "totalPrice": "Tổng giá",
+    "addToCart": "Thêm vào giỏ hàng",
+    "modalDelContent": "Bạn muốn xóa sản phẩm này khỏi giỏ hàng không?",
+    "Add shipping Address success": "Thêm địa chỉ giao hàng thành công",
+    "Edit shipping Address success": "Cập nhật địa chỉ giao hàng thành công",
+    "Please enter CVC": "Vui lòng nhập CVC",
+    "Please enter expiration code": "Vui lòng nhập mã hết hạn",
+    "Please enter card number": "Vui lòng nhập số thẻ",
+    "Cash On Delivery": "Thanh toán khi giao hàng",
+    "Internal Balance": "Số dư hệ thống",
+    "Credit_Debit_Card": "Thẻ tín dụng/thẻ ghi nợ",
+    "Pay when you receive": "Thanh toán khi bạn nhận được",
+    "Change the current balance": "Thay đổi điểm hiện tại",
+    "Transaction fee may apply": "Có thể áp dụng phí giao dịch",
+    "Keep buying": "Tiếp tục mua",
+    "ConfirmYourOrder": "Xác nhận đơn đặt hàng của bạn?",
+    "YoureStillCanBuyMoreStuffsThatSuitYouInOurStore": "Bạn vẫn có thể mua thêm những thứ phù hợp với bạn trong cửa hàng của chúng tôi",
+    "Insufficient Balance": "Tài khoản không đủ điểm",
+    "messageRemoveCartSuccess": "Xóa sản phẩm thành công",
+    "messageAddProductToCartSuccess": "Thêm sản phẩm vào giỏ hàng thành công",
+    "empty shipping address": "Vui lòng thêm địa chỉ giao hàng",
+    "confirm order note": "Lưu ý: khi bạn chấp nhận thanh toán đơn hàng. Thì bạn chỉ có thể đổi sản phẩm vơi giá trị tương đương. Chứ không được hủy đơn hàng. Cảm ơn."
+  },
+  "header": {
+    "welcome": "Chào mừng bạn",
+    "textLogin": "Đăng nhập",
+    "textRegister": "Đăng ký",
+    "Disconnect": "Ngắt kết nối",
+    "Connect wallet": "Kết nối ví",
+    "menu": {
+      "home": "Trang chủ",
+      "activity": "Lĩnh vực hoạt động",
+      "product": "Sản phẩm",
+      "members": "Gói thành viên",
+      "shop": "Shop",
+      "news": "Tin tức",
+      "newsHeath": "Tin tức sức khỏe",
+      "newsScience": "Tin tức khoa học",
+      "contactUs": "Liên hệ",
+      "about us": "Giới thiệu",
+      "about Happy365Global": "Về Happy365Global",
+      "aiming": "Tầm nhìn, sứ mệnh, mục tiêu",
+      "creator message": "Thông điệp từ nhà sáng lập"
+    },
+    "menuUser": {
+      "home": "Home",
+      "organization": "Tổ chức",
+      "order": "Đặt hàng",
+      "commission": "Hoa hồng",
+      "shop": "Cửa hàng",
+      "news": "Lịch",
+      "contactUs": "Liên hệ với chúng tôi"
+    },
+    "dropdownUserInfo": {
+      "labelProfile": "Hồ sơ",
+      "labelDashboard": "Dashboard",
+      "labelOrder": "Đặt hàng",
+      "labelLogout": "Đăng xuất"
+    }
+  },
+  "footer": {
+    "mission": "Với sứ mệnh tạo ra một cộng đồng Affiliate maketing đoàn kết, nơi mọi người có thể phát triển kinh doanh và tiếp cận các sản phẩm và dịch vụ chất lượng",
+    "mapAddress": "Địa chỉ trên map",
+    "supportInfoFooter": {
+      "title": "Thông tin hỗ trợ",
+      "item1": "Giới thiệu công ty",
+      "item2": "Liên hệ",
+      "item3": "Hệ thống cửa hàng",
+      "item4": "Tin tuyển dụng",
+      "item5": "Tin khuyến mại"
+    },
+    "salePolicyFooter": {
+      "title": "Chính sách bán hàng",
+      "item1": "Bảo mật thanh toán",
+      "item2": "Bảo mật thông tin",
+      "item3": "Giải quyết khiếu nại",
+      "item4": "Chính sách đổi trả hàng",
+      "item5": "Chính sách bảo hành",
+      "item6": "Điều khoản sử dụng"
+    },
+    "contact": {
+      "title": "Liên hệ",
+      "item1": "Hotline",
+      "item2": "Tư vấn bán hàng",
+      "item3": "Thời gian làm việc"
+    },
+    "license": "Bản quyền thuộc công ty TNHH Happy365Global."
+  },
+  "homePage": {
+    "addToCart": "Thêm vào giỏ hàng",
+    "bannerContent": "Hạnh phúc trong tầm tay của bạn",
+    "viewMore": "Xem thêm",
+    "sectionAchievement": {
+      "item1": {
+        "title": "Xếp hạng hàng đầu",
+        "description": "Sản phẩm sạch đạt chứng nhận VietGAP cho những người yêu thích thực phẩm lành mạnh"
+      },
+      "item2": {
+        "title": "Chất lượng tốt nhất",
+        "description": "Miễn phí giao hàng nội thành bán kinh 5km với mỗi hóa đơn trên 500.000đ"
+      },
+      "item3": {
+        "title": "Luôn luôn tươi ngon",
+        "description": "Chúng tôi tự hào mang đến những sản phẩm chất lượng nhất, ngon nhất vì sức khỏe người dùng."
+      }
+    },
+    "sectionAbout": {
+      "subTile": "Về Happy 365 Global",
+      "title": "Chào mừng bạn đến với tập đoàn Happy365Global",
+      "content": "Với sứ mệnh tạo ra một cộng đồng Affiliate maketing đoàn kết, nơi mọi người có thể phát triển kinh doanh và tiếp cận các sản phẩm và dịch vụ chất lượng. Tập đoàn Happy365Global cam kết cung cấp sự hỗ trợ, đào tạo và cơ hội phát triển để giúp những người tham gia đạt được thành công và đáp ứng mục tiêu của họ.",
+      "happyCustomer": "Khách hàng hạnh phúc",
+      "successCustomer": "Khách hàng thành công"
+    },
+    "sectionInfo": {
+      "title": "Những gì chúng tôi mang đến",
+      "content": "Nếu bạn đang tìm kiếm một môi trường hợp tác, có nhịp độ nhanh, Bạn sẽ được tận hưởng một nền văn hóa đổi mới và hướng đến kết quả dựa trên thực tế."
+    },
+    "sectionProduct": {
+      "title": "Sản phẩm của chúng tôi",
+      "content": "Dành tặng khách hàng hàng ngàn sản phẩm tốt cho sức khỏe"
+    },
+    "sectionStrategy": {
+      "subTitle": "Về Happy 365 Global",
+      "title": "Tại sao chọn chúng tôi",
+      "content": "HAPPY365GLOBAL tập trung vào việc nghiên cứu giải pháp và ứng dụng các thành tựu khoa học tiên tiến, thân thiện với môi trường, con người, thiên nhiên",
+      "list1": {
+        "title": "Chiến lược dinh dưỡng",
+        "content": "Chúng tôi sử dụng 5 cách khác nhau để tăng tốc độ trao đổi chất của bạn để bạn đốt cháy calo. Mục đích chính của chúng tôi là cải thiện thông tin ăn uống lành mạnh & sức mạnh bên trong."
+      },
+      "list2": {
+        "title": "Hỗ trợ & Động lực",
+        "content": "Chúng tôi sử dụng 5 cách khác nhau để tăng tốc độ trao đổi chất của bạn để bạn đốt cháy calo. Mục đích chính của chúng tôi là cải thiện thông tin ăn uống lành mạnh & sức mạnh bên trong."
+      },
+      "reasons": "Tám lý do hợp tác HAPPY365GLOBAL",
+      "desc1": "Đa dạng sản phẩm, đáp ứng nhu cầu của khách hàng",
+      "desc2": "Phát triển KHÔNG giới hạn thị trường ( Toàn cầu )",
+      "desc3": "Cộng dồn doanh số nhóm không giới hạn",
+      "desc4": "Khi tuyến dưới cùng cấp hoặc cao hơn cấp thì không bị tách khỏi nhóm",
+      "desc5": "Thu nhập thụ động từ doanh nghiệp chính mình phát triển ra.",
+      "desc6": "Lên cấp không bị hạ cấp",
+      "desc7": "Lên cấp không phụ thuộc vào doanh số  cá nhân",
+      "desc8": "Kế thừa"
+    },
+    "sectionAboutUs": {
+      "subTitle": "Câu chuyện của chúng tôi",
+      "title": "Chúng tôi cung cấp sản phẩm sức khỏe tốt nhất thế giới.",
+      "content": "TẬP ĐOÀN HAPPY365GLOBAL là một tổ chức với Tôn chỉ: Tư vấn giải pháp mang lại hạnh phúc và truyền cảm hứng cho cuộc sống của mỗi thành viên người trên toàn thế giới. Cung cấp giải pháp chăm sóc sức khỏe bằng cách dùng những dòng sản phẩm có nguồn gốc thiên nhiên, được chắt lọc bằng khoa học tiên tiến, dùng đúng, đủ và hợp lý.",
+      "happyCustomer": "Khách hàng hạnh phúc",
+      "successCustomer": "Khách hàng thành công"
+    },
+    "sectionHeath": {
+      "title": "Tin tức sức khỏe",
+      "content": "Tin tức vệ sinh an t oàn thực phẩm cập nhật mới nhất mỗi ngày cho bạn"
+    },
+    "sectionBenefit": {
+      "subTitle": "Lời chứng thực",
+      "title": "Khách hàng nói về chúng tôi",
+      "content": "TẬP ĐOÀN HAPPY365GLOBAL là một tổ chức với Tôn chỉ: Tư vấn giải pháp mang lại hạnh phúc và truyền cảm hứng cho cuộc sống của mỗi thành viên người trên toàn thế giới. Cung cấp giải pháp chăm sóc sức khỏe bằng cách dùng những dòng sản phẩm có nguồn gốc thiên nhiên, được chắt lọc bằng khoa học tiên tiến, dùng đúng, đủ và hợp lý.",
+      "item1": {
+        "title": "Miễn phí giao hàng Việt Nam",
+        "content": "Bán kính 5KM và đơn hàng từ 200.000đ"
+      },
+      "item2": {
+        "title": "Văn phòng đại diện Châu Á:",
+        "content": "531A UPPER CROSS STREET #04-95 HONG LIM COMPLEX SINGAPORE (051531)"
+      },
+      "item3": {
+        "title": "Thương mại điện tử",
+        "content": "Cung cấp nhiều mặt hàng giá cả hợp lý"
+      }
+    }
+  },
+  "aboutUs": {
+    "aboutHappy365": {
+      "our story": "Câu chuyện của chúng tôi",
+      "about Happy365Global": "Lời thiệu về Happy365Global",
+      "mission quote": "Chấm dứt nghèo đói, chấm dứt nợ nần, khởi đầu một thời đại hoàng kim mới!",
+      "mission description": "TẬP ĐOÀN HAPPY365GLOBAL là một tổ chức với Tôn chỉ: Tư vấn giải pháp mang lại hạnh phúc và truyền cảm hứng cho cuộc sống của mỗi thành viên người trên toàn thế giới. Cung cấp giải pháp chăm sóc sức khỏe bằng cách dùng những dòng sản phẩm có nguồn gốc thiên nhiên, được chắt lọc bằng khoa học tiên tiến, dùng đúng, đủ và hợp lý.",
+      "description": "<p>Hãy chuẩn bị cho một thế giới, nơi nghèo đói, nợ nần và thất nghiệp đã là di tích của quá khứ, được thay thế bằng sự thịnh vượng toàn cầu và hòa bình lâu dài cho tất cả mọi người!</p><p>Khi khoa học toàn cầu tiến bộ, chúng ta đang phải đối mặt với một thế giới nơi thịnh vượng, tự do và đổi mới phát triển mạnh mẽ, tinh thần con người thăng hoa mà không phải chịu gánh nặng về vật chất.</p><p>Là Bác sĩ Y sinh trẻ hóa chuyên điều trị bằng thảo dược và châm cứu khi mới 8 tuổi. Là  Đại sứ rất tích cực trong việc áp dụng công nghệ  thực phẩm và nông nghiệp xanh sạch thích ứng với biến đổi khí hậu, thân thiện với môi trường. Tiến sĩ Nguyễn Thị Giang Vân cũng là một triết gia, nghệ sĩ, nhà thơ và người quảng bá năng lượng xanh. Xuất phát từ những trăn trở về cuộc sống của người dân trên khắp thế giới, ước mơ tạo dựng một mái ấm - “ Thế giới tràn ngập tình yêu, niềm vui và hạnh phúc”.</p><p>Ý tưởng tạo dựng cộng đồng HAPPY365GLOBAL đã được Tiến sĩ Nguyễn Thị Giang Vân hình thành và cụ thể hóa bằng kế hoạch hành động từ tháng 3 năm 2018. Nhưng ngay sau đó vào năm 2019, dịch bệnh COVID lây lan trên toàn cầu khiến nó bị gián đoạn. Đến năm 2022 HAPPY365GLOBAL tiếp tục được hiện thực hóa.</p>",
+      "fouder": "Nhà sáng lập Tập đoàn HAPPY365GLOBAL",
+      "about founder": "<p>Là nhà sáng lập Tập Đoàn HAPPY365GLOBAL đồng thời là Đại sứ cho Tổ chức PRIME WORLD TRUST PTE. LTD. Chống biến đổi khí hậu Toàn Cầu có trụ sở Tại USA. Là Đại Sứ đại diện cho khu vực Đông Nam Á và Nam Á có Văn phòng đại diện tại Singapore.</p><p>Địa chỉ: 531A UPPER CROSS STREET #04-95 HONG LIM COMPLEX SINGAPORE (051531).</p>",
+      "description-2": "<p>Chúng tôi hiểu rất rõ giá trị của hạnh phúc trong từng phút của 365 ngày mỗi năm. Đó chính là lý do Tập Đoàn HAPPY365GLOBAL đã có mặt ở đây để hỗ trợ giải pháp cho cộng đồng châu Á nói riêng và toàn thế giới nói chung.</p><p>HẠNH PHÚC LÀ TRONG TAY BẠN! Hãy tin vào chính mình, suy nghĩ đơn giản, thực hiện những bước nhỏ và đoàn kết cộng đồng. Bạn sẽ đạt được hạnh phúc trong tầm tay mà bạn không bao giờ ngờ tới. Xin chân thành cảm ơn quý khách đã đến với chúng tôi. CHÚC MỪNG365 TOÀN CẦU! CHÚNG TÔI YÊU TẤT CẢ CÁC BẠN</p>",
+      "footer-banner": "Happy365Global! Chúng tôi yêu tất cả các bạn!"
+    },
+    "founderMessage": {
+      "title": "Thông điệp từ nhà sáng lập",
+      "missionQuote": "Chấm dứt nghèo đói, chấm dứt nợ nần, khởi đầu một thời đại hoàng kim mới!",
+      "missionDescription": "TẬP ĐOÀN HAPPY365GLOBAL là một tổ chức với Tôn chỉ: Tư vấn giải pháp mang lại hạnh phúc và truyền cảm hứng cho cuộc sống của mỗi thành viên người trên toàn thế giới. Cung cấp giải pháp chăm sóc sức khỏe bằng cách dùng những dòng sản phẩm có nguồn gốc thiên nhiên, được chắt lọc bằng khoa học tiên tiến, dùng đúng, đủ và hợp lý.",
+      "founderInfoTitle": "Nhà sáng lập Tập đoàn HAPPY365GLOBAL",
+      "founderQuote": "Là nhà sáng lập Tập Đoàn HAPPY365GLOBAL đồng thời là Đại sứ cho Tổ chức PRIME WORLD TRUST PTE. LTD. Chống biến đổi khí hậu Toàn Cầu có trụ sở Tại USA. Là Đại Sứ đại diện  cho khu vực Đông Nam Á và Nam Á có Văn phòng đại diện tại HongKong.",
+      "address": "Địa chỉ: ",
+      "founder name": "Nguyễn Thị Giang Vân"
+    },
+    "vision": {
+      "mission": {
+        "title": "Sứ mệnh",
+        "content": "Sứ mệnh của Happy365Global là tạo ra một cộng đồng Affiliate maketing   đoàn kết. Nơi mọi người có thể phát triển kinh doanh và tiếp cận các sản phẩm, dịch vụ chất lượng. Tập Đoàn cam kết cung cấp sự hỗ trợ đào tạo, mang lại cơ hội phát triển bản thân, giúp những người tham gia đạt được thành công và đáp ứng mục tiêu sức khỏe, tài chính của mình.\n- Happy365Global  cam kết tuân thủ các nguyên tắc đạo đức và đảm bảo hoạt động kinh doanh được thực hiện một cách minh bạch và trung thực. Tập Đoàn luôn đặt lợi ích của các thành viên và khách hàng lên hàng đầu. Happy365Global đảm bảo rằng những sản phẩm, dịch vụ được cung cấp đáp ứng chất lượng và giá trị thực.\n- Tầm nhìn và sứ mệnh này thể hiện cam kết của Happy365Global đối với sự phát triển & thành công bền vững của mô hình Affiliate maketing, tạo điều kiện thuận lợi cho những người tham gia để đạt được mục tiêu sức khỏe và tài chính, mang lại giá trị cho cộng đồng."
+      },
+      "vision": {
+        "title": "Tầm nhìn",
+        "content": "Happy365Global hướng đến việc trở thành một Tập Đoàn hàng đầu trong lĩnh vực Affiliate maketing, mang lại cơ hội phát triển và thành công cho những người tham gia. Tập Đoàn mong muốn xây dựng một mô hình kinh doanh Affiliate maketing bền vững và đáng tin cậy. Tạo điều kiện thuận lợi cho các thành viên đạt được sự thành công về sức khỏe, tài chính và sắc đẹp."
+      },
+      "goal": {
+        "title": "Mục tiêu",
+        "content": "HAPPY365GLOBAL tổ chức các chương trình, sự kiện, hoạt động cộng đồng nhằm khuyến khích mọi người có những hành động tích cực và xây dựng môi trường tốt đẹp để hạnh phúc. Tổ chức này còn hợp tác với các đối tác là các doanh nghiệp, viện nghiên cứu khoa học và các tổ chức khác trên thế giới nhằm tìm hiểu và ứng dụng các thành tựu khoa học vào chăm sóc sức khỏe thông minh, xây dựng đời sống kinh tế tích cực, thịnh vượng, lan tỏa thông điệp hạnh phúc và tạo dựng cuộc sống tốt đẹp hơn cho mọi người."
+      },
+      "bottomText": "Chúng tôi hiểu rất rõ giá trị của hạnh phúc trong từng phút của 365 ngày mỗi năm. Đó chính là lý do Tập Đoàn HAPPY365GLOBAL đã có mặt ở đây để hỗ trợ giải pháp cho cộng đồng châu Á nói riêng và toàn thế giới nói chung."
+    }
+  },
+  "modal": {
+    "modalFormShipping": {
+      "titleEdit": "Sửa địa chỉ giao hàng",
+      "titleAdd": "Thêm địa chỉ giao hàng",
+      "inputReceiverName": "Tên người nhận",
+      "inputReceiverPhone": "Điện thoại người nhận",
+      "inputStreet": "Đường",
+      "inputCountry": "Quốc gia",
+      "inputPostalCode": "Mã Bưu Chính",
+      "inputDistrict": "Quận",
+      "inputCity": "Thành phố",
+      "Please enter receiver name": "Vui lòng nhập tên người nhận",
+      "Please enter receiver phone": "Vui lòng nhập điện thoại người nhận",
+      "Please enter receive street": "Vui lòng nhập đường nhận",
+      "Please enter portal code": "Vui lòng nhập mã cổng",
+      "Please enter receive district": "Vui lòng nhập quận nhận",
+      "Please enter receive city": "Vui lòng nhập thành phố nhận",
+      "Save": "Lưu",
+      "maxLength": "Vui vòng nhập số ký tự không vượt quá {{number}} ký tự"
+    },
+    "modalEditProfile": {
+      "title": "Chỉnh sửa hồ sơ của bạn",
+      "inputFullName": "Họ và Tên",
+      "inputLastName": "Họ",
+      "inputCompany": "Công ty",
+      "inputPersonalWebsite": "Trang web cá nhân",
+      "inputDateOfBirth": "Ngày sinh (MM/DD/YYYY)",
+      "inputPreferredName": "Tên ưa thích",
+      "inputPreferredLanguage": "Ngôn ngữ ưa thích",
+      "inputReplicatedSiteText": "Văn bản trang được sao chép",
+      "inputCheckbox": "Đặt các đăng ký mới của bạn vào bể chứa của bạn",
+      "invalid url": "Địa chỉ website không hợp lệ, vui lòng nhập lại"
+    },
+    "modalWarningQuantityLimit": {
+      "content_1": "Chỉ có",
+      "content_2": "số lượng còn lại của mặt hàng này"
+    },
+    "modalEditBillingAddress": {
+      "title": "Chỉnh sửa địa chỉ thanh toán",
+      "inputStreet": "Đường",
+      "inputCountry": "Quốc gia",
+      "inputPostalCode": "Mã Bưu Chính",
+      "inputDistrict": "Quận",
+      "inputCity": "Thành phố",
+      "inputCheckbox": "Địa chỉ Thanh toán giống như Địa chỉ Giao hàng"
+    },
+    "modalEditContactInformation": {
+      "title": "Sửa thông tin hợp đồng",
+      "inputEmail": "Email",
+      "inputPhoneNumber": "Điện thoại",
+      "inputCountry": "Quốc gia",
+      "inputPostalCode": "Mã Bưu Chính",
+      "inputWork": "Công việc",
+      "inputFax": "Fax",
+      "inputPager": "Máy nhắn tin",
+      "inputOther": "Khác",
+      "alertSuccess": "Cập nhât thông tin liên hệ thành công!",
+      "errors": {
+        "invalidPhone": "Sai định dạng số điện thoại!",
+        "invalidEmail": "Sai định dạng email!",
+        "requiredEmail": "Vui lòng nhập email !"
+      }
+    },
+    "modalDeposit": {
+      "continue": "Tiếp tục",
+      "steps1": {
+        "title": "Chọn tiền tệ",
+        "currency": "Tiền tệ",
+        "depositWith": "Nạp tiền với",
+        "recommended": "Gợi ý",
+        "otherMethod": "Phương thức khác",
+        "option1": {
+          "title": "Chuyển tiền qua ngân hàng (SEPA)",
+          "content": "Phí giao dịch chiết khấu {{fee}}, 1-2 ngày làm việc"
+        },
+        "option2": {
+          "title": "Thẻ ngân hàng (VISA/MC)",
+          "content": "{{fee}} phí giao dịch"
+        },
+        "option3": {
+          "title": "Metamask",
+          "content": "{{fee}} phí giao dịch"
+        },
+        "question1": "SEPA là gì?",
+        "question2": "Tiền gửi mất bao lâu?",
+        "Request rejected": "Vui lòng phê duyệt yêu cầu để tiếp tục",
+        "An error has occur": "Có lỗi xảy ra, vui lòng thử lại",
+        "Add token success": "Thêm token vào ví của bạn thành công",
+        "Not select currency": "Vui lòng chọn 1 token để tiếp tục",
+        "Add token to wallet": "Nhập token",
+        "Select a currency": "Chọn loại tiền"
+      },
+      "steps2": {
+        "title": "Nhập số tiền",
+        "amount": "Số tiền",
+        "transactionRequirement": "Yêu cầu giao dịch",
+        "youReceive": "Bạn nhận",
+        "paymentMethod": "Phương thức thanh toán",
+        "transactionFee": "Phí giao dịch",
+        "link": "Không nhận được tiền đặt cọc",
+        "notice": "Chú ý",
+        "noticeContent": "Nếu số tiền gửi vượt quá giới hạn hàng ngày của bạn, chúng tôi sẽ chia tổng số tiền thanh toán dựa trên giới hạn hàng ngày tối đa của bạn",
+        "user balance": "Số dư: {{balance}} {{token}}"
+      },
+      "steps3": {
+        "title": "Thành công",
+        "main": "Nạp tiền thành công",
+        "detail": "Yêu cầu của bạn đã được xác nhận. Bạn có thể theo dõi tiến độ của nó trên trang Lịch sử giao dịch."
+      },
+      "errors": {
+        "currency": "Hãy chọn 1 loại tiền tệ",
+        "amount": "Hãy nhập số tiền"
+      },
+      "btn": {
+        "btnPrevious": "Trước",
+        "btnContinue": "Tiếp tục",
+        "btnViewWall": "Xem ví",
+        "btnViewHistory": "Lịch xử giao dịch"
+      }
+    },
+    "modalConfirmChooseAddressDefault": {
+      "title": "Bạn có muốn chỉnh sửa địa chỉ giao hàng thành địa chỉ mặc định không?"
+    }
+  },
+  "drawerCartItem": {
+    "textOnly": "Chỉ còn",
+    "textProduct": "sản phẩm"
+  },
+  "drawerCart": {
+    "textSubtotal": "Tổng phụ",
+    "btnViewCart": "Xem giỏ hàng",
+    "btnCheckout": "Thanh toán"
+  },
+  "profile": {
+    "textMyProfile": "Hồ sơ của tôi",
+    "textDistributor": "Nhà phân phối",
+    "textCustomer": "Khách hàng",
+    "textPreferredPlacement": "Vị trí ưu tiên",
+    "textRank": "Xếp hạng",
+    "textEmail": "Email",
+    "textPhone": "Điện thoại",
+    "btnEdit": "Chỉnh sửa",
+    "textBillingAddress": "Địa chỉ thanh toán",
+    "textShippingAddress": "Địa chỉ giao hàng",
+    "textEnrollmentInfo": "Thông tin đăng ký",
+    "textJoinDate": "Ngày tham gia",
+    "textPayoutMethod": "Phương thức thanh toán",
+    "textPayment": "Thanh toán",
+    "textSponsor": "Nhà tài trợ",
+    "textSponsorPhone": "Điện thoại tài trợ",
+    "textPersonallySponsored": "Được tài trợ cá nhân",
+    "textTotalDownline": "Tổng tuyến dưới",
+    "activityTimeline": {
+      "title": "Dòng thời gian hoạt động",
+      "textLastUpdated": "Cập nhật lần cuối",
+      "descReUp": "Đã tạo {{desc}} với tư cách là khách hàng mới",
+      "descOrder": "Đơn hàng #{{desc}} đã được đặt, tổng giá là {{amount}}$",
+      "descDeposit": "Bạn đã gửi {{amount}} {{currency}}",
+      "descWithdraw": "Bạn đã rút {{amount}} {{currency}}",
+      "descBuyNFT": "Bạn đã mua 1 NFT {{amount}} {{currency}}",
+      "descUpgradeNFT": "Bạn vừa nâng cấp gói NFT {{amount}} {{currency}}",
+      "descCancelOrder": "Bạn đã hủy đơn #{{desc}}, tổng giá là {{amount}}$"
+    },
+    "btnViewMore": "Xem thêm Đơn hàng",
+    "btnCreateOrders": "Tạo Đơn hàng Mới",
+    "textTitleTableDescription": "Mô tả",
+    "textTitleTableDate": "Ngày",
+    "messageUpdateDefaultAddress": "Cập nhật địa chỉ giao hàng mặc định thành công",
+    "preferredPlacement": {
+      "title": "Chọn vị trí uu tiên của bạn",
+      "content": "Chọn vị trí ưa thích cho nhà phân phối mới. Vị trí này sẽ được sử dụng cho tất cả các đăng ký mới.",
+      "btnSave": "Lưu thay đổi",
+      "labelSelect": "Vị trí ưa tiên"
+    },
+    "file size exceed": "Quá kích thước cho phép {{size}}MB",
+    "Referral link": "Liên kêt giới thiệu",
+    "Promoter": "Người giới thiệu",
+    "LEFT Branch": "Nhánh Trái (L)",
+    "RIGHT Branch": "Nhánh Phải (R)"
+  },
+  "dashboardUser": {
+    "balance": {
+      "title": "Số dư ước tính",
+      "btnDeposit": "Nạp tiền",
+      "btnWithdraw": "Rút tiền",
+      "msgDepositProcessing": "Đang xử lý giao dịch",
+      "msgDepositError": "Lỗi giao dịch",
+      "msgApproveError": "Lỗi phê duyệt token"
+    },
+    "infoUser": {
+      "textRank": "Xếp hạng",
+      "textBonusRank": "Xếp hạng thưởng",
+      "textRefCode": "Mã giới thiệu",
+      "textRewardPoint": "Điểm thưởng"
+    },
+    "quickLink": {
+      "title": "Liên kết nhanh",
+      "textDate": "Cập nhật lần cuối",
+      "textEnrollDistributor": "Đăng ký Nhà phân phối",
+      "textMyPersonalWebsite": "Trang web cá nhân của tôi",
+      "textManageMySubscriptions": "Quản lý đăng ký của tôi",
+      "textLeftLeg": "Tổng quan doanh nghiệp nhánh trái",
+      "textRightLeg": "Tổng quan doanh nghiệp nhánh phải",
+      "tooltipWebsite": "Thông tin chưa được bạn cập nhật trong Profile, vui lòng cập nhật."
+    },
+    "businessSnapshot": {
+      "title": "Tổng quan doanh nghiệp",
+      "textDate": "Cập nhật lần cuối",
+      "textWeeklyLeftLeg": "Nhánh trái hàng tuần (CV)",
+      "textWeeklyRightLeg": "Nhánh trái hàng tuần (CV)",
+      "textWeeklyPersonallySponsoredLeftLeg": "Cá nhân đang hoạt động ở nhánh trái",
+      "textWeeklyPersonallySponsoredRightLeg": "Cá nhân đang hoạt động ở nhánh phải"
+    },
+    "rankProgress": {
+      "title": "Tiến độ xếp hạng",
+      "textDate": "Cập nhật lần cuối",
+      "labelTabCurrent": "Hiện tại",
+      "labelTabLast": "Cuối cùng",
+      "labelTabHighest": "Cao nhất",
+      "textBtn": "Xem yêu cầu xếp hạng"
+    },
+    "myAlerts": {
+      "title": "Cảnh báo của tôi",
+      "textAction": "Xem thêm"
+    },
+    "teamGrowth": {
+      "title": "Thống kê tăng trưởng nhóm",
+      "textDate": "Cập nhật lần cuối",
+      "labelTotalDownline": "Tổng số tuyến dưới",
+      "labelFrontLine": "Dòng phía trước",
+      "labelNew3Days": "Mới trong 3 ngày qua",
+      "labelLast3Days": "% tăng trưởng trong 3 ngày qua",
+      "labelLast30Days": "% tăng trưởng trong 30 ngày qua",
+      "labelDeepestLevel": "Cấp độ sâu nhất"
+    },
+    "commissions": {
+      "title": "Hoa hồng",
+      "textDate": "Cập nhật lần cuối",
+      "textViewAll": "Xem tất cả",
+      "labelBalanceForward": "Số dư chuyển tiếp",
+      "labelPreviousBalance": "Số dư trước đó",
+      "labelCommissionAmount": "Số tiền hoa hồng",
+      "labelAdjustment": "Điều chỉnh"
+    },
+    "withdrawal": {
+      "Enter OTP": "Nhập OTP",
+      "Select coin": "Chọn tiền",
+      "Send to": "Gửi đến",
+      "address": "địa chỉ",
+      "Happy365 user": "Người dùng trong Happy365",
+      "Enter Address": "Nhập địa chỉ",
+      "Network": "Mạng",
+      "Select withdrawal network": "Chọn mạng rút",
+      "Internal Wallet": "Ví hệ thống",
+      "Recipients email": "Địa chỉ email của người nhận",
+      "Recipients ID": "Mã người nhận",
+      "Withdrawal Order Submited": "Lệnh rút tiền đã được gửi đi",
+      "Withdrawal request submitted": "Yêu cầu rút tiền đã được gửi đi",
+      "Visit History to view your order status": "Đi đến lịch sử giao dịch để xem trạng thái lệnh rút",
+      "Receive amount": "Số tiền nhận",
+      "Transaction Method": "Phương thức giao dịch",
+      "Indicated Amount": "Số tiền chỉ định",
+      "protocolFee": "Phí giao dịch",
+      "View wallet": "Xem ví",
+      "View history": "Xem lịch sử",
+      "Minimal amount": "Số tiền tối thiểu {{amount}}",
+      "requireAddress": "Address nhập bắt buộc!",
+      "validateAddress": "Address không hợp lệ",
+      "requireAmount": "Số tiền nhập bắt buộc!",
+      "validateAmount": "Chỉ được nhập số",
+      "validateMinimumAmount": "Số tiền phải lớn hơn {{amount}}",
+      "withdrawProcessing": "Yêu cầu rút tiền đang được xử lý...",
+      "withdrawSuccess": "Rút tiền thành công",
+      "Withdraw amount": "Số tiền rút",
+      "MAX": "Tối đa",
+      "Balance": "Số dư {{currency}}",
+      "Daily remaining limit": "Giới hạn hàng ngày còn lại",
+      "Change withdrawal amount to received amount": "Đổi số tiền rút thành số tiền nhận",
+      "Minimum withdrawal": "Số tiền rút tối thiểu",
+      "24h remaining limit": "Giới hạn còn lại 24h"
+    },
+    "deposit": {
+      "depositSuccess": "Nạp {{amount}} USDT thành công",
+      "deposit info": "Làm ơn bình tĩnh. Hệ thống có thể sẽ cần đến 2-5 phút để đồng bộ số dư tài khoản của bạn. Nếu sau khoảng thời gian này mà không được, vui lòng liên lạc với chúng tôi qua support@happy365global.com."
+    }
+  },
+  "myOrder": {
+    "btn": {
+      "export": "Xuất file",
+      "search": "Tìm kiếm",
+      "refresh": "Làm mới",
+      "back": "Quay lại",
+      "cancel": "Hủy"
+    },
+    "orderBY": {
+      "date": "Ngày",
+      "amount": "Số tiền",
+      "orderId": "Mã đơn"
+    },
+    "sorting": {
+      "ascending": "Tăng dần",
+      "descending": "Giảm dần"
+    },
+    "placeholder": {
+      "searchOrder": "Tìm kiếm đơn hàng..."
+    },
+    "allOrder": {
+      "title": "Tất cả đơn hàng",
+      "sortBy": "Sắp xếp theo",
+      "table": {
+        "yourOrder": "Đơn hàng của bạn",
+        "itemCount": "Số lượng",
+        "amount": "Số tiền",
+        "status": "Trạng thái",
+        "page": "Trang"
+      },
+      "detail": {
+        "orderNumber": "Số đơn",
+        "shipTo": "Vận chuyển đến",
+        "billingTo": "Thanh toán cho",
+        "emailAddress": "Email",
+        "orderDate": "Ngày đặt hàng",
+        "shippingUnit": "Đơn vị vận chuyển",
+        "shipping": "Đang giao",
+        "productItems": "Đơn hàng",
+        "quantity": "Số lượng",
+        "totalPrice": "Tổng tiền",
+        "subTotal": "Tổng phụ",
+        "shippingFee": "Phí vận chuyển",
+        "total": "Tổng",
+        "timelinePending": "Đã tạo",
+        "timelineProcessing": "Đang xử lý",
+        "timelineDelivery": "Đang giao hàng",
+        "timelineSucceed": "Thành công",
+        "timelineCancelled": "Đã hủy",
+        "cancelSuccess": "Bạn vừa hủy thành công!",
+        "doYouWantToCancel": "Bạn có muốn hủy đơn đặt hàng này?",
+        "exit": "Thoát"
+      },
+      "errors": {
+        "notFound": "Không tìm thấy đơn đặt hàng!",
+        "cancelledFailed": "Hủy đặt hàng thất bại!"
+      }
+    },
+    "personalOrder": {
+      "title": "Đặt hàng cá nhân"
+    },
+    "customerOrder": {
+      "title": "Đặt hàng của khách hàng"
+    },
+    "subscription": {
+      "title": "Subscription"
+    }
+  },
+  "alerts": {
+    "tabs": {
+      "item1": "Tất cả thông báo",
+      "item2": "Hoa hồng",
+      "item3": "Đại diện đặt hàng",
+      "item4": "Đăng ký đại diện",
+      "item5": "Kỷ niệm"
+    },
+    "alertOderItem": {
+      "title": "Đơn đang đặt hàng của bạn {{orderStatus}}",
+      "content": "Cảm ơn bạn, đơn đặt hàng của bạn là #{{orderId}} vào ngày {{date}}. Đơn đặt hàng của bạn {{orderStatus}}. Nếu bạn có bất kỳ câu hỏi nào, đừng ngần ngại liên hệ với bộ phận Hỗ trợ."
+    },
+    "alertSignUpItem": {
+      "title": "Bạn vừa có 1 khách hàng mới!",
+      "content": "Chúc mừng! Một khách hàng mới vừa đăng ký! THÔNG TIN KHÁCH HÀNG Tên: {{nameRef}} Email: {{emailRef}}"
+    },
+    "alertCommissionItem": {
+      "title": "Thu nhập dự kiến ​​của bạn cho {{fromDate}} {{toDate}}",
+      "content": "Thu nhập dự kiến ​​của bạn cho {{fromDate}} - {{toDate}} hiện tại là ${{amount}} Tiếp tục chia sẻ sản phẩm và dịch vụ của bạn cho đến hết thời gian {{formDate}} - {{toDate}} để tối đa hóa thu nhập của bạn!"
+    },
+    "alertCelebrationItem": {
+      "title": "Sự gia hạn hàng năm của chúng tôi sắp diễn ra",
+      "content": "Cảm ơn bạn đã trở thành thành viên của Gia đình New U Life của chúng tôi! Tư cách thành viên New U Life hàng năm của bạn sẽ được gia hạn vào {{renewOn}} và phương thức thanh toán trong hồ sơ của bạn sẽ bị tính phí. Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với bộ phận dịch vụ khách hàng theo số (925) 274-5000 hoặc gửi email tới support@happy365global.com"
+    },
+    "alert": "Thông báo"
+  },
+  "commission": {
+    "Commissions": "Hoa hồng",
+    "Type": "Kiểu",
+    "Commission Total": "Tổng số tiền hoa hồng",
+    "Previous Balance": "Số dư trước đó",
+    "Adjustment": "Điều chỉnh",
+    "Balance Forward": "Số tiền chuyển",
+    "Statements": "Báo cáo",
+    "View Statements": "View Xem Báo cáo",
+    "paid at": "Thanh toán lúc",
+    "username": "Tài khoản"
+  },
+  "toastErrorCommon": {
+    "Message-1.1": "Giao dịch bị từ chối!",
+    "Message-1.2": "Đã xảy ra lỗi không mong muốn, vui lòng thử lại.",
+    "Message-1.3": "Lỗi giao dịch.",
+    "Message-1.4": "Kiểm tra lại cửa sổ bật lên Metamask để kết nối với hệ thống",
+    "Message-1.5": "Bạn đã từ chối yêu cầu.",
+    "Message-2.1": "Số tiền phải lớn hơn 0.",
+    "Message-2.2": "Số tiền phải nhỏ hơn hoặc bằng Số dư của bạn.",
+    "Message-2.3": "Số tiền phải nhỏ hơn hoặc bằng giới hạn ngày hôm nay."
+  },
+  "genealogy": {
+    "title": "Phả hệ",
+    "titleCheckBox": "Phả hệ",
+    "titleLegend": "Huyền thoại",
+    "textTreeView": "Chế độ xem dạng cây",
+    "textGraphicalView": "Chế độ xem đồ họa",
+    "textBinary": "Nhị phân",
+    "textSponsor": "Nhà tài trợ",
+    "Enter keyword": "Nhập từ khóa...",
+    "Available": "Còn trống",
+    "Deactivated": "Ngừng hoạt động",
+    "New Enrollment": "Mới đăng ký",
+    "Personaly Sponsored": "Người tài trợ"
+  },
+  "marketplace": {
+    "marguee text": "Hãy mua NFT của chúng tôi: Lợi nhuận và đặc quyền đang đón chờ bạn!",
+    "Premium NFTs": "NFTs cao cấp",
+    "NFTItem": {
+      "btnBuy": "Mua ngay",
+      "btnDetail": "Xem Chi tiết",
+      "btnProcessing": "Đang xử lý",
+      "tooltipWarning": "Bạn đang là khách hàng, để đúc NFT bạn cần đăng ký làm nhà phân phối.",
+      "tooltipVFTVip": "NFT của bạn là VIP",
+      "textOwner": "Chủ sở hữu",
+      "textDetail": "Chi tiết",
+      "textBenefits": "Lợi ích",
+      "textCreatedAt": "Ngày tạo",
+      "textExpirationDate": "Ngày hết hạn",
+      "textBuyNFTSuccess": "Mua NFT thành công!",
+      "textProcessingBuyNFT": "Đang trong quá trinh xử lý",
+      "textUpgradeSuccessfully": "Cập nhật gói thành công!",
+      "textRenewalSuccessfully": "Gia hạn gói thành công!",
+      "nftDesc": "Thương hiệu và nhà điều phối sự kiện tiền điện tử và Web3 đa chuỗi, dựa trên cộng đồng lớn nhất, tập trung vào DeFi, NFT, Metaverses, GameFi và DAO.",
+      "Not enought balance": "Số dư trong tài khoản hệ thống không đủ để mua NFT. Vui lòng nạp thêm tiền để mua NFt",
+      "Profit from both referral product purchases and NFTs": "Nhận hoa hồng từ cả mua sản phẩm và NFT.",
+      "Eligible to earn commissions up": "Đạt điều kiện nhận hoa hồng lên đến 11 tầng (lên tới ~36%).",
+      "Unleash Premium can earn up to 12 levels": "Mở khóa VIP có thể kiếm được đến 12 tầng."
+    },
+    "modalAutoRenewal": {
+      "textPackage": "Gói:",
+      "textUpgradePackage": "Nâng cấp gói của bạn lên VIP chỉ với",
+      "btnUpgrade": "Nâng cấp ngay",
+      "textExpired": "Gói của bạn sẽ sớm hết hạn:",
+      "textAutoRenewal": "Tự động gia hạn",
+      "btnReActive": "Kích hoạt lại",
+      "textRenewalPrior": "Gia hạn trước",
+      "Expired": "Hết hạn"
+    },
+    "modalCheckoutNFT": {
+      "title": "Thanh toán",
+      "content": "Bạn sắp mua 1 NFT",
+      "labelInput": "Địa chỉ ví",
+      "placeholderInput": "Nhập địa chỉ ví",
+      "btnConfirm": "Xác nhận"
+    },
+    "modalUpgradeYourPackage": {
+      "title": "Nâng cấp gói của bạn",
+      "title2": "Gia hạn gói của bạn",
+      "btnCancel": "Thoát",
+      "btnOk": "Đồng ý",
+      "option1": {
+        "title": "Theo tháng",
+        "type": "tháng",
+        "eventType": "Thanh toán hàng tháng"
+      },
+      "option2": {
+        "title": "Theo năm",
+        "type": "năm",
+        "eventType": "Thanh toán hàng năm"
+      },
+      "option3": {
+        "title": "Mỗi 6 tháng",
+        "type": "6 tháng",
+        "eventType": "Thanh toán 6 tháng 1 lần"
+      },
+      "autoRenew": "Tự động gia hạn kích hoạt",
+      "No upgrade nor renew": "Không tự động gia hạn",
+      "Renew only": "Chỉ NFT thường",
+      "Upgrade only": "Chỉ NFT VIP",
+      "Both renew and upgrade": "Tự động gia hạn NFT thường và VIP",
+      "Renew failed": "Tự động gia hạn thất bại",
+      "Renew successfully": "Tự động gia hạn thành công"
+    }
+  },
+  "productManagement": {
+    "Sell Price": "Giá bán",
+    "Sold": "Đã bán",
+    "In Stock": "Còn tồn",
+    "Rating": "Đánh giá",
+    "Product ID": "Mã sản phẩm",
+    "Product name": "Tên sản phẩm",
+    "Category": "Danh mục",
+    "Brand": "Nhãn hiệu",
+    "Cost Price": "Giá mua",
+    "Attribute": "Thuộc tính",
+    "Product image": "Ảnh",
+    "Single Product": "Sản phẩm đơn",
+    "Composed Product": "Sản phẩm phúc hợp",
+    "Sub Products": "Sản phẩm con",
+    "Value": "Giá trị",
+    "Oldest": "Lâu nhất",
+    "Highest rating": "Đánh giá cao nhất",
+    "Least rating": "Đánh giá thấp nhất",
+    "Delete": "Ẩn",
+    "Are you really want to delete product": "Bạn có chắc muốn ẩn sản phẩm {{id}}",
+    "This field is required": "Vui lòng nhập trường này",
+    "Product create success": "Sản phẩm đã được tạo thành công",
+    "Product edit success": "Sản phẩm đã được cập nhật thành công",
+    "This product name has been taken": "Tên sản phẩm đã tồn tại, vui lòng nhập 1 cái tên khác",
+    "This product SKU has been taken": "Mã SKU đã tồn tại, vui lòng nhập 1 mã khác",
+    "active": "Đang hiện",
+    "inactive": "Đã ẩn",
+    "Add new product": "Tạo sản phẩm",
+    "Edit product": "Cập nhật sản phẩm",
+    "Tags": "Nhãn",
+    "English version": "Phiên bản tiếng Anh",
+    "Vietnamese version": "Phiên bản tiếng Việt",
+    "Add description": "Thêm miêu tả",
+    "Edit description": "Sửa miêu tả",
+    "Upload": "Tải lên",
+    "Update": "Cập nhật",
+    "language description": "Mô tả {{lang}}"
+  },
+  "adminOrders": {
+    "statusOptionAll": "Tất cả trạng thái",
+    "orderStatus": {
+      "accessing": "Đang xử lý",
+      "created": "Đã tạo",
+      "fulfilled": "Thành công",
+      "shipping": "Đang giao",
+      "cancelled": "Đã hủy"
+    },
+    "placeholder": "Tìm kiếm đơn hàng",
+    "filter": {
+      "showBy": "Hiển thị bằng",
+      "sortBy": "Lọc bằng"
+    },
+    "tableColumn": {
+      "orderId": "Mã đơn",
+      "date": "Ngày",
+      "customer": "Khách hàng",
+      "total": "Tổng",
+      "shippingUnit": "Đơn đặt hàng",
+      "fee": "Phí",
+      "status": "Trạng thái"
+    }
+  },
+  "adminOrdersDetail": {
+    "title": "Chi tiết đơn đặt hàng",
+    "status": "Trạng thái",
+    "shipTo": "Giao đến",
+    "billTo": "Hóa đơn đến",
+    "change": "Thay đổi",
+    "orderDate": "Ngày đặt",
+    "shippingUnit": "Đơn vị vận chuyển",
+    "orderItem": "Sản phầm",
+    "paymentInfo": "Thông tin thanh toán",
+    "paymentMethod": "Phương thức thanh toán",
+    "phone": "Số điện thoại",
+    "discount": "Giảm giá",
+    "note": "Chú thích",
+    "table": {
+      "name": "Tên",
+      "price": "Giá",
+      "quantity": "Số lượng",
+      "total": "Tổng tiền"
+    },
+    "alertUpdatedSuccess": "Bạn vừa cập nhật thông tin order thành công!",
+    "businessName": "Doanh nghiệp"
+  },
+  "notifyAlert": {
+    "newCustomer": {
+      "title": "Bạn đã có một Khách hàng mới!",
+      "content": "Một khách hàng mới vừa đăng ký! Thông tin khách hàng: {{name}} - {{email}} "
+    },
+    "order": {
+      "title": "Đơn hàng của bạn đang được",
+      "content": "Đơn đặt hàng #{{id}} vào ngày {{date}} đang được ",
+      "textCanceled": "đã hủy",
+      "textFulfilled": "đã hoàn thành",
+      "textProcessing": "đang xử lý",
+      "textShipping": "vận chuyển",
+      "textCreated": "đã tạo"
+    },
+    "textViewDetail": "View detail"
+  },
+  "chartSelection": {
+    "thisWeek": "Trong tuần",
+    "thisMonth": "Trong tháng",
+    "thisYear": "Trong năm",
+    "bySixMonth": "Trong 6 tháng"
+  },
+  "adminWithdrawStatus": {
+    "created": "Đã tạo",
+    "approved": "Chấp thuận",
+    "processing": "Đang xử lý",
+    "rejected": "Từ chối",
+    "finished": "Hoàn thành"
+  },
+  "adminRecentlyActivity": {
+    "title": "Hoạt động gần đây",
+    "totalCustomer": "Tổng số khách hàng",
+    "visitor": "Khách truy cập",
+    "totalDelivery": "Tổng số đơn giao hàng thành công",
+    "totalOrder": "Tổng số đơn"
+  },
+  "adminMenuSlide": {
+    "dashboard": "Dashboard",
+    "Balance Tracking": "Theo dõi số dư",
+    "Orders": "Đơn hàng",
+    "Products": "Sản phẩm",
+    "Sales Report": "Báo cáo bán hàng",
+    "Settings": "Cài đặt"
+  },
+  "adminDashboard": {
+    "totalRevenue": "Tổng doanh thu",
+    "totalVisitor": "Tổng lượt truy cập",
+    "totalSale": "Tổng sản phẩm đã bán"
+  },
+  "estimateBalance": {
+    "title": "Số dư ước tính",
+    "totalMoneyDeposit": "Tổng số tiền gửi",
+    "adminBalance": "Số dư",
+    "totalVolume": "Tổng số lượng",
+    "Deposit Total": "Tổng tiền gửi",
+    "Withdraw Total": "Tổng số tiền rút",
+    "Hash": "Hash",
+    "No": "STT"
+  },
+  "news": {
+    "previous": "Bài viết trước",
+    "next": "Bài viết tiếp theo"
+  }
+}

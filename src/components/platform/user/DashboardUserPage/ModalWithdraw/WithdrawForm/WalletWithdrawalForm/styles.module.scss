@@ -1,0 +1,205 @@
+.wallet-withdrawal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+
+      .ant-form-item-label {
+        padding-bottom: 8px;
+      }
+
+      .ant-input-affix-wrapper {
+        border-radius: 2px;
+        padding: 8px 12px;
+
+        > input {
+          font-size: 14px !important;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+          &:hover {
+            box-shadow: none !important;
+          }
+
+          &::placeholder {
+            color: var(--gray3);
+          }
+        }
+
+        > .ant-input-suffix {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  &__network-selection {
+    :global {
+      .ant-select .ant-select-selector {
+        height: 40px;
+        padding: 4px 12px;
+        border-radius: 2px;
+      }
+    }
+
+    &__item {
+      display: flex;
+      justify-items: center;
+      .item__icon {
+        height: 35px;
+        width: 35px;
+      }
+      > span {
+        padding: 4px 0;
+      }
+    }
+  }
+
+  &__info {
+    font-family: var(--base-font);
+    font-size: 14px;
+    font-style: normal;
+    line-height: 22px; /* 157.143% */
+
+    &__title {
+      color: var(--gray3);
+      font-weight: 400;
+      margin: 0 0 4px;
+
+      &.network-fee {
+        margin-bottom: 8px;
+      }
+
+      &.receive-amount-info {
+        color: var(--gray10);
+        margin-bottom: 0;
+      }
+    }
+
+    &__info {
+      color: var(--gray-black3);
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+
+  &__amount-input {
+    label {
+      width: 100%;
+
+      > span {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      .limit {
+        color: var(--gray-black3);
+        margin-right: 8px;
+      }
+      &::after {
+        display: none;
+      }
+    }
+
+    :global {
+      .ant-form-item-control-input-content > .ant-input-affix-wrapper > span.ant-input-suffix {
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+
+        > span {
+          display: inline-flex;
+          align-items: center;
+          gap: 1rem;
+        }
+      }
+    }
+
+    .max-amount-btn {
+      padding: 0;
+      border: 0;
+      height: auto;
+      color: var(--base-color);
+      &:hover {
+        background-color: transparent !important;
+      }
+    }
+  }
+
+  &__wallet-options-list {
+    color: var(--gray-black3);
+
+    font-family: var(--base-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 157.143% */
+    width: 100%;
+
+    :global {
+      .ant-radio-wrapper {
+        font: inherit;
+        color: inherit;
+        width: 278px;
+
+        > .ant-radio {
+          &.ant-radio-checked {
+            > .ant-radio-inner {
+              background-color: transparent !important;
+
+              &::after {
+                background-color: var(--base-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__receive-amount {
+    color: var(--gray-black3);
+
+    /* H4/medium */
+    font-family: var(--base-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 140% */
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+
+  &__submit-btn {
+    height: auto;
+    width: fit-content;
+    padding: 7px 15px;
+    background-color: var(--base-color);
+    border-radius: 2px;
+    border: 1px solid var(--base-color);
+    color: var(--white-color);
+    /* H5/medium */
+    font-family: var(--base-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+
+    &:focus {
+      color: var(--neutral-1) !important;
+    }
+
+    &:hover {
+      background-color: var(--base-color) !important;
+      color: var(--neutral-1) !important;
+    }
+  }
+}

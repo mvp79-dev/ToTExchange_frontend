@@ -1,0 +1,47 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.myOrderPage {
+  display: flex;
+  column-gap: 32px;
+  width: 100%;
+  max-width: var(--width-content);
+  margin: 0px auto;
+  font-family: "Be Vietnam Pro", sans-serif;
+  padding: 60px 0px 74px;
+  min-height: 450px;
+  @include mobile {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 16px;
+    min-width: 208px;
+    color: var(--neutral-11);
+    font-size: 16px;
+    font-weight: 500;
+
+    > div {
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+  }
+  .activeMenu {
+    border-right: 2px solid var(--base-color);
+    background: var(--btn-bg-disabled);
+    color: var(--base-color);
+    width: 100%;
+    text-align: end;
+    @include mobile {
+      text-align: left;
+    }
+  }
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+}
